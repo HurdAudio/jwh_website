@@ -21,6 +21,30 @@
         url: '/',
         parent: 'app',
         component: 'landing'
+      })
+      .state({
+        name: 'novels',
+        url: '/novels',
+        parent: 'app',
+        component: 'novels'
+      })
+      .state({
+        name: 'ellie',
+        url: '/ellie',
+        parent: 'app',
+        component: 'ellie'
+      })
+      .state({
+        name: 'misselliesopeningpages',
+        url: '/misselliesopeningpages',
+        parent: 'app',
+        component: 'misselliesopeningpages'
+      })
+      .state({
+        name: 'ellieessay',
+        url: '/ellieessay',
+        parent: 'app',
+        component: 'ellieessay'
       });
       // .state({
       //   name: 'dayview',
