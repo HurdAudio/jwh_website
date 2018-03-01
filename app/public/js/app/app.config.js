@@ -45,6 +45,24 @@
         url: '/ellieessay',
         parent: 'app',
         component: 'ellieessay'
+      })
+      .state({
+        name: 'kate',
+        url: '/kate',
+        parent: 'app',
+        component: 'kate'
+      })
+      .state({
+        name: 'kateopeningpages',
+        url: '/kateopeningpages',
+        parent: 'app',
+        component: 'kateopeningpages'
+      })
+      .state({
+        name: 'kateessay',
+        url: '/kateessay',
+        parent: 'app',
+        component: 'kateessay'
       });
       // .state({
       //   name: 'dayview',

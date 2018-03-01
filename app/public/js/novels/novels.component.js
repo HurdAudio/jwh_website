@@ -16,6 +16,11 @@
       vm.$onInit = onInit;
       vm.navigateLanding = navigateLanding;
       vm.navigateEllie = navigateEllie;
+      vm.navigateKate = navigateKate;
+
+      function navigateKate() {
+        $state.go('kate');
+      }
 
       function navigateEllie() {
         $state.go('ellie');
