@@ -63,6 +63,24 @@
         url: '/kateessay',
         parent: 'app',
         component: 'kateessay'
+      })
+      .state({
+        name: 'pinkerton',
+        url: '/pinkerton',
+        parent: 'app',
+        component: 'pinkerton'
+      })
+      .state({
+        name: 'pinkpages',
+        url: '/pinkpages',
+        parent: 'app',
+        component: 'pinkpages'
+      })
+      .state({
+        name: 'pinkessay',
+        url: '/pinkessay',
+        parent: 'app',
+        component: 'pinkessay'
       });
       // .state({
       //   name: 'dayview',

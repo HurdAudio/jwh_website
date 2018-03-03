@@ -33,6 +33,13 @@
   color: transparent;
 }
 
+#pinkerton {
+  font-size: 80px;
+  padding: 0;
+  margin: 0 0 0 22%;
+  color: transparent;
+}
+
 #novels {
   font-size: 80px;
   padding: 0;
@@ -145,6 +152,59 @@
   font-size: 30px;
 }
 
+#pinkOpeningPagesContent {
+  float: left;
+  width: 74.5%;
+  height: 118%;
+  overflow: scroll;
+
+}
+
+#pinkOpeningPagesContent p {
+  font-family: 'Bellefair', sans-serif;
+  font-size: 30px;
+  margin: 1% 6% 1% 6%;
+
+}
+
+#pinkOpeningPagesContent img {
+  margin: 0% 6% 0 6%;
+  float: left;
+}
+
+#pinkOpeningPagesContent h3 {
+  float: left;
+  font-family: 'Bellefair', sans-serif;
+  font-size: 30px;
+}
+
+#pinkEssayContent {
+  float: left;
+  width: 74.5%;
+  height: 118%;
+  overflow: scroll;
+
+}
+
+#pinkEssayContent p {
+  font-family: 'Bellefair', sans-serif;
+  font-size: 30px;
+  margin: 1% 6% 1% 6%;
+
+}
+
+#pinkEssayContent img {
+  margin: 0% 6% 0 6%;
+  float: left;
+}
+
+#pinkEssayContent h3 {
+  float: left;
+  font-family: 'Bellefair', sans-serif;
+  font-size: 42px;
+  margin: 1% 12% 6% 6%;;
+}
+
 #content img {
   width: 100%;
 }
@@ -171,11 +231,26 @@
   filter: sepia(100%);
 }
 
+#pinkertonContent {
+  background-image: url(../img/detective-1347102_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  float: left;
+  width: 74.5%;
+  height: 118%;
+  overflow: scroll;
+  filter: sepia(100%);
+}
+
 #ellieContentParagraphs {
   margin: 12% 0 0 0;
 }
 
 #kateContentParagraphs {
+  margin: 12% 0 0 0;
+}
+
+#pinkertonContentParagraphs {
   margin: 12% 0 0 0;
 }
 
@@ -249,6 +324,43 @@
 }
 
 #kateContent ul {
+  list-style-type: none;
+  margin: 20vmin 6vmin 0 6vmin;
+}
+
+#pinkertonContent h3 {
+  color: #ffffff;
+  font-family: 'Bellefair', serif;
+  font-size: 30px;
+  margin: 2% 0 -9% 5%;
+  text-shadow: -1px 1px 1px #000000, -2px 2px 1px #000000;
+}
+
+#pinkertonContent p {
+  color: #ffffff;
+  font-family: 'Bellefair', serif;
+  font-size: 30px;
+  padding: 1%;
+  margin: 1% 6% 0 6%;
+  text-shadow: -1px 1px 1px #000000, -2px 2px 1px #000000;
+}
+
+#pinkertonContent img {
+  float:left;
+  margin: 4vmin;
+  box-shadow: -1px 1px 1px #999999, -2px 2px 1px #999999;
+}
+
+#pinkertonContent h1 {
+  float: left;
+  color: #ffffff;
+  font-family: 'Bellefair', serif;
+  font-size: 48px;
+  margin: 11vmin 0 0 5vmin;
+  text-shadow: -1px 1px 1px #000000, -2px 2px 1px #000000;
+}
+
+#pinkertonContent ul {
   list-style-type: none;
   margin: 20vmin 6vmin 0 6vmin;
 }
@@ -358,6 +470,10 @@
   margin: 60% 0 0 0;
 }
 
+#pinkertonBlurbs {
+  margin: 60% 0 0 0;
+}
+
 #ellieSidebar {
   width: 25.35%;
   float: right;
@@ -436,6 +552,48 @@
 }
 
 #kateSidebar p {
+  float: left;
+  font-family: 'Bellefair', serif;
+  font-size: 24px;
+  margin: 3vmin 4vmin 3vmin 4vmin;
+}
+
+#pinkertonSidebar {
+  width: 25.35%;
+  float: right;
+  height: 118%;
+  overflow: scroll;
+  background-color: #F43472;
+  background-color: -webkit-linear-gradient(135deg, #95B9D3, #FA9547);
+  background: -o-linear-gradient(135deg, #95B9D3, #FA9547);
+  background: -moz-linear-gradient(135deg, #95B9D3, #FA9547);
+  background: linear-gradient(135deg, #95B9D3, #FA9547);
+}
+#pinkertonSidebar img {
+  float: left;
+  filter: brightness(100%);
+  transition: filter 400ms linear;
+  box-shadow: -1px 1px 1px #999999, -2px 2px 1px #999999;
+}
+
+#pinkertonSidebar img:hover {
+  filter: brightness(150%);
+  transition: filter 300ms linear;
+}
+
+#pinkertonSidebar a {
+  font-family: 'Bellefair', serif;
+  font-size: 24px;
+  font-weight: 200;
+  color: #000000;
+  text-decoration: none;
+}
+
+#pinkertonSidebar a:hover {
+  color: #ffffff;
+}
+
+#pinkertonSidebar p {
   float: left;
   font-family: 'Bellefair', serif;
   font-size: 24px;
