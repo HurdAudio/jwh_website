@@ -19,6 +19,11 @@
       vm.navigateKate = navigateKate;
       vm.navigateKateEssay = navigateKateEssay;
       vm.scrollKateToTop = scrollKateToTop;
+      vm.navigateMemoir = navigateMemoir;
+
+      function navigateMemoir() {
+        $state.go('memoir');
+      }
 
       function scrollKateToTop() {
         let kateOpeningPagesContent = document.getElementById('kateOpeningPagesContent');

@@ -19,6 +19,11 @@
       vm.navigatePink = navigatePink;
       vm.navigatePinkEssay = navigatePinkEssay;
       vm.scrollPinkToTop = scrollPinkToTop;
+      vm.navigateMemoir = navigateMemoir;
+
+      function navigateMemoir() {
+        $state.go('memoir');
+      }
 
       function scrollPinkToTop() {
         let pinkOpeningPagesContent = document.getElementById('pinkOpeningPagesContent');

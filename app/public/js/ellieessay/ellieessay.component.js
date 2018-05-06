@@ -19,6 +19,11 @@
       vm.navigateEllie = navigateEllie;
       vm.navigateEllieOpeningPages = navigateEllieOpeningPages;
       vm.scrollEllieToTop = scrollEllieToTop;
+      vm.navigateMemoir = navigateMemoir;
+
+      function navigateMemoir() {
+        $state.go('memoir');
+      }
 
       function scrollEllieToTop() {
         let ellieOpeningPagesContent = document.getElementById('ellieOpeningPagesContent');

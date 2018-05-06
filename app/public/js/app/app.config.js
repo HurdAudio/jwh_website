@@ -81,6 +81,18 @@
         url: '/pinkessay',
         parent: 'app',
         component: 'pinkessay'
+      })
+      .state({
+        name: 'memoir',
+        url: '/memoir',
+        parent: 'app',
+        component: 'memoir'
+      })
+      .state({
+        name: 'surprisedbystory',
+        url: '/surprisedbystory',
+        parent: 'app',
+        component: 'surprisedbystory'
       });
       // .state({
       //   name: 'dayview',

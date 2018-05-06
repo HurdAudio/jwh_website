@@ -18,6 +18,11 @@
       vm.navigateEllie = navigateEllie;
       vm.navigateKate = navigateKate;
       vm.navigatePinkerton = navigatePinkerton;
+      vm.navigateMemoir = navigateMemoir;
+
+      function navigateMemoir() {
+        $state.go('memoir');
+      }
 
       function navigatePinkerton() {
         $state.go('pinkerton');

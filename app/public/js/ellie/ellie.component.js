@@ -18,6 +18,11 @@
       vm.navigateNovels = navigateNovels;
       vm.navigateEllieOpeningPages = navigateEllieOpeningPages;
       vm.navigateEllieEssay = navigateEllieEssay;
+      vm.navigateMemoir = navigateMemoir;
+
+      function navigateMemoir() {
+        $state.go('memoir');
+      }
 
       function navigateEllieEssay() {
         $state.go('ellieessay');
@@ -41,7 +46,7 @@
         ellieContent.setAttribute("style", "opacity: 0.7; filter: hue-rotate(180deg) sepia(0%);");
         setTimeout(()=>{
           ellieContent.setAttribute("style", "opacity: 1; filter: hue-rotate(0deg) sepia(50%); transition: all 1.4s linear;");
-        }, 600)
+        }, 600);
 
       }
 

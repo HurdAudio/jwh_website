@@ -18,6 +18,11 @@
       vm.navigateNovels = navigateNovels;
       vm.navigateKateOpeningPages = navigateKateOpeningPages;
       vm.navigateKateEssay = navigateKateEssay;
+      vm.navigateMemoir = navigateMemoir;
+
+      function navigateMemoir() {
+        $state.go('memoir');
+      }
 
       function navigateKateEssay() {
         $state.go('kateessay');
