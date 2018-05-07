@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div id="topbar">
     <nav class="navbar navbar-expand-lg" id="navBarTop">
-      <h1 id="novels">Novels</h1>
+      <h1 id="shortstories">Short Stories</h1>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div id="storyStamp">
 
@@ -9,9 +9,9 @@
         </div>
         <div class="navbar-nav" id="menuBar">
           <a class="nav-item nav-link" href="#" ng-click="$ctrl.navigateLanding();">Welcome</a>
-          <a class="nav-item nav-link active" href="#"><span class="sr-only">Novels</span></a>
+          <a class="nav-item nav-link" href="#" ng-click="$ctrl.navigateNovels()">Novels</a>
           <a class="nav-item nav-link" href="#" ng-click="$ctrl.navigateMemoir()">Current Project</a>
-          <a class="nav-item nav-link" href="#" ng-click="$ctrl.navigateShortStories()">Short Stories</a>
+          <a class="nav-item nav-link active" href="#"><span class="sr-only">Short Stories</span></a>
           <a class="nav-item nav-link" href="#">Books</a>
 
         </div>
@@ -22,15 +22,15 @@
   </div>
     <div class="row" id="theRow">
 
-      <div id="NovelsContent" class="col-8">
-        <div id="novelsLeft">
+      <div id="shortStoriesContent" class="col-8">
+        <div id="shortStoriesLeft">
 
-          <img src="./img/elliecov.gif" href="#" ng-click="$ctrl.navigateEllie()">
+          <img class="shortStoryImage" src="./img/oil-in-water-1438353_1920.jpg" href="#" ng-click="$ctrl.navigateSnakeOil()">
+          <p>The Family Snake Oil</p>
           <img src="./img/Katecov.gif" href="#" ng-click="$ctrl.navigateKate()">
         </div>
-        <div id="NovelsSubContent">
-          <h3><em>A novel should take us places </em></h3>
-          <h3><em>we've never been before.</em></h3>
+        <div id="shortStoriesSubContent">
+          <h3><em>It was a dark and stormy night . . .</em></h3>
           <!-- <p>Welcome. This site contains information about Jerrie Hurd and her written works, including new projects that she's working on. You'll find reader's guides, reviews, interviews and research tidbits. How to contact her, where to buy her books, and where she will reading, speaking or teaching. Photos, lists, links and other fun stuff. Explore. Enjoy. Also check out <a href="http://jerriehurd.wordpress.com"><em>Our Stories: The Blog</em>
           </a></p> -->
 

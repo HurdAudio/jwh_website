@@ -93,6 +93,12 @@
         url: '/surprisedbystory',
         parent: 'app',
         component: 'surprisedbystory'
+      })
+      .state({
+        name: 'shortstories',
+        url: '/shortstories',
+        parent: 'app',
+        component: 'shortstories'
       });
       // .state({
       //   name: 'dayview',
