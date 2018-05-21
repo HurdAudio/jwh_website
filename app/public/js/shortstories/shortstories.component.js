@@ -20,7 +20,7 @@
       vm.navigateSnakeOil = navigateSnakeOil;
 
       function navigateSnakeOil() {
-        $state.go('snakeoil');
+        $state.go('familysnakeoil');
       }
 
       function navigateNovels() {

@@ -77,6 +77,13 @@
 
 }
 
+#snakeOilTitleBar {
+  font-size: 80px;
+  padding: 0;
+  margin: 0 0 0 9%;
+  color: #ffffff;
+}
+
 #menuBar a {
   margin: 3vmin 3vmin 3vmin 3vmin;
   font-weight: bold;
@@ -184,6 +191,16 @@
   transition: filter 1s linear;
 }
 
+#snakeOilDef {
+  width: 75%;
+  margin: 13vmin 1vmin 1vmin 25%;
+}
+
+.synopsis {
+  float: left;
+  margin: 3vmin 3vmin 3vmin 13vmin;
+}
+
 #otherNon {
   position: relative;
   float: right;
@@ -284,6 +301,35 @@
 }
 
 #kateOpeningPagesContent h3 {
+  float: left;
+  font-family: 'Bellefair', sans-serif;
+  font-size: 30px;
+}
+
+#snakeoilContent {
+  float: left;
+  width: 74.5%;
+  height: 118%;
+  overflow: scroll;
+
+}
+
+#snakeoilContent p {
+  font-family: 'Bellefair', sans-serif;
+  font-size: 30px;
+  margin: 1% 6% 1% 6%;
+
+}
+
+#snakeoilContent img {
+  margin: 0% 6% 0 6%;
+  float: left;
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
+#snakeoilContent h3 {
   float: left;
   font-family: 'Bellefair', sans-serif;
   font-size: 30px;
@@ -567,6 +613,12 @@
   margin: 0 0 0 5vmin;
 }
 
+#shortStoriesRight p {
+  font-family: 'Roboto', serif;
+  font-size: 18px;
+  margin: 0 0 0 5vmin;
+}
+
 #novelsRight {
   float: right;
   margin: -64% 0 0 2%;
@@ -587,6 +639,27 @@
 }
 
 #novelsRight img:hover {
+  filter: grayscale(0%);
+  transition: filter 500ms linear;
+}
+
+#shortStoriesRight {
+  float: right;
+  margin: -64% 0 0 2%;
+  width: 22.5%;
+}
+
+
+
+#shortStoriesRight img {
+  margin: 50.4% 2% 8% 23%;
+  box-shadow: -1px 1px 1px #aaaaaa, -2px 2px 1px #aaaaaa, -3px 3px 1px #aaaaaa, -4px 4px 1px #aaaaaa;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: filter 500ms linear;
+}
+
+#shortStoriesRight img:hover {
   filter: grayscale(0%);
   transition: filter 500ms linear;
 }
@@ -618,7 +691,7 @@
 #shortStoriesSubContent {
   float: right;
   width: 54.1%;
-  margin: -61.8% 21.5% 0 0;
+  margin: -57.4% 21.5% 0 0;
   height: 80vmin;
   background-image: url(../img/fantasynite.gif);
   background-repeat: no-repeat;

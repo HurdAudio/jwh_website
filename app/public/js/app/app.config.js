@@ -99,6 +99,12 @@
         url: '/shortstories',
         parent: 'app',
         component: 'shortstories'
+      })
+      .state({
+        name: 'familysnakeoil',
+        url: '/familysnakeoil',
+        parnet: 'app',
+        component: 'familysnakeoil'
       });
       // .state({
       //   name: 'dayview',
