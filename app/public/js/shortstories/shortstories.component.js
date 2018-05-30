@@ -18,6 +18,11 @@
       vm.navigateMemoir = navigateMemoir;
       vm.navigateNovels = navigateNovels;
       vm.navigateSnakeOil = navigateSnakeOil;
+      vm.navigateSisters = navigateSisters;
+
+      function navigateSisters() {
+        $state.go('sisters');
+      }
 
       function navigateSnakeOil() {
         $state.go('familysnakeoil');

@@ -103,8 +103,14 @@
       .state({
         name: 'familysnakeoil',
         url: '/familysnakeoil',
-        parnet: 'app',
+        parent: 'app',
         component: 'familysnakeoil'
+      })
+      .state({
+        name: 'sisters',
+        url: '/sisters',
+        parent: 'app',
+        component: 'sisters'
       });
       // .state({
       //   name: 'dayview',
