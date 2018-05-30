@@ -20,6 +20,11 @@
       vm.navigateKateEssay = navigateKateEssay;
       vm.scrollKateToTop = scrollKateToTop;
       vm.navigateMemoir = navigateMemoir;
+      vm.navigateShortStories = navigateShortStories;
+
+      function navigateShortStories() {
+        $state.go('shortstories');
+      }
 
       function navigateMemoir() {
         $state.go('memoir');

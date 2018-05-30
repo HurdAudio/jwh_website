@@ -19,6 +19,11 @@
       vm.navigateKateOpeningPages = navigateKateOpeningPages;
       vm.navigateKateEssay = navigateKateEssay;
       vm.navigateMemoir = navigateMemoir;
+      vm.navigateShortStories = navigateShortStories;
+
+      function navigateShortStories() {
+        $state.go('shortstories');
+      }
 
       function navigateMemoir() {
         $state.go('memoir');

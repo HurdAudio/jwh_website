@@ -17,6 +17,11 @@
       vm.navigateNovels = navigateNovels;
       vm.navigateLanding = navigateLanding;
       vm.navigateToSurprise = navigateToSurprise;
+      vm.navigateShortStories = navigateShortStories;
+
+      function navigateShortStories() {
+        $state.go('shortstories');
+      }
 
       function navigateToSurprise() {
         $state.go('surprisedbystory');

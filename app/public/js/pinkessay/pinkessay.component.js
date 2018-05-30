@@ -20,6 +20,11 @@
       vm.navigatePinkPages = navigatePinkPages;
       vm.scrollPinkToTop = scrollPinkToTop;
       vm.navigateMemoir = navigateMemoir;
+      vm.navigateShortStories = navigateShortStories;
+
+      function navigateShortStories() {
+        $state.go('shortstories');
+      }
 
       function navigateMemoir() {
         $state.go('memoir');

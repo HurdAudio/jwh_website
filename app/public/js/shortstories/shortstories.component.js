@@ -20,6 +20,11 @@
       vm.navigateSnakeOil = navigateSnakeOil;
       vm.navigateSisters = navigateSisters;
       vm.navigateMadeForTelevision = navigateMadeForTelevision;
+      vm.navigateCoyoteKissed = navigateCoyoteKissed;
+
+      function navigateCoyoteKissed() {
+        $state.go('coyotekissed');
+      }
 
       function navigateMadeForTelevision() {
         $state.go('madefortelevision');

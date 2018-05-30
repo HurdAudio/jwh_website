@@ -117,6 +117,12 @@
         url: '/madefortelevision',
         parent: 'app',
         component: 'madefortelevision'
+      })
+      .state({
+        name: 'coyotekissed',
+        url: '/coyotekissed',
+        parent: 'app',
+        component: 'coyotekissed'
       });
       // .state({
       //   name: 'dayview',

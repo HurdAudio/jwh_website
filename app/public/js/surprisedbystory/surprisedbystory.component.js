@@ -16,6 +16,11 @@
       vm.$onInit = onInit;
       vm.navigateNovels = navigateNovels;
       vm.navigateLanding = navigateLanding;
+      vm.navigateShortStories = navigateShortStories;
+
+      function navigateShortStories() {
+        $state.go('shortstories');
+      }
 
 
 
