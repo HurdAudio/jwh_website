@@ -19,6 +19,11 @@
       vm.navigateNovels = navigateNovels;
       vm.navigateSnakeOil = navigateSnakeOil;
       vm.navigateSisters = navigateSisters;
+      vm.navigateMadeForTelevision = navigateMadeForTelevision;
+
+      function navigateMadeForTelevision() {
+        $state.go('madefortelevision');
+      }
 
       function navigateSisters() {
         $state.go('sisters');

@@ -91,6 +91,13 @@
   color: #ffffff;
 }
 
+#madeForTelevisionTitleBar {
+  font-size: 80px;
+  padding: 0;
+  margin: 0 0 0 11%;
+  color: #ffffff;
+}
+
 #menuBar a {
   margin: 3vmin 3vmin 3vmin 3vmin;
   font-weight: bold;

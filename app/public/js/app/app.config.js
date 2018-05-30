@@ -111,6 +111,12 @@
         url: '/sisters',
         parent: 'app',
         component: 'sisters'
+      })
+      .state({
+        name: 'madefortelevision',
+        url: '/madefortelevision',
+        parent: 'app',
+        component: 'madefortelevision'
       });
       // .state({
       //   name: 'dayview',
