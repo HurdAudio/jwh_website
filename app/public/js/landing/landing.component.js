@@ -1,6 +1,9 @@
 (function() {
   'use strict';
 
+  var memoirDropdownToggle = false;
+  var overMemoirMenu = false;
+
 
   angular.module('app')
     .component('landing', {
@@ -17,13 +20,53 @@
       vm.navigateNovels = navigateNovels;
       vm.navigateMemoir = navigateMemoir;
       vm.navigateShortStories = navigateShortStories;
+      vm.surpisedbystory = surpisedbystory;
+      vm.hoverOffMemoir = hoverOffMemoir;
+      vm.memoirMenuActive = memoirMenuActive;
+      vm.memoirMenueInactive = memoirMenueInactive;
+
+      function memoirMenuActive() {
+        overMemoirMenu = true;
+      }
+
+      function memoirMenueInactive() {
+        overMemoirMenu = false;
+        hoverOffMemoir();
+      }
+
+
+      function surpisedbystory() {
+        $state.go('memoir');
+      }
 
       function navigateShortStories() {
         $state.go('shortstories');
       }
 
       function navigateMemoir() {
-        $state.go('memoir');
+        let memoirDropdownDiv = document.getElementById('memoirDropdownDiv');
+
+        if (memoirDropdownToggle) {
+          memoirDropdownToggle = false;
+          memoirDropdownDiv.setAttribute("style", "visibility: hidden; opacity: 0; transition: opacity 0.3s linear; z-index: -10;");
+        } else {
+          memoirDropdownToggle = true;
+          memoirDropdownDiv.setAttribute("style", "visibility: visible; opacity: 1; transition: opacity 0.3s linear; z-index: 10;");
+        }
+        // $state.go('memoir');
+      }
+
+      function hoverOffMemoir() {
+        let memoirDropdownDiv = document.getElementById('memoirDropdownDiv');
+
+        if (memoirDropdownToggle && !overMemoirMenu) {
+          setTimeout(()=>{
+            if (memoirDropdownToggle && !overMemoirMenu) {
+              memoirDropdownToggle = false;
+              memoirDropdownDiv.setAttribute("style", "visibility: hidden; opacity: 0; transition: opacity 0.3s linear; z-index: -10;");
+            }
+          }, 500);
+        }
       }
 
       function navigateNovels() {

@@ -11,6 +11,10 @@
 
 }
 
+
+
+
+
 #welcome {
   font-size: 80px;
   padding: 0;
@@ -105,6 +109,34 @@
   color: #ffffff;
 }
 
+#memoirDropdownDiv {
+  /* display: none; */
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  left: 21%;
+  top: 15%;
+  z-index: -10;
+  background-color: #dddddd;
+  border: 3px solid #CFAE9C;
+  padding: 2.3vmin;
+
+}
+
+#memoirDropdownDiv p {
+  font-family: 'Bellefair', sans-serif;
+  font-size: 4vmin;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0 0 0.5vmin 0;
+  background-color: #dddddd;
+}
+
+#memoirDropdownDiv p:hover {
+  background-color: #111111;
+  color: #ffffff;
+}
+
 #menuBar a {
   margin: 3vmin 3vmin 3vmin 3vmin;
   font-weight: bold;
@@ -151,7 +183,7 @@
   background-repeat: no-repeat;
   background-size: 100%; */
   float: left;
-  width: 74.5%;
+  width: 100%;
   /* padding: 2% 0 0 0; */
 
 }
@@ -414,6 +446,7 @@
 
 #content img {
   width: 100%;
+  z-index: -1;
 }
 
 #ellieContent {
@@ -739,10 +772,10 @@
 
 
 #content p {
-  font-family: 'Bellefair', serif;
-  font-size: 36px;
-  padding: 1%;
-  margin: 1% 6% 1% 6%;
+  font-family: 'Lato', serif;
+  font-size: 30px;
+  /* padding: 1%; */
+  margin: 1% 6% 0% 6%;
 }
 
 .bookGraphic {
@@ -937,4 +970,22 @@
 
 .discussionQuestions h3 {
   margin: 2vmin 1vmin 4vmin 20vmin;
+}
+
+.teaser {
+  font-family: 'Montserrat', serif;
+  font-size: 30px;
+  margin: 1% 6% 1% 12%;
+
+}
+
+.subteaser {
+  font-family: 'Roboto', serif;
+  font-size: 30px;
+  margin: 1% 6% 1% 6%;
+}
+
+#theSubTeaser {
+  margin: -2.5vmin 0 0 0;
+  z-index: 1;
 }
