@@ -10,14 +10,14 @@
 
 
   angular.module('app')
-    .component('landing', {
-      controller: LandingController,
-      templateUrl: '/js/landing/landing.template.html'
+    .component('contact', {
+      controller: ContactController,
+      templateUrl: '/js/contact/contact.template.html'
     });
 
-    LandingController.$inject = ['$http', '$state', '$stateParams'];
+    ContactController.$inject = ['$http', '$state', '$stateParams'];
 
-    function LandingController($http, $state, $stateParams){
+    function ContactController($http, $state, $stateParams){
       const vm = this;
 
       vm.$onInit = onInit;
@@ -36,10 +36,10 @@
       vm.funStuffMenuInactive = funStuffMenuInactive;
       vm.hoverOffFunStuff = hoverOffFunStuff;
       vm.navigateFunStuff = navigateFunStuff;
-      vm.navigateContact = navigateContact;
+      vm.navigateWelcome = navigateWelcome;
 
-      function navigateContact() {
-        $state.go('contact');
+      function navigateWelcome() {
+        $state.go('landing');
       }
 
       function funStuffMenuInactive() {
@@ -159,11 +159,11 @@
       }
 
       function onInit() {
-        console.log("Landing is lit");
-        let landingPic = document.getElementById('contentImg');
-        landingPic.setAttribute("style", "opacity: 0.2; filter: hue-rotate(60deg);");
+        console.log("Contact is lit");
+        let contactPic = document.getElementById('contactImg');
+        contactPic.setAttribute("style", "opacity: 0.2; filter: hue-rotate(60deg);");
         setTimeout(()=>{
-          landingPic.setAttribute("style", "opacity: 1; filter: hue-rotate(0deg); transition: all 1s linear;");
+          contactPic.setAttribute("style", "opacity: 1; filter: hue-rotate(0deg); transition: all 1s linear;");
         }, 200)
 
 

@@ -23,7 +23,7 @@
 
   <div id="topbar">
     <nav class="navbar navbar-expand-lg" id="navBarTop">
-      <h1 id="welcome">Welcome</h1>
+      <h1 id="welcome">Contact</h1>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <!-- <div id="storyStamp">
 
@@ -31,14 +31,14 @@
         </div> -->
 
         <div class="navbar-nav" id="menuBar">
-          <a class="nav-item nav-link active"><span class="sr-only">Welcome</span></a>
+          <a class="nav-item nav-link" ng-click="$ctrl.navigateWelcome()" style="cursor:pointer">Welcome</a>
           <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateMemoir()" ng-mouseleave="$ctrl.hoverOffMemoir()" ng-click="$ctrl.navigateMemoir()">Current Book: <em>Surprised by Story</em>
 
 
 
           </a>
           <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateAuthor()" ng-mouseleave="$ctrl.hoverOffAuthor()" ng-click="$ctrl.navigateAuthor()">Author Info</a>
-          <a class="nav-item nav-link" href="#" ng-click="$ctrl.navigateContact()">Contact</a>
+          <a class="nav-item nav-link active" href="#"><span class="sr-only">Contact</span></a>
           <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateFunStuff()" ng-mouseleave="$ctrl.hoverOffFunStuff()" ng-click="$ctrl.navigateFunStuff()">Fun Stuff</a>
           <!-- <a class="nav-item nav-link" ng-click="$ctrl.navigateNovels()" href="#">Novels</a> -->
 
@@ -53,15 +53,18 @@
   </div>
     <div class="row" id="theRow">
 
-      <div id="contentImg" class="col-8">
+      <div id="contactImg" class="col-8">
+        <p id="tellMeAboutTheHouse">My husband and I restored this 120-year-old Victorian in downtown Boulder, Colorado. We live there with our dog. Best way to contact me is by email.</p>
+        <h1 id="contactMail"><a href="mailto:jerrie@jerriehurd.com">jerrie@jerriehurd.com</a></h1>
+
         <!-- <img id="landingPic" src="./img/website.jpg"> -->
-        <div id="theSubTeaser">
+        <!-- <div id="theSubTeaser">
             <p class="subteaser"><em>We expect our lives to turn out like the stories we've heard.</em></p>
           </div>
         <br>
         <div id="theTeaserDiv">
           <h5 class="teaser">That's the theme of my current book--<em>Surprised by Story, a memoir.</em></h5>
-        </div>
+        </div> -->
 
         <br>
 

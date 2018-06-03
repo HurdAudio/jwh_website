@@ -123,6 +123,12 @@
         url: '/coyotekissed',
         parent: 'app',
         component: 'coyotekissed'
+      })
+      .state({
+        name: 'contact',
+        url: '/contact',
+        parent: 'app',
+        component: 'contact'
       });
       // .state({
       //   name: 'dayview',
