@@ -2,8 +2,10 @@
   'use strict';
 
   var memoirDropdownToggle = false;
+  var funStuffDropdownToggle = false;
   var overMemoirMenu = false;
   var overAuthorMenu = false;
+  var overFunStuffMenu = false;
   var authorDropdownToggle = false;
 
 
@@ -30,10 +32,23 @@
       vm.authorMenueInactive = authorMenueInactive;
       vm.hoverOffAuthor = hoverOffAuthor;
       vm.navigateAuthor = navigateAuthor;
+      vm.funStuffMenuActive = funStuffMenuActive;
+      vm.funStuffMenuInactive = funStuffMenuInactive;
+      vm.hoverOffFunStuff = hoverOffFunStuff;
+      vm.navigateFunStuff = navigateFunStuff;
+
+      function funStuffMenuInactive() {
+        overFunStuffMenu = false;
+        hoverOffFunStuff();
+      }
 
       function authorMenueInactive() {
         overAuthorMenu = false;
         hoverOffAuthor();
+      }
+
+      function funStuffMenuActive() {
+        overFunStuffMenu = true;
       }
 
       function authorMenuActive() {
@@ -56,6 +71,18 @@
 
       function navigateShortStories() {
         $state.go('shortstories');
+      }
+
+      function navigateFunStuff() {
+        let funStuffDropdownDiv = document.getElementById('funStuffDropdownDiv');
+
+        if (funStuffDropdownToggle) {
+          funStuffDropdownToggle = false;
+          funStuffDropdownDiv.setAttribute("style", "visibility: hidden; opacity: 0; transition: opacity 0.3s linear; z-index: -10;");
+        } else {
+          funStuffDropdownToggle = true;
+          funStuffDropdownDiv.setAttribute("style", "visibility: visible; opacity: 1; transition: opacity 0.3s linear; z-index: 10;");
+        }
       }
 
       function navigateAuthor() {
@@ -81,6 +108,19 @@
           memoirDropdownDiv.setAttribute("style", "visibility: visible; opacity: 1; transition: opacity 0.3s linear; z-index: 10;");
         }
         // $state.go('memoir');
+      }
+
+      function hoverOffFunStuff() {
+        let funStuffDropdownDiv = document.getElementById('funStuffDropdownDiv');
+
+        if (funStuffDropdownToggle && !overFunStuffMenu) {
+          setTimeout(()=>{
+            if (funStuffDropdownToggle && !overFunStuffMenu) {
+              funStuffDropdownToggle = false;
+              funStuffDropdownDiv.setAttribute("style", "visibility: hidden; opacity: 0; transition: opacity 0.3s linear; z-index: -10;");
+            }
+          }, 500);
+        }
       }
 
       function hoverOffAuthor() {
