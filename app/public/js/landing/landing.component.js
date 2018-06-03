@@ -3,6 +3,8 @@
 
   var memoirDropdownToggle = false;
   var overMemoirMenu = false;
+  var overAuthorMenu = false;
+  var authorDropdownToggle = false;
 
 
   angular.module('app')
@@ -24,6 +26,19 @@
       vm.hoverOffMemoir = hoverOffMemoir;
       vm.memoirMenuActive = memoirMenuActive;
       vm.memoirMenueInactive = memoirMenueInactive;
+      vm.authorMenuActive = authorMenuActive;
+      vm.authorMenueInactive = authorMenueInactive;
+      vm.hoverOffAuthor = hoverOffAuthor;
+      vm.navigateAuthor = navigateAuthor;
+
+      function authorMenueInactive() {
+        overAuthorMenu = false;
+        hoverOffAuthor();
+      }
+
+      function authorMenuActive() {
+        overAuthorMenu = true;
+      }
 
       function memoirMenuActive() {
         overMemoirMenu = true;
@@ -43,6 +58,18 @@
         $state.go('shortstories');
       }
 
+      function navigateAuthor() {
+        let authorDropdownDiv = document.getElementById('authorDropdownDiv');
+
+        if (authorDropdownToggle) {
+          authorDropdownToggle = false;
+          authorDropdownDiv.setAttribute("style", "visibility: hidden; opacity: 0; transition: opacity 0.3s linear; z-index: -10;");
+        } else {
+          authorDropdownToggle = true;
+          authorDropdownDiv.setAttribute("style", "visibility: visible; opacity: 1; transition: opacity 0.3s linear; z-index: 10;");
+        }
+      }
+
       function navigateMemoir() {
         let memoirDropdownDiv = document.getElementById('memoirDropdownDiv');
 
@@ -54,6 +81,19 @@
           memoirDropdownDiv.setAttribute("style", "visibility: visible; opacity: 1; transition: opacity 0.3s linear; z-index: 10;");
         }
         // $state.go('memoir');
+      }
+
+      function hoverOffAuthor() {
+        let authorDropdownDiv = document.getElementById('authorDropdownDiv');
+
+        if (authorDropdownToggle && !overAuthorMenu) {
+          setTimeout(()=>{
+            if (authorDropdownToggle && !overAuthorMenu) {
+              authorDropdownToggle = false;
+              authorDropdownDiv.setAttribute("style", "visibility: hidden; opacity: 0; transition: opacity 0.3s linear; z-index: -10;");
+            }
+          }, 500);
+        }
       }
 
       function hoverOffMemoir() {

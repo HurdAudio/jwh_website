@@ -5,6 +5,13 @@
     <p>Introduction</p>
     <p>First Chapter</p>
   </div>
+
+  <div id="authorDropdownDiv" ng-mouseover="$ctrl.authorMenuActive()" ng-mouseleave="$ctrl.authorMenueInactive()">
+
+    <p>Short Bio</p>
+    <p>Long Bio</p>
+    <p>Published Books</p>
+  </div>
   <div id="topbar">
     <nav class="navbar navbar-expand-lg" id="navBarTop">
       <h1 id="welcome">Welcome</h1>
@@ -21,7 +28,7 @@
 
 
           </a>
-          <a class="nav-item nav-link" href="#">Author Info</a>
+          <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateAuthor()" ng-mouseleave="$ctrl.hoverOffAuthor()" ng-click="$ctrl.navigateAuthor()">Author Info</a>
           <a class="nav-item nav-link" href="#">Contact</a>
           <a class="nav-item nav-link" href="#">Fun Stuff</a>
           <!-- <a class="nav-item nav-link" ng-click="$ctrl.navigateNovels()" href="#">Novels</a> -->
