@@ -10,14 +10,14 @@
 
 
   angular.module('app')
-    .component('landing', {
-      controller: LandingController,
-      templateUrl: '/js/landing/landing.template.html'
+    .component('memoirfirstchapter', {
+      controller: MemoirFirstChapterController,
+      templateUrl: '/js/memoirfirstchapter/memoirfirstchapter.template.html'
     });
 
-    LandingController.$inject = ['$http', '$state', '$stateParams'];
+    MemoirFirstChapterController.$inject = ['$http', '$state', '$stateParams'];
 
-    function LandingController($http, $state, $stateParams){
+    function MemoirFirstChapterController($http, $state, $stateParams){
       const vm = this;
 
       vm.$onInit = onInit;
@@ -37,15 +37,20 @@
       vm.hoverOffFunStuff = hoverOffFunStuff;
       vm.navigateFunStuff = navigateFunStuff;
       vm.navigateContact = navigateContact;
-      vm.navigateIntroduction = navigateIntroduction;
-      vm.navigateFirstChapter = navigateFirstChapter;
+      vm.navigateWelome = navigateWelome;
+      vm.navigateToSurprise = navigateToSurprise;
+      vm.navigateToIntroduction = navigateToIntroduction;
 
-      function navigateFirstChapter() {
-        $state.go('memoirfirstchapter');
+      function navigateToIntroduction() {
+        $state.go('memoirintroduction');
       }
 
-      function navigateIntroduction() {
-        $state.go('memoirintroduction');
+      function navigateToSurprise() {
+        $state.go('memoir');
+      }
+
+      function navigateWelome() {
+        $state.go('landing');
       }
 
       function navigateContact() {
@@ -169,12 +174,8 @@
       }
 
       function onInit() {
-        console.log("Landing is lit");
-        let landingPic = document.getElementById('contentImg');
-        landingPic.setAttribute("style", "opacity: 0.2; filter: hue-rotate(60deg);");
-        setTimeout(()=>{
-          landingPic.setAttribute("style", "opacity: 1; filter: hue-rotate(0deg); transition: all 1s linear;");
-        }, 200)
+        console.log("Memoir Introduction is lit");
+
 
 
 

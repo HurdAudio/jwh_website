@@ -39,6 +39,11 @@
       vm.navigateContact = navigateContact;
       vm.navigateWelome = navigateWelome;
       vm.navigageIntroduction = navigageIntroduction;
+      vm.navigateFirstChapter = navigateFirstChapter;
+
+      function navigateFirstChapter() {
+        $state.go('memoirfirstchapter');
+      }
 
       function navigageIntroduction() {
         $state.go('memoirintroduction')

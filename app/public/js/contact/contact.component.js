@@ -38,6 +38,11 @@
       vm.navigateFunStuff = navigateFunStuff;
       vm.navigateWelcome = navigateWelcome;
       vm.navigateIntroduction = navigateIntroduction;
+      vm.navigateFirstChapter = navigateFirstChapter;
+
+      function navigateFirstChapter() {
+        $state.go('memoirfirstchapter');
+      }
 
       function navigateIntroduction() {
         $state.go('memoirintroduction');

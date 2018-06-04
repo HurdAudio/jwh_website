@@ -135,6 +135,12 @@
         url: '/memoirintroduction',
         parent: 'app',
         component: 'memoirintroduction'
+      })
+      .state({
+        name: 'memoirfirstchapter',
+        url: '/memoirfirstchapter',
+        parent: 'app',
+        component: 'memoirfirstchapter'
       });
       // .state({
       //   name: 'dayview',

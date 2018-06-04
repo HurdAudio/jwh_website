@@ -287,6 +287,16 @@
   box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 }
 
+#sophia {
+  float: left;
+  width: 40%;
+  margin: 2vmin 1vmin 4vmin 2vmin;
+  /* filter: sepia(30%); */
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
 #aboveBoneNav {
   position: relative;
   float: left;
