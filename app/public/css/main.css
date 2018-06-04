@@ -143,7 +143,7 @@
   visibility: hidden;
   opacity: 0;
   position: absolute;
-  left: 46%;
+  left: 51%;
   top: 16.5%;;
   z-index: -10;
   background-color: #dddddd;
@@ -170,7 +170,7 @@
   visibility: hidden;
   opacity: 0;
   position: absolute;
-  right: 8%;
+  right: 3%;
   top: 16.5%;;
   z-index: -10;
   background-color: #dddddd;
