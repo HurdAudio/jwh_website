@@ -1,17 +1,49 @@
 <div class="container-fluid">
+  <div id="memoirDropdownDiv" ng-mouseover="$ctrl.memoirMenuActive()" ng-mouseleave="$ctrl.memoirMenueInactive()">
+
+    <p><span class="sr-only">About the Memoir</span></p>
+    <p>Introduction</p>
+    <p>First Chapter</p>
+  </div>
+
+  <div id="authorDropdownDiv" ng-mouseover="$ctrl.authorMenuActive()" ng-mouseleave="$ctrl.authorMenueInactive()">
+
+    <p>Short Bio</p>
+    <p>Long Bio</p>
+    <p>Published Books</p>
+  </div>
+
+  <div id="funStuffDropdownDiv" ng-mouseover="$ctrl.funStuffMenuActive()" ng-mouseleave="$ctrl.funStuffMenuInactive()">
+
+    <p>Fun Info</p>
+    <p>Future Projects</p>
+    <p>Photo Website</p>
+    <p>Short Stories</p>
+  </div>
+
   <div id="topbar">
     <nav class="navbar navbar-expand-lg" id="navBarTop">
       <h1 id="currentProject">Surprised by Story</h1>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div id="storyStamp">
+        <!-- <div id="storyStamp">
 
           <h1>Jerrie Hurd's Stories</h1>
-        </div>
+        </div> -->
+
         <div class="navbar-nav" id="menuBar">
-          <a class="nav-item nav-link" href="#" ng-click="$ctrl.navigateLanding()">Welcome</a>
-          <a class="nav-item nav-link" ng-click="$ctrl.navigateNovels()" href="#">Novels</a>
-          <a class="nav-item nav-link active"><span class="sr-only">Surprised by Story</span></a>
-          <a class="nav-item nav-link" href="#" ng-click="$ctrl.navigateShortStories()">Short Stories</a>
+          <a class="nav-item nav-link" ng-click="$ctrl.navigateWelome()" style="cursor:pointer">Welcome</a>
+          <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateMemoir()" ng-mouseleave="$ctrl.hoverOffMemoir()" ng-click="$ctrl.navigateMemoir()">Current Book: <em>Surprised by Story</em>
+
+
+
+          </a>
+          <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateAuthor()" ng-mouseleave="$ctrl.hoverOffAuthor()" ng-click="$ctrl.navigateAuthor()">Author Info</a>
+          <a class="nav-item nav-link" href="#" ng-click="$ctrl.navigateContact()">Contact</a>
+          <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateFunStuff()" ng-mouseleave="$ctrl.hoverOffFunStuff()" ng-click="$ctrl.navigateFunStuff()">Fun Stuff</a>
+          <!-- <a class="nav-item nav-link" ng-click="$ctrl.navigateNovels()" href="#">Novels</a> -->
+
+          <!-- <a class="nav-item nav-link" href="#" ng-click="$ctrl.navigateShortStories()">Short Stories</a> -->
+          <!-- <a class="nav-item nav-link" href="#">Books</a> -->
 
         </div>
 
@@ -23,18 +55,22 @@
 
       <div id="memoirContent" class="col-8">
         <!-- <img id="landingPic" src="./img/website.jpg"> -->
-        <h3 align="center"><em>We expect our lives to turn out</em></h3>
-        <h3 align="center"><em>like the stories we've heard.</em></h3>
+
         <a id="aboveBoneNav" href="#" ng-click="$ctrl.navigateToSurprise()"><h3><em></em></h3></a>
 
-        <img src="./img/shclowns.jpg">
+        <img src="./img/treesm.jpg">
         <!-- <a href="#" id="otherNon"><h3><em>Other Non-fiction</em></h3></a> -->
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <div id="currentBlurb">
-          <h3>In my family we tell great love stories.</h3>
-          <p class="currentBlurbParagraph">Every family has a central narrative—the story they tell more often than any other. In my family it is the story of the great grandmother who stopped a railroad for the sake of love—not one or two trains, a whole railroad. We also have a story of a young girl who dreamed as she sat swinging on the front gate, hoping that a guy on the white horse who would take her away from a bad situation and, one day, he showed up, white horse and all. We also have a World War II romance, complete with love letters, a mid-19th Century shipboard romance, and a more distance tale of lost love and Viking pirates.  Given those stories, I can’t imagine the women in my family settling for less than love, which also means some of us spend our whole lives waiting . . .</p><br>
-          <h3>Because the stories we tell often become the scripts we live or try to live?</h3>
-          <p class="currentBlurbParagraph">That is a theme in <em>Surprised by Story</em>. More than that, <em>Surprised by Story</em> is about the power of family stories. It urges the reader to examine her own stories as means of taking control of her life. Stories can be reshaped. In fact, families do it all the time.</p><br>
+          <h3><b>About the Memoir:</b> <em>Surprised by Story</em></h3>
+          <p class="currentBlurbParagraph">&nbsp;&nbsp;&nbsp;Jerrie Hurd thought she was luckier than most. Her family tells great love stories—a wonderful heritage. Then she discovered the hazard. If you listen long enough, you can wait a lifetime expecting to be swept off your feet.<br><br>
+          &nbsp;&nbsp;&nbsp;Surprise! Those same-old, same-old, heard-them-a-hundred-times family stories are full of hazards that apply to everyone. Pay attention, family stories are the script. They repeat, like songs stuck in our heads, telling us over and over what the people in our families have always done—judging us when we don’t.<br><br>
+          &nbsp;&nbsp;&nbsp;Only one way out—own them!<br><br>
+          &nbsp;&nbsp;&nbsp;<b>Surprised by Story</b> chronicles Hurd’s story-filled journey into her inherited past. Newly aware of the power of stories, she travels from a ranch in Idaho to an island off the coast of Denmark with various stops along the way gathering, examining and wrestling with her heritage.<br><br>
+          &nbsp;&nbsp;&nbsp;<em>Why that story? Why that story told that way? </em>she asks, again and again, with surprising results.<br><br>
+          &nbsp;&nbsp;&nbsp;The focus is on stories, not genealogy, because nobody remembers names and dates. Stories, on the other hand, are hard to forget. What’s more, it is story that shapes values, perspective, even our sense of self. Knowing your cultural heritage, Hurd argues, might be as important as knowing your family’s medical history.<br><br>
+	        &nbsp;&nbsp;&nbsp;This is a book that goes beyond one family and their place in American history. It is about finding firm footing amid the muck of most of our messy lives. It is a love-poem to storytellers, a roadmap to finding roots, an exercise in finding home. It is about taking control of life and how to recognize wisdom in a modern, mobile world.<br><br>
+          &nbsp;&nbsp;&nbsp;“It sounds too simple to be true,” Hurd writes, “but when you change your story, you change everything.” </p><br><br>
 
         </div>
 
@@ -42,12 +78,7 @@
 
 
       </div>
-      <div id="sidebar">
 
-        <h3>Author Info</h3>
-        <h3>Contact Info</h3>
-        <p>©2008-2018 Jerrie Hurd (all text, photos, design)</p>
-      </div>
     </div>
 
 

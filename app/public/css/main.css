@@ -25,6 +25,7 @@
 }
 
 #currentProject {
+  visibility: hidden;
   font-size: 80px;
   padding: 0;
   margin: 0 0 0 17%;
@@ -265,7 +266,7 @@
 
 #memoirContent {
   float: left;
-  width: 74.5%;
+  width: 94.5%;
   height: 98%;
   overflow: scroll;
 }
@@ -277,10 +278,10 @@
 } */
 
 #memoirContent img {
-  float: left;
-  width: 20%;
+  float: right;
+  width: 30%;
   margin: 2vmin 1vmin 4vmin 13vmin;
-  filter: sepia(30%);
+  /* filter: sepia(30%); */
   -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   box-shadow: 1px 2px 3px rgba(0,0,0,.5);
@@ -298,7 +299,7 @@
   -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-  background: url(../img/title.jpg);
+  background: url(../img/titlenew.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   /* background-color: #8F9288;
@@ -370,10 +371,10 @@
 
 
 #memoirContent h3 {
-  font-family: 'Bellefair', serif;
+  font-family: 'Montserrat', serif;
   font-size: 36px;
   padding: 1%;
-  margin: 1% 19% 1% 19%;
+  margin: -10% 9% 3% 9%;
 }
 
 #ellieOpeningPagesContent {
