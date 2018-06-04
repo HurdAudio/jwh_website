@@ -37,6 +37,11 @@
       vm.hoverOffFunStuff = hoverOffFunStuff;
       vm.navigateFunStuff = navigateFunStuff;
       vm.navigateWelcome = navigateWelcome;
+      vm.navigateIntroduction = navigateIntroduction;
+
+      function navigateIntroduction() {
+        $state.go('memoirintroduction');
+      }
 
       function navigateWelcome() {
         $state.go('landing');

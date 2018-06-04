@@ -129,6 +129,12 @@
         url: '/contact',
         parent: 'app',
         component: 'contact'
+      })
+      .state({
+        name: 'memoirintroduction',
+        url: '/memoirintroduction',
+        parent: 'app',
+        component: 'memoirintroduction'
       });
       // .state({
       //   name: 'dayview',

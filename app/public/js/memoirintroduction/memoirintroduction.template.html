@@ -1,0 +1,107 @@
+<div class="container-fluid">
+  <div id="memoirDropdownDiv" ng-mouseover="$ctrl.memoirMenuActive()" ng-mouseleave="$ctrl.memoirMenueInactive()">
+
+    <p ng-click="$ctrl.navigateToSurprise()">About the Memoir</p>
+    <p><span class="sr-only">Introduction</span></p>
+    <p>First Chapter</p>
+  </div>
+
+  <div id="authorDropdownDiv" ng-mouseover="$ctrl.authorMenuActive()" ng-mouseleave="$ctrl.authorMenueInactive()">
+
+    <p>Short Bio</p>
+    <p>Long Bio</p>
+    <p>Published Books</p>
+  </div>
+
+  <div id="funStuffDropdownDiv" ng-mouseover="$ctrl.funStuffMenuActive()" ng-mouseleave="$ctrl.funStuffMenuInactive()">
+
+    <p>Fun Info</p>
+    <p>Future Projects</p>
+    <p>Photo Website</p>
+    <p>Short Stories</p>
+  </div>
+
+  <div id="topbar">
+    <nav class="navbar navbar-expand-lg" id="navBarTop">
+      <h1 id="currentProject">Surprised by Story</h1>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <!-- <div id="storyStamp">
+
+          <h1>Jerrie Hurd's Stories</h1>
+        </div> -->
+
+        <div class="navbar-nav" id="menuBar">
+          <a class="nav-item nav-link" ng-click="$ctrl.navigateWelome()" style="cursor:pointer">Welcome</a>
+          <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateMemoir()" ng-mouseleave="$ctrl.hoverOffMemoir()" ng-click="$ctrl.navigateMemoir()">Current Book: <em>Surprised by Story</em>
+
+
+
+          </a>
+          <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateAuthor()" ng-mouseleave="$ctrl.hoverOffAuthor()" ng-click="$ctrl.navigateAuthor()">Author Info</a>
+          <a class="nav-item nav-link" href="#" ng-click="$ctrl.navigateContact()">Contact</a>
+          <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateFunStuff()" ng-mouseleave="$ctrl.hoverOffFunStuff()" ng-click="$ctrl.navigateFunStuff()">Fun Stuff</a>
+          <!-- <a class="nav-item nav-link" ng-click="$ctrl.navigateNovels()" href="#">Novels</a> -->
+
+          <!-- <a class="nav-item nav-link" href="#" ng-click="$ctrl.navigateShortStories()">Short Stories</a> -->
+          <!-- <a class="nav-item nav-link" href="#">Books</a> -->
+
+        </div>
+
+      </div>
+
+    </nav>
+  </div>
+    <div class="row" id="theRow">
+
+      <div id="memoirContent" class="col-8">
+        <!-- <img id="landingPic" src="./img/website.jpg"> -->
+
+        <a id="aboveBoneNav" href="#"><h3><em></em></h3></a>
+
+        <img src="./img/nicole3sm.jpg">
+        <!-- <a href="#" id="otherNon"><h3><em>Other Non-fiction</em></h3></a> -->
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div id="currentBlurb">
+          <h3><b>Introduction</b></h3>
+          <p class="currentBlurbParagraph">&nbsp;&nbsp;&nbsp;It’s trendy. Send off a tube of saliva. Back comes an analysis of who you are according to your genetic DNA. Can produce surprises.<br><br>
+          &nbsp;&nbsp;&nbsp;I was more surprised by the results of my cultural DNA. I’m talking about the stories—the folkloric history—that my family handed down to me. Stories teach us how the world works and, like it or not, those same-old, same-old family stories become our mantras—what we tell ourselves about who we think we are. Truth—most of us expect our lives to turn out like the stories we’ve heard. And when that doesn’t happen . . .<br><br>
+          &nbsp;&nbsp;&nbsp;Here’s the thing—I can be proactive about a predisposition to certain diseases. Likewise I can shape my family stories to fit current circumstances, but only if I pay attention to the hold those stories have on me. That little-known truth all but slapped me in the face one day.<br><br>
+          &nbsp;&nbsp;&nbsp;I was critiquing manuscripts at the end of a three-day writer’s conference. Mid-afternoon, I sat down with a thirty-something writer who was working on a novel about three generations of women—mothers and daughters—who seemed to do nothing but increase each other’s misery. It was a well written, if melancholy, book that I suspected subsequent readers would find a downer, so I asked the author, “Why do you want to write this story?”<br><br>
+          &nbsp;&nbsp;&nbsp;That’s a deceptively simple question that I usually have to ask several times before getting to the core. This writer is the exception. Without hesitation, she answered, “I wanted to understand why all the women in my family marry men we don’t love. I mean, God forbid, one of us should actually break that cycle.”<br><br>
+          &nbsp;&nbsp;&nbsp;I was startled, not because she was so clear-eyed about her central narrative, not because of the bitterness she’d expressed, and not because I didn’t believe her. Families run these kinds of patterns all the time. I was startled because I hadn’t realized the book was autobiographical. And—even more important—I’d recognized similarities between the generations of her family and my own. Actually, I thought the similarities were nearly universal. Except for the particulars, she could have been writing about almost any set of mothers and daughters, mine included, with one important exception. In my family, we tell great love stories.<br><br>
+          &nbsp;&nbsp;&nbsp;The author shook her head and continued. She felt trapped. Her family had a pattern of failed relationships. So why had she expected her marriage would be different? “It’s like they gave me a script. I can follow the family script or struggle against it. Either way, the script owns me.”<br><br>
+          &nbsp;&nbsp;&nbsp;I interrupted. “Owns you?”<br><br>
+          &nbsp;&nbsp;&nbsp;She shot me an incredulous glance. “Isn’t it obvious? Following the family script means an incredibly strong mother-daughter bond because the women in my family are forever commiserating with one another about our failed loves. We never let anyone else in. On the other hand, if I took a chance on real love, I’d lose the support of my family who got me through one bad marriage already. Given my family’s background, how likely is it that I could recognize real love anyway?” She shrugged. “How do you make some kind of Disneyfied happy ending out of that?”<br><br>
+          &nbsp;&nbsp;&nbsp;I’m not used to being challenged quite so directly. Worse, I’m feeling personally uncomfortable. The more she talks, the more I wonder about my own family and our love stories. Is that also a family script? If so, how have those stories—that family pattern—affected my life? At the same time, I’m mentally resisting the idea. Nobody takes family stories seriously. I don’t. Or haven’t. What’s more, I don’t have time to investigate this. I have other plans, other projects. And yet, another part of me is screaming—pay attention!<br><br>
+
+          &nbsp;&nbsp;&nbsp;The importance of family stories is best explained in Aesop terms. Take the famous Aesop fable of the ants and the grasshopper. The ants work all summer putting food away while the grasshopper fiddles. When winter comes, the hungry grasshopper knocks on the ants’ door looking for dinner. The usual moral is something like “don’t fiddle the summer away.” Ok, fine, but who keeps the ants from dying of boredom—all winter long—if not that fiddling grasshopper?<br><br>
+	        &nbsp;&nbsp;&nbsp;Here’s the thing—if my family gave me an ant’s point of view, likely I will have to make a big shift to appreciate silly, seemingly slothful grasshoppers. On the other hand, if I come from a grasshopper family, likely I’ve learned to look down on steadier, plodding lifestyles that are just not cool. Now think what happens when a grasshopper marries an ant or an ant hires a grasshopper? This is serious stuff—like it or not.<br><br>
+
+          &nbsp;&nbsp;&nbsp;Before our scheduled hour was up, I explained that my family tells love stories—something very different from the author’s family. I wanted to her understand that at some level families and individuals choose how to tell their stories. In other words, she could change her novel and her life if she wanted, but she shook her head. Because the story is autobiographical, she felt constrained by real events.<br><br>
+
+          &nbsp;&nbsp;&nbsp;Cultural DNA—maybe it goes without saying that who we are cannot be separated from where we come from. I can act all grown-up and tell myself that I’m my own person but, like a reflex, when I cook, I cook the way my mother did. When I open my mouth to talk politics, I sound like my father. When I’m shopping for clothes, pink isn’t a possibility. I can’t wear pink because my grandmother hated pink. Those are the little things. The big one is my family’s love stories. I’ve always considered myself luckier than most because my family tells great love stories, but when I stop to think about it, I immediately recognize the hazard of those stories:  listen long enough and you can spend a lifetime waiting to be swept off your feet.<br><br>
+          &nbsp;&nbsp;&nbsp;And the more I think about it, the more questions I have. On the other hand, it’s no small undertaking to investigate one’s history. There are aunts, uncles, cousins and other kin to be interviewed. Documents to be examined. And who knows what I might find—good or bad. Do I really want this? Like the fairy folk, when it comes to family stories, the accepted wisdom is to leave them alone. Those warnings aside, I tell myself that it will be worth poking around a bit. At minimum I hope to stop running patterns I don’t understand, like never wearing pink. Mostly, however, I want to understand those love stories. I’m pretty sure my family’s track record in the relationship department is no better than most. So what do we gain by telling ourselves great love stories?<br><br>
+
+	        &nbsp;&nbsp;&nbsp;A friend, who is a professional genealogist, immediately poo-pooed my project. “They’re wrong,” he tells me. “First rule of genealogy is to disprove the family stories.”  When I question his attitude, he admits that family stories are often the reason people get interested in their history and that he is mostly referring to the classically untrue stories, like thinking you are related to an Indian princess. “American Indians didn’t have princesses,” he explains, in case I hadn’t gotten it.<br><br>
+          &nbsp;&nbsp;&nbsp;He hadn’t gotten it.<br><br>
+          &nbsp;&nbsp;&nbsp;I’m not interested in dates and documents. I’m interested in why a family might claim an Indian princess as part of their heritage. How does something like that become part of the history they tell themselves? In what way does thinking they are related to an Indian princess form their identity? In other words, stories don’t have to be right to be powerful. They just need to be repeated and believed.<br><br>
+          &nbsp;&nbsp;&nbsp;I didn’t get it either.<br><br>
+          &nbsp;&nbsp;&nbsp;I will be repeatedly surprised by the obvious. Clearly I haven’t been listening. I’d absorbed the stories without ever asking: <em>Why that story? Why that story told that way? </em>When you begin to ask those questions all kinds of interesting, startling, seemingly hidden, things come into focus. I mean, whoa!<br><br>
+	        &nbsp;&nbsp;&nbsp;I now believe that knowing my family’s storied history might be as important as knowing my family’s medical history. And I’m not alone in that belief. It has been documented that people who experience a genealogical void often have serious identity problems. Hence the drive for adopted children to find their “real” parents and African Americans, who have slavery backgrounds, to make a genetic connection to a particular part of the African continent.<br><br>
+	        &nbsp;&nbsp;&nbsp;I’m lucky. No genealogical void. I have a rich and colorful background—plenty of stories, more than enough surprises and lots of dirt. Doesn’t every family have at least one pirate and/or Mormon polygamist in their past? The trick is deciding the take-away. Dirt is where things get muddy. It’s also where things grow. Before I finish, I will travel from a ranch in Idaho to an island off the coast of Denmark. I will interview lots and lots of people—family members, experts, and friends. I will uncover stories I’ve never heard before and stories I’ve heard too many times in too many varying versions. In every case, I never assume the first version is the right one. I always expect that if I turn the dirt one more time, I’ll find a different perspective, something wiser or wittier. And, in that sense, the old stories never fail me even when some family members do.<br><br>
+	        &nbsp;&nbsp;&nbsp;“What do you want?<br><br>
+	        &nbsp;&nbsp;&nbsp;“Why?”<br><br>
+	        &nbsp;&nbsp;&nbsp;“Who asked you to do this?”<br><br>
+          &nbsp;&nbsp;&nbsp;I asked me. And I’m glad I did. It sounds too simple to be true, but when you change the way you tell your story, everything changes. </p><br><br>
+
+        </div>
+
+
+
+
+      </div>
+
+    </div>
+
+
+</div>

@@ -10,14 +10,14 @@
 
 
   angular.module('app')
-    .component('memoir', {
-      controller: MemoirController,
-      templateUrl: '/js/memoir/memoir.template.html'
+    .component('memoirintroduction', {
+      controller: MemoirIntroductionController,
+      templateUrl: '/js/memoirintroduction/memoirintroduction.template.html'
     });
 
-    MemoirController.$inject = ['$http', '$state', '$stateParams'];
+    MemoirIntroductionController.$inject = ['$http', '$state', '$stateParams'];
 
-    function MemoirController($http, $state, $stateParams){
+    function MemoirIntroductionController($http, $state, $stateParams){
       const vm = this;
 
       vm.$onInit = onInit;
@@ -38,10 +38,10 @@
       vm.navigateFunStuff = navigateFunStuff;
       vm.navigateContact = navigateContact;
       vm.navigateWelome = navigateWelome;
-      vm.navigageIntroduction = navigageIntroduction;
+      vm.navigateToSurprise = navigateToSurprise;
 
-      function navigageIntroduction() {
-        $state.go('memoirintroduction')
+      function navigateToSurprise() {
+        $state.go('memoir');
       }
 
       function navigateWelome() {
@@ -169,7 +169,7 @@
       }
 
       function onInit() {
-        console.log("Memoir is lit");
+        console.log("Memoir Introduction is lit");
 
 
 

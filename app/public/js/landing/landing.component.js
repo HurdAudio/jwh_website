@@ -37,6 +37,11 @@
       vm.hoverOffFunStuff = hoverOffFunStuff;
       vm.navigateFunStuff = navigateFunStuff;
       vm.navigateContact = navigateContact;
+      vm.navigateIntroduction = navigateIntroduction;
+
+      function navigateIntroduction() {
+        $state.go('memoirintroduction');
+      }
 
       function navigateContact() {
         $state.go('contact');
