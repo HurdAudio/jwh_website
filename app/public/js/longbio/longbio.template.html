@@ -1,15 +1,15 @@
 <div class="container-fluid">
   <div id="memoirDropdownDiv" ng-mouseover="$ctrl.memoirMenuActive()" ng-mouseleave="$ctrl.memoirMenueInactive()">
 
-    <p ng-click="$ctrl.surpisedbystory()">About the Memoir</p>
-    <p ng-click="$ctrl.navigateIntroduction()">Introduction</p>
+    <p ng-click="$ctrl.navigateToSurprise()">About the Memoir</p>
+    <p ng-click="$ctrl.navigageIntroduction()">Introduction</p>
     <p ng-click="$ctrl.navigateFirstChapter()">First Chapter</p>
   </div>
 
   <div id="authorDropdownDiv" ng-mouseover="$ctrl.authorMenuActive()" ng-mouseleave="$ctrl.authorMenueInactive()">
 
     <p ng-click="$ctrl.navigateShortBio()">Short Bio</p>
-    <p ng-click="$ctrl.navigateLongBio()">Long Bio</p>
+    <p><span class="sr-only">Long Bio</span></p>
     <p>Published Books</p>
   </div>
 
@@ -23,7 +23,7 @@
 
   <div id="topbar">
     <nav class="navbar navbar-expand-lg" id="navBarTop">
-      <h1 id="welcome">Welcome</h1>
+      <h1 id="currentProject">Surprised by Story</h1>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <!-- <div id="storyStamp">
 
@@ -31,7 +31,7 @@
         </div> -->
 
         <div class="navbar-nav" id="menuBar">
-          <a class="nav-item nav-link active"><span class="sr-only">Welcome</span></a>
+          <a class="nav-item nav-link" ng-click="$ctrl.navigateWelome()" style="cursor:pointer">Welcome</a>
           <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateMemoir()" ng-mouseleave="$ctrl.hoverOffMemoir()" ng-click="$ctrl.navigateMemoir()">Current Book: <em>Surprised by Story</em>
 
 
@@ -53,28 +53,35 @@
   </div>
     <div class="row" id="theRow">
 
-      <div id="contentImg" class="col-8">
-        <!-- <img id="landingPic" src="./img/website.jpg"> -->
-        <div id="theSubTeaser">
-            <p class="subteaser"><em>We expect our lives to turn out like the stories we've heard.</em></p>
-          </div>
-        <br>
-        <div id="theTeaserDiv">
-          <h5 class="teaser">That's the theme of my current book--<em>Surprised by Story, a memoir.</em></h5>
-        </div>
+      <div id="longbioContent" class="col-8">
+        <img id="authorPicLong" src="./img/jerrie2b&w-1.jpg">
 
-        <br>
+        <!-- <a id="aboveBoneNav" href="#" ng-click="$ctrl.navigateToSurprise()"><h3><em></em></h3></a> -->
+
+        <!-- <img src="./img/treesm.jpg"> -->
+        <!-- <a href="#" id="otherNon"><h3><em>Other Non-fiction</em></h3></a> -->
+
+        <div id="bioLongBlurb">
+
+          <p class="longBioBlurb">&nbsp;&nbsp;&nbsp;In addition to the memoir <em>Surprised by Story</em>, Jerrie Hurd has published three novels with Pocket Books, several nonfiction books with a regional publisher as well as short stories and essays. She began her writing career working for her hometown newspaper while still in high school.<br><br>
+
+          &nbsp;&nbsp;&nbsp;She has taught writing at community colleges in Washington State and New Jersey and lead seminars at writing conferences.<br><br>
+
+          &nbsp;&nbsp;&nbsp;She is also a fine art photographer whose work has shown in galleries across the U.S. <br><br>
+
+          &nbsp;&nbsp;&nbsp;Hurd graduated with honors from University of Colorado and got an MFA in creative writing from the University of Oregon. <br><br>
+
+          &nbsp;&nbsp;&nbsp;She has served on the board of Women of the West Museum and the Autry Museum. She is co-founder and past-president of Women Writing the West and a former board member of Western Writers of America. She also served on the board of Women Work Together an organization working to improve girl’s education in Guatemala.<br><br>
+
+          &nbsp;&nbsp;&nbsp;She and her husband live in Boulder, Colorado.</p><br><br>
+
+        </div>
 
 
 
 
       </div>
-      <!-- <div id="sidebar">
 
-        <h3>Author Info</h3>
-        <h3>Contact Info</h3>
-        <p>©2008-2018 Jerrie Hurd (all text, photos, design)</p>
-      </div> -->
     </div>
 
 

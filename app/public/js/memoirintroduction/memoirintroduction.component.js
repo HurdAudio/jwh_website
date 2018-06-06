@@ -41,6 +41,11 @@
       vm.navigateToSurprise = navigateToSurprise;
       vm.navigateFirstChapter = navigateFirstChapter;
       vm.navigateShortBio = navigateShortBio;
+      vm.navigateLongBio = navigateLongBio;
+
+      function navigateLongBio() {
+        $state.go('longbio');
+      }
 
       function navigateShortBio() {
         $state.go('shortbio');

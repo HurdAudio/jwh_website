@@ -10,14 +10,14 @@
 
 
   angular.module('app')
-    .component('memoir', {
-      controller: MemoirController,
-      templateUrl: '/js/memoir/memoir.template.html'
+    .component('longbio', {
+      controller: LongBioController,
+      templateUrl: '/js/longbio/longbio.template.html'
     });
 
-    MemoirController.$inject = ['$http', '$state', '$stateParams'];
+    LongBioController.$inject = ['$http', '$state', '$stateParams'];
 
-    function MemoirController($http, $state, $stateParams){
+    function LongBioController($http, $state, $stateParams){
       const vm = this;
 
       vm.$onInit = onInit;
@@ -40,15 +40,15 @@
       vm.navigateWelome = navigateWelome;
       vm.navigageIntroduction = navigageIntroduction;
       vm.navigateFirstChapter = navigateFirstChapter;
+      vm.navigateToSurprise = navigateToSurprise;
       vm.navigateShortBio = navigateShortBio;
-      vm.navigateLongBio = navigateLongBio;
-
-      function navigateLongBio() {
-        $state.go('longbio');
-      }
 
       function navigateShortBio() {
         $state.go('shortbio');
+      }
+
+      function navigateToSurprise() {
+        $state.go('memoir');
       }
 
       function navigateFirstChapter() {
@@ -184,7 +184,7 @@
       }
 
       function onInit() {
-        console.log("Memoir is lit");
+        console.log("longbio is lit");
 
 
 

@@ -147,6 +147,12 @@
         url: '/shortbio',
         parent: 'app',
         component: 'shortbio'
+      })
+      .state({
+        name: 'longbio',
+        url: '/longbio',
+        parent: 'app',
+        component: 'longbio'
       });
       // .state({
       //   name: 'dayview',

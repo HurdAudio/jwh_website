@@ -1175,7 +1175,7 @@
   position: relative;
   float: right;
   width: 30%;
-  margin: 2vmin 1vmin 1vmin -12vmin;
+  margin: 2vmin 1vmin 1vmin -1vmin;
   /* left: 1%; */
   /* left: 10%; */
   /* filter: sepia(30%); */
@@ -1189,4 +1189,28 @@
   width: 60%;
   position: absolute;
   margin: -42vmin 1vmin 1vmin 1vmin;
+}
+
+#bioLongBlurb {
+  float: right;
+  width: 60%;
+  position: absolute;
+  margin: 2vmin 1vmin 1vmin 35%;
+}
+
+.longBioBlurb {
+  font-family: 'Bellefair', sans-serif;
+  font-size: 30px;
+  margin: 1% 6% 1% 6%;
+  float: left;
+}
+
+#authorPicLong {
+  float: left;
+  width: 30%;
+  position: absolute;
+  margin: 1vmin 1vmin 1vmin 0;
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 }
