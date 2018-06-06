@@ -10,14 +10,14 @@
 
 
   angular.module('app')
-    .component('memoirfirstchapter', {
-      controller: MemoirFirstChapterController,
-      templateUrl: '/js/memoirfirstchapter/memoirfirstchapter.template.html'
+    .component('shortbio', {
+      controller: ShortBioController,
+      templateUrl: '/js/shortbio/shortbio.template.html'
     });
 
-    MemoirFirstChapterController.$inject = ['$http', '$state', '$stateParams'];
+    ShortBioController.$inject = ['$http', '$state', '$stateParams'];
 
-    function MemoirFirstChapterController($http, $state, $stateParams){
+    function ShortBioController($http, $state, $stateParams){
       const vm = this;
 
       vm.$onInit = onInit;
@@ -38,20 +38,20 @@
       vm.navigateFunStuff = navigateFunStuff;
       vm.navigateContact = navigateContact;
       vm.navigateWelome = navigateWelome;
+      vm.navigageIntroduction = navigageIntroduction;
+      vm.navigateFirstChapter = navigateFirstChapter;
       vm.navigateToSurprise = navigateToSurprise;
-      vm.navigateToIntroduction = navigateToIntroduction;
-      vm.navigateShortBio = navigateShortBio;
-
-      function navigateShortBio() {
-        $state.go('shortbio');
-      }
-
-      function navigateToIntroduction() {
-        $state.go('memoirintroduction');
-      }
 
       function navigateToSurprise() {
         $state.go('memoir');
+      }
+
+      function navigateFirstChapter() {
+        $state.go('memoirfirstchapter');
+      }
+
+      function navigageIntroduction() {
+        $state.go('memoirintroduction')
       }
 
       function navigateWelome() {
@@ -179,7 +179,7 @@
       }
 
       function onInit() {
-        console.log("Memoir Introduction is lit");
+        console.log("Memoir is lit");
 
 
 

@@ -1,14 +1,14 @@
 <div class="container-fluid">
   <div id="memoirDropdownDiv" ng-mouseover="$ctrl.memoirMenuActive()" ng-mouseleave="$ctrl.memoirMenueInactive()">
 
-    <p ng-click="$ctrl.surpisedbystory()">About the Memoir</p>
-    <p ng-click="$ctrl.navigateIntroduction()">Introduction</p>
+    <p ng-click="$ctrl.navigateToSurprise()">About the Memoir</p>
+    <p ng-click="$ctrl.navigageIntroduction()">Introduction</p>
     <p ng-click="$ctrl.navigateFirstChapter()">First Chapter</p>
   </div>
 
   <div id="authorDropdownDiv" ng-mouseover="$ctrl.authorMenuActive()" ng-mouseleave="$ctrl.authorMenueInactive()">
 
-    <p ng-click="$ctrl.navigateShortBio()">Short Bio</p>
+    <p><span class="sr-only">Short Bio</span></p>
     <p>Long Bio</p>
     <p>Published Books</p>
   </div>
@@ -23,7 +23,7 @@
 
   <div id="topbar">
     <nav class="navbar navbar-expand-lg" id="navBarTop">
-      <h1 id="welcome">Contact</h1>
+      <h1 id="currentProject">Surprised by Story</h1>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <!-- <div id="storyStamp">
 
@@ -31,14 +31,14 @@
         </div> -->
 
         <div class="navbar-nav" id="menuBar">
-          <a class="nav-item nav-link" ng-click="$ctrl.navigateWelcome()" style="cursor:pointer">Welcome</a>
+          <a class="nav-item nav-link" ng-click="$ctrl.navigateWelome()" style="cursor:pointer">Welcome</a>
           <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateMemoir()" ng-mouseleave="$ctrl.hoverOffMemoir()" ng-click="$ctrl.navigateMemoir()">Current Book: <em>Surprised by Story</em>
 
 
 
           </a>
           <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateAuthor()" ng-mouseleave="$ctrl.hoverOffAuthor()" ng-click="$ctrl.navigateAuthor()">Author Info</a>
-          <a class="nav-item nav-link active" href="#"><span class="sr-only">Contact</span></a>
+          <a class="nav-item nav-link" href="#" ng-click="$ctrl.navigateContact()">Contact</a>
           <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateFunStuff()" ng-mouseleave="$ctrl.hoverOffFunStuff()" ng-click="$ctrl.navigateFunStuff()">Fun Stuff</a>
           <!-- <a class="nav-item nav-link" ng-click="$ctrl.navigateNovels()" href="#">Novels</a> -->
 
@@ -53,39 +53,27 @@
   </div>
     <div class="row" id="theRow">
 
-      <div class="col-8">
-        <img src="./img/house.jpg" id="housePic">
-        <p id="tellMeAboutTheHouse">My husband and I restored this 120-year-old Victorian in downtown Boulder, Colorado. We live there with our dog. </p>
+      <div id="memoirContent" class="col-8">
+        <img id="authorPicShort" src="./img/jerrie1color-1.jpg">
 
-        <form id="contactForm">
-          <h2>Contact:</h2>
-          <input type="text" id="contactorEmail" placeholder="your email address" autofocus>
-          <textarea id="message" rows="13" col="145" placeholder="your message"></textarea>
-          <button type="button" class="btn btn-primary btn-lg btn-block">Send</button>
-        </form>
-        <!-- <h1 id="contactMail"><a href="mailto:jerrie@jerriehurd.com">jerrie@jerriehurd.com</a></h1> -->
+        <!-- <a id="aboveBoneNav" href="#" ng-click="$ctrl.navigateToSurprise()"><h3><em></em></h3></a> -->
 
-        <!-- <img id="landingPic" src="./img/website.jpg"> -->
-        <!-- <div id="theSubTeaser">
-            <p class="subteaser"><em>We expect our lives to turn out like the stories we've heard.</em></p>
-          </div>
-        <br>
-        <div id="theTeaserDiv">
-          <h5 class="teaser">That's the theme of my current book--<em>Surprised by Story, a memoir.</em></h5>
-        </div> -->
+        <!-- <img src="./img/treesm.jpg"> -->
+        <!-- <a href="#" id="otherNon"><h3><em>Other Non-fiction</em></h3></a> -->
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div id="bioShortBlurb">
 
-        <br>
+          <p class="shortBioBlurb">&nbsp;&nbsp;&nbsp;Jerrie Hurd, who recently completed the memoir <em>Surprised by Story</em>, has published novels, short stories and essays. She has taught writing at weekend conferences, and community colleges. When she’s not writing, she is a fine art photographer whose work has shown in galleries from coast to coast.<br><br><br><br>
+
+          In her memoir, she refers to a family ranch above Bone, Idaho. She has also lived in Oregon, New Jersey and New Mexico. More recently, she and her husband remodeled a small hundred-year-old Victorian house near downtown Boulder, Colorado, which they share with their dog.</p><br><br>
+
+        </div>
 
 
 
 
       </div>
-      <!-- <div id="sidebar">
 
-        <h3>Author Info</h3>
-        <h3>Contact Info</h3>
-        <p>©2008-2018 Jerrie Hurd (all text, photos, design)</p>
-      </div> -->
     </div>
 
 

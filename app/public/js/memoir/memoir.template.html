@@ -8,7 +8,7 @@
 
   <div id="authorDropdownDiv" ng-mouseover="$ctrl.authorMenuActive()" ng-mouseleave="$ctrl.authorMenueInactive()">
 
-    <p>Short Bio</p>
+    <p ng-click="$ctrl.navigateShortBio()">Short Bio</p>
     <p>Long Bio</p>
     <p>Published Books</p>
   </div>
@@ -62,7 +62,7 @@
         <!-- <a href="#" id="otherNon"><h3><em>Other Non-fiction</em></h3></a> -->
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <div id="currentBlurb">
-          <h3><b>About the Memoir:</b> <em>Surprised by Story</em></h3>
+          <h3 id="memoirTitle"><b>About the Memoir:</b> <em>Surprised by Story</em></h3>
           <p class="currentBlurbParagraph">&nbsp;&nbsp;&nbsp;Jerrie Hurd thought she was luckier than most. Her family tells great love stories—a wonderful heritage. Then she discovered the hazard. If you listen long enough, you can wait a lifetime expecting to be swept off your feet.<br><br>
           &nbsp;&nbsp;&nbsp;Surprise! Those same-old, same-old, heard-them-a-hundred-times family stories are full of hazards that apply to everyone. Pay attention, family stories are the script. They repeat, like songs stuck in our heads, telling us over and over what the people in our families have always done—judging us when we don’t.<br><br>
           &nbsp;&nbsp;&nbsp;Only one way out—own them!<br><br>

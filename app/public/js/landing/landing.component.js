@@ -39,6 +39,11 @@
       vm.navigateContact = navigateContact;
       vm.navigateIntroduction = navigateIntroduction;
       vm.navigateFirstChapter = navigateFirstChapter;
+      vm.navigateShortBio = navigateShortBio;
+
+      function navigateShortBio() {
+        $state.go('shortbio');
+      }
 
       function navigateFirstChapter() {
         $state.go('memoirfirstchapter');

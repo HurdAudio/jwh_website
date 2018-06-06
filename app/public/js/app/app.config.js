@@ -141,6 +141,12 @@
         url: '/memoirfirstchapter',
         parent: 'app',
         component: 'memoirfirstchapter'
+      })
+      .state({
+        name: 'shortbio',
+        url: '/shortbio',
+        parent: 'app',
+        component: 'shortbio'
       });
       // .state({
       //   name: 'dayview',

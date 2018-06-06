@@ -37,10 +37,21 @@
   width: 100%;
 }
 
+#memoirTitle {
+  font-size: 46px;
+}
+
 .currentBlurbParagraph {
   font-family: 'Bellefair', sans-serif;
   font-size: 30px;
   margin: 1% 6% 1% 6%;
+}
+
+.shortBioBlurb {
+  font-family: 'Bellefair', sans-serif;
+  font-size: 30px;
+  margin: 1% 6% 1% 6%;
+  float: left;
 }
 
 #ellies {
@@ -301,7 +312,7 @@
   position: relative;
   float: left;
   width: 40%;
-  margin: 2vmin 8vmin 1vmin 8vmin;
+  margin: 2vmin 8vmin 1vmin 1vmin;
   padding-top: 5vmin;
   text-decoration: none;
   border: 1px solid transparent;
@@ -318,7 +329,8 @@
   background: -moz-linear-gradient(135deg, #8F9288, #F5F5F6);
   background: linear-gradient(135deg, #8F9288, #F5F5F6); */
   filter: hue-rotate(0deg);
-  height: 28%;
+  height: 30%;
+  transform: scale(0.6);
 }
 
 #aboveBoneNav h3 {
@@ -382,7 +394,7 @@
 
 #memoirContent h3 {
   font-family: 'Montserrat', serif;
-  font-size: 36px;
+  font-size: 48px;
   padding: 1%;
   margin: -10% 9% 3% 9%;
 }
@@ -1127,12 +1139,18 @@
   width: 85%;
   font-size: 30px;
   margin: 1vmin;
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 }
 
 #contactForm textarea {
   width: 85%;
   font-size: 30px;
   margin: 1vmin;
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 }
 
 #contactForm button {
@@ -1151,4 +1169,24 @@
   margin-bottom: 0;
   margin-top: 0;
   font-size: 24px;
+}
+
+#authorPicShort {
+  position: relative;
+  float: right;
+  width: 30%;
+  margin: 2vmin 1vmin 1vmin -12vmin;
+  /* left: 1%; */
+  /* left: 10%; */
+  /* filter: sepia(30%); */
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
+#bioShortBlurb {
+  float: left;
+  width: 60%;
+  position: absolute;
+  margin: -42vmin 1vmin 1vmin 1vmin;
 }
