@@ -1214,3 +1214,130 @@
   -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 }
+
+#missElliePublishedInfos img {
+  margin: 2vmin 2vmin 2vmin 10vmin;
+  float: left;
+  padding: 0;
+  width: 15%;
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
+#missElliePublishedInfos p {
+  font-family: 'Bellefair', sans-serif;
+  font-size: 30px;
+  margin: 1% 6% 1% 1%;
+  float: left;
+}
+
+#katePublishedInfos img {
+  margin: 2vmin 2vmin 2vmin 10vmin;
+  float: left;
+  padding: 0;
+  width: 15%;
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
+#katePublishedInfos p {
+  font-family: 'Bellefair', sans-serif;
+  font-size: 30px;
+  margin: 1% 6% 1% 1%;
+  float: left;
+}
+
+#ladyPinkertonPublishedInfos img {
+  margin: 2vmin 2vmin 2vmin 10vmin;
+  float: left;
+  padding: 0;
+  width: 15%;
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
+#ladyPinkertonPublishedInfos p {
+  font-family: 'Bellefair', sans-serif;
+  font-size: 30px;
+  margin: 1% 6% 1% 1%;
+  float: left;
+}
+
+#aboutEllie {
+  width: 70%;
+  float: left;
+}
+
+#aboutKate {
+  width: 70%;
+  float: left;
+}
+
+#aboutPinkerton {
+  width: 70%;
+  float: left;
+}
+
+.publishersBlurb {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  padding-top: 16vmin;
+  padding-bottom: 2vmin;
+  padding-left: 10vmin;
+  padding-right: 10vmin;
+}
+
+.publishersBlurb h2 {
+  font-size: 36px;
+  margin: 10vmin 1vmin 1vmin 10vmin;
+}
+
+.publishersBlurb p {
+  font-family: 'Lato', sans-serif;
+  margin: 10vmin 1vmin 1vmin 10vmin;
+}
+
+.editorialReviewPub {
+  width: 90%;
+  float: left;
+  margin: 2vmin 2vmin 2vmin 10vmin;
+}
+
+.editorialReviewPub h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 36px;
+}
+
+.editorialReviewPub h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  margin-left: 16vmin;
+}
+
+.editorialReviewPub p {
+  font-family: 'Bellefair', san-serif;
+  font-size: 24px;
+  margin: 1vmin 15vmin 1vmin 10vmin;
+}
+
+#publishedBooksContent {
+  overflow: scroll;
+  height: 100%;
+}
+
+#earlyPublishedBooks {
+  margin: 1vmin 15vmin 1vmin 15vmin;
+}
+
+#earlyPublishedBooks img {
+  margin: 2vmin 7% 2vmin 7%;
+  float: left;
+  padding: 0;
+  width: 15%;
+  /* -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5); */
+}

@@ -10,14 +10,14 @@
 
 
   angular.module('app')
-    .component('memoirintroduction', {
-      controller: MemoirIntroductionController,
-      templateUrl: '/js/memoirintroduction/memoirintroduction.template.html'
+    .component('publishedbooks', {
+      controller: PublishedBooksController,
+      templateUrl: '/js/publishedbooks/publishedbooks.template.html'
     });
 
-    MemoirIntroductionController.$inject = ['$http', '$state', '$stateParams'];
+    PublishedBooksController.$inject = ['$http', '$state', '$stateParams'];
 
-    function MemoirIntroductionController($http, $state, $stateParams){
+    function PublishedBooksController($http, $state, $stateParams){
       const vm = this;
 
       vm.$onInit = onInit;
@@ -38,15 +38,11 @@
       vm.navigateFunStuff = navigateFunStuff;
       vm.navigateContact = navigateContact;
       vm.navigateWelome = navigateWelome;
-      vm.navigateToSurprise = navigateToSurprise;
+      vm.navigageIntroduction = navigageIntroduction;
       vm.navigateFirstChapter = navigateFirstChapter;
+      vm.navigateToSurprise = navigateToSurprise;
       vm.navigateShortBio = navigateShortBio;
       vm.navigateLongBio = navigateLongBio;
-      vm.navigatePublishedBooks = navigatePublishedBooks;
-
-      function navigatePublishedBooks() {
-        $state.go('publishedbooks');
-      }
 
       function navigateLongBio() {
         $state.go('longbio');
@@ -56,12 +52,16 @@
         $state.go('shortbio');
       }
 
+      function navigateToSurprise() {
+        $state.go('memoir');
+      }
+
       function navigateFirstChapter() {
         $state.go('memoirfirstchapter');
       }
 
-      function navigateToSurprise() {
-        $state.go('memoir');
+      function navigageIntroduction() {
+        $state.go('memoirintroduction')
       }
 
       function navigateWelome() {
@@ -189,7 +189,7 @@
       }
 
       function onInit() {
-        console.log("Memoir Introduction is lit");
+        console.log("longbio is lit");
 
 
 

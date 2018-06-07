@@ -153,6 +153,12 @@
         url: '/longbio',
         parent: 'app',
         component: 'longbio'
+      })
+      .state({
+        name: 'publishedbooks',
+        url: '/publishedbooks',
+        parent: 'app',
+        component: 'publishedbooks'
       });
       // .state({
       //   name: 'dayview',

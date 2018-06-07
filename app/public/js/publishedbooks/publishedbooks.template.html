@@ -1,0 +1,146 @@
+<div class="container-fluid">
+  <div id="memoirDropdownDiv" ng-mouseover="$ctrl.memoirMenuActive()" ng-mouseleave="$ctrl.memoirMenueInactive()">
+
+    <p ng-click="$ctrl.navigateToSurprise()">About the Memoir</p>
+    <p ng-click="$ctrl.navigageIntroduction()">Introduction</p>
+    <p ng-click="$ctrl.navigateFirstChapter()">First Chapter</p>
+  </div>
+
+  <div id="authorDropdownDiv" ng-mouseover="$ctrl.authorMenuActive()" ng-mouseleave="$ctrl.authorMenueInactive()">
+
+    <p ng-click="$ctrl.navigateShortBio()">Short Bio</p>
+    <p ng-click="$ctrl.navigateLongBio()">Long Bio</p>
+    <p><span class="sr-only">Published Books</span></p>
+  </div>
+
+  <div id="funStuffDropdownDiv" ng-mouseover="$ctrl.funStuffMenuActive()" ng-mouseleave="$ctrl.funStuffMenuInactive()">
+
+    <p>Fun Info</p>
+    <p>Future Projects</p>
+    <p>Photo Website</p>
+    <p>Short Stories</p>
+  </div>
+
+  <div id="topbar">
+    <nav class="navbar navbar-expand-lg" id="navBarTop">
+      <h1 id="currentProject">Surprised by Story</h1>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <!-- <div id="storyStamp">
+
+          <h1>Jerrie Hurd's Stories</h1>
+        </div> -->
+
+        <div class="navbar-nav" id="menuBar">
+          <a class="nav-item nav-link" ng-click="$ctrl.navigateWelome()" style="cursor:pointer">Welcome</a>
+          <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateMemoir()" ng-mouseleave="$ctrl.hoverOffMemoir()" ng-click="$ctrl.navigateMemoir()">Current Book: <em>Surprised by Story</em>
+
+
+
+          </a>
+          <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateAuthor()" ng-mouseleave="$ctrl.hoverOffAuthor()" ng-click="$ctrl.navigateAuthor()">Author Info</a>
+          <a class="nav-item nav-link" href="#" ng-click="$ctrl.navigateContact()">Contact</a>
+          <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateFunStuff()" ng-mouseleave="$ctrl.hoverOffFunStuff()" ng-click="$ctrl.navigateFunStuff()">Fun Stuff</a>
+          <!-- <a class="nav-item nav-link" ng-click="$ctrl.navigateNovels()" href="#">Novels</a> -->
+
+          <!-- <a class="nav-item nav-link" href="#" ng-click="$ctrl.navigateShortStories()">Short Stories</a> -->
+          <!-- <a class="nav-item nav-link" href="#">Books</a> -->
+
+        </div>
+
+      </div>
+
+    </nav>
+  </div>
+    <div class="row" id="theRow">
+
+      <div id="publishedBooksContent" class="col-8">
+        <!-- <img id="authorPicLong" src="./img/jerrie2b&wme.jpg"> -->
+
+        <!-- <a id="aboveBoneNav" href="#" ng-click="$ctrl.navigateToSurprise()"><h3><em></em></h3></a> -->
+
+        <!-- <img src="./img/treesm.jpg"> -->
+        <!-- <a href="#" id="otherNon"><h3><em>Other Non-fiction</em></h3></a> -->
+
+        <div id="publishedBooksIntro">
+
+          <p class="longBioBlurb">&nbsp;&nbsp;&nbsp;When women historians began to tell a different story about the role that women played in the settlement of the American West (see <em>The Women’s West</em> by Susan Armitage and Elizabeth Jameson), Jerrie Hurd wrote three novels based on that new research that Pocket Books called:  <em>Novels of Independent Women on America’s Great Frontier.</em><br><br>
+
+          &nbsp;&nbsp;&nbsp;At this same time Hurd served on the board of the newly formed Women of the West Museum that later became a part of the Autry Museum in Los Angeles. She also served on the board of the Autry Museum.</p><br><br>
+
+        </div>
+
+        <div id="missElliePublishedInfos">
+
+          <img src="./img/elliecov.gif">
+          <div id="aboutEllie">
+            <p><em>Miss Ellie’s Purple Sage Saloon</em> is about a woman Temperance Leader and a woman Saloon owner in 1880s Colorado. The book got some notice because it features woman-on-woman conflict that is still kind of rare in fiction.</p>
+            <div class="publishersBlurb">
+
+              <h2>Publisher's Blurb</h2>
+              <p>Breaking off her engagement to her business partner, Miss Ellie Wells, a saloon owner, disguises her emotions when Seth weds Marta Mae, a woman who is all too aware of the threat Ellie poses to her new marriage.</p>
+            </div>
+          </div>
+        </div>
+        <div class="editorialReviewPub">
+
+          <h2>Editorial Review</h2>
+          <h3>From <em>Publishers Weekly</em></h3>
+          <p>The Wild West: it's where women go to tear off the stays of contemporary morality, battle their demons and find their true selves-their true loves be damned. Set in turn-of-the-century Colorado, Hurd's comical and lyrical women's western breaks the mold. Her frazzled hero, Seth Watkins, is a man besieged. Miss Ellie-the con artist and scam-puller to whom he has given his heart and the keys of the Purple Sage Saloon-won't marry him and keeps throwing him out at gunpoint. His new, "respectable" bride, Marta Mae, daughter of Colorado's richest entrepreneur, won't heed him. She's put antimacassars on all the couches at his rustic hunting lodge, and she's leading the townswomen in a temperance fight to close the Purple Sage. Ellie, a fierce freethinker and deadly poker player, is grieving for the little girl she and Seth lost in Abilene because she was judged an "unfit" single mother. For her part, Marta Mae believes that her reproductive organs are drying up, little knowing that a doctor destroyed them during an abortion forced on her by her family. But when Marta Mae's temperance ladies threaten her uncle's power base, she and Ellie become "enemies enjoined," determined to do him in and to empower themselves. Hurd, just as quirky, powerful and zealous as her heroines, portrays the causes of both past and present in such fine spunky style that readers are never overwhelmed by her moral clarion.  <br>Copyright 1995 Reed Business Information, Inc.</p>
+        </div>
+
+        <div id="katePublishedInfos">
+
+          <img src="./img/Katecov.gif">
+          <div id="aboutKate">
+            <p><em>Kate Burke Shoots the Old West</em> is about a woman photographer  interested in photographing Native American sacred ceremonies performed by women, something her husband thinks is a waste of film. That also gets her in trouble with US military who have been sent to subdue the “natives.”</p>
+            <div class="publishersBlurb">
+
+              <h2>Publisher's Blurb</h2>
+              <p>Defying conventions that dictate what women photographers of early America should reserve as their subjects, Kate Burke captures images of important moments in history, an endeavor that brings her face-to-face with the entire U.S. Seventh Cavalry. Original.</p>
+            </div>
+          </div>
+        </div>
+        <div class="editorialReviewPub">
+
+          <h2>Editorial Review</h2>
+          <h3>From <em>Publishers Weekly</em></h3>
+          <p>The floral-and-feather cover of this latest fancifully titled historical by the author of <em>Miss Ellie's Purple Sage Saloon</em> belies its gritty portrayal of relations between men and women and between whites and Native Americans. The year is 1891, and Kate Burke, a married photographer with a burning passion to capture the Old West in its authenticity, finds herself on the nasty end of Colonel Elliot George's temper when she defies his command to stop photographing Indians (or more specifically, the mistreatment of Indians) and stick to making "parlor pretties." The colonel is the kind of guy who collects picture frames fashioned from Indian women's genitals, and one gets the sense that he'd like to add Kate's to his collection. He tries to bring her under his control by blowing up her wagon, leaving her a widow. Kate counters by exposing the colonel through a photograph her late husband had taken, and though the colonel doesn't get the comeuppance readers might want, Kate eventually finds fame as a photographer and an independent happiness. In Kate, Hurd has created a fine, gutsy heroine who is tough as her time, her place and her men.  <br>Copyright 1996 Reed Business Information, Inc.</p>
+        </div>
+
+        <div id="ladyPinkertonPublishedInfos">
+
+          <img src="./img/pinkcov.gif">
+          <div id="aboutPinkerton">
+            <p><em>The Lady Pinkerton Gets Her Man</em> is about a woman Pinkerton Detective at a time when such women detectives were expected to get the job done but still act like ladies so as to not reflect badly on the Pinkerton Agency.</p>
+            <div class="publishersBlurb">
+
+              <h2>Publisher's Blurb</h2>
+              <p>Sent to a Wyoming mining town to rescue Chinese child prostitutes, Dayle Dobson crosses paths with "outlaw" labor organizer Harry Bryant and is forced to make a wrenching choice between the law and the man she loves.</p>
+            </div>
+          </div>
+        </div>
+        <div class="editorialReviewPub">
+
+          <h2>Editorial Review</h2>
+          <h3>From <em>Literary Times</em></h3>
+          <p>Dayle Dobson, one of the first Lady Pinkertons, is hired by Garrick Bateman to guard his wife and make sure she doesn't come to harm. Little does Dayle know that Garrick has an ulterior motive for doing this. During the course of guarding Lotta Bateman, Dayle helps to rescue Chinese women who have been virtually enslaved in the Chinatown sector of White Springs, Wyoming. Dayle stumbles on to the realization that the Tong, which controls Chinatown is losing its control and an anarchist group begins agitating in the mines around town. The situation in White Springs becomes more and more tense and dangerous. Enter Harry Bryant and his traveling theatrical group into this setting. Harry is a handsome actor who has his own hidden agenda toward mining laws and the Pinkerton agency itself. Harry intrigues Dayle, who begins to suspect he is the Hooded Sleeper, leader of the anarchist group which has been terrorizing mining companies across America, especially those owned by Jay Gould. The great Allan Pinkerton himself becomes involved in the resolution of the anarchist plot. The story bubbles its way to a fairly explosive ending. Ms. Hurd does a fabulous job in setting the scenes and the historical background for the period. She gives the readers a more than plausible plot and well-written story line. On a personal note, I had a hard time reading this story, mostly because it dealt with a period of history and issues that I have never been interested in. The story is rife with the anti-Chinese/Oriental sentiment expressed during the day, as well as with the agitation for new mining laws and the coming of the labor movement. However, if the reader doesn't mind the subject matter then this book is well worth reading.Jerrie Hurd changes all conception of women's roles in law enforcement and life in the west with this rip-snortin' adventure! No one can deliver a better western with the right flavoring of romance than Jerrie Hurd! This is truly the stuff from which western legends come!<br>Gloria Lower -- Copyright © 1994-97 Literary Times, Inc. All rights reserved -- <br>From <a href="https://www.amazon.com/exec/obidos/subst/partners/marketing/literary-times.html/$%7B0%7D" target="_blank">Literary Times</a></p>
+        </div>
+
+        <div id="earlyPublishedBooks">
+
+          <p class="longBioBlurb">Very early in her career, Jerrie Hurd also did a series of books that take a fresh look at the old stories about women in scripture. These were published by Deseret Book and Aspen Book in Salt Lake City.</p>
+          <img src="./img/51DAfOfYSJL._AC_US218_.jpg">
+          <img src="./img/51LROK3FTML._AC_US218_.jpg">
+          <img src="./img/51w-eBZnAlL._AC_US218_.jpg">
+
+        </div>
+
+
+
+
+      </div>
+
+    </div>
+
+
+</div>
