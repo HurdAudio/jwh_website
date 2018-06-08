@@ -1341,3 +1341,86 @@
   -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   box-shadow: 1px 2px 3px rgba(0,0,0,.5); */
 }
+
+#authorDesk {
+  float: left;
+  width: 40%;
+  height: 90vmin;
+  overflow: scroll;
+}
+
+#authorDesk img {
+  margin: 4vmin 2vmin 2vmin 2vmin;
+  /* float: left; */
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
+#favoriteBooksDiv {
+  float: right;
+  width: 55%;
+  padding: -1vmin 3vmin 3vmin 3vmin;
+  margin: 1vmin 2vmin 1vmin 2vmin;
+  /* -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5); */
+  height: 90vmin;
+  overflow: scroll;
+}
+
+#favoriteBooksDiv h3 {
+  font-family: 'Bellefair', san-serif;
+  font-size: 36px;
+  margin-left: 6vmin;
+}
+
+#favoriteBooksDiv p {
+  font-family: 'Bellefair', san-serif;
+  font-size: 30px;
+  margin: 0 1vmin 2vmin 6vmin;
+}
+
+#favoriteBooksDiv img {
+  width: 10%;
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  float: left;
+  margin: 0 0 0 6vmin;
+}
+
+.favBookTitle {
+  font-family: 'Bellefair', san-serif;
+  float: left;
+  text-decoration: none;
+  padding: 1vmin 0 1vmin 1.5vmin;
+  /* margin-left: 4vmin; */
+}
+
+.favBookAuthor {
+  font-family: 'Bellefair', san-serif;
+  float: left;
+  text-decoration: none;
+  padding: 1vmin 0 1vmin 1.5vmin;
+}
+
+#favoriteRetreatsDiv h3 {
+  font-family: 'Lato', san-serif;
+  font-size: 30px;
+  padding: 2vmin;
+}
+
+#favoriteRetreatsDiv img {
+  float: left;
+  margin: -8vmin 1vmin 1vmin 1vmin;
+}
+
+#favoriteRetreatsDiv p {
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  float: left;
+  width: 50%;
+  margin-left: 2vmin;
+}

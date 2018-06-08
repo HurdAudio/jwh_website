@@ -8,14 +8,14 @@
 
   <div id="authorDropdownDiv" ng-mouseover="$ctrl.authorMenuActive()" ng-mouseleave="$ctrl.authorMenueInactive()">
 
-    <p><span class="sr-only">Short Bio</span></p>
+    <p ng-click="$ctrl.navigateShortBio()">Short Bio</p>
     <p ng-click="$ctrl.navigateLongBio()">Long Bio</p>
     <p ng-click="$ctrl.navigatePublishedBooks()">Published Books</p>
   </div>
 
   <div id="funStuffDropdownDiv" ng-mouseover="$ctrl.funStuffMenuActive()" ng-mouseleave="$ctrl.funStuffMenuInactive()">
 
-    <p ng-click="$ctrl.navigateFunInfo()">Fun Info</p>
+    <p><span class="sr-only">Fun Info</span></p>
     <p>Future Projects</p>
     <p>Photo Website</p>
     <p>Short Stories</p>
@@ -53,21 +53,40 @@
   </div>
     <div class="row" id="theRow">
 
-      <div id="memoirContent" class="col-8">
-        <img id="authorPicShort" src="./img/jerrie1color.jpg">
+      <div id="funstuffContent" class="col-8">
+        <div id="authorDesk">
+          <img src="./img/desk.gif">
+          <div id="favoriteRetreatsDiv">
 
-        <!-- <a id="aboveBoneNav" href="#" ng-click="$ctrl.navigateToSurprise()"><h3><em></em></h3></a> -->
+            <h3>Every writer needs a little quiet. Here are my favorite retreat places:</h3>
+            <main ng-repeat="retreat in $ctrl.retreats | orderBy : $ctrl.sortBy">
 
-        <!-- <img src="./img/treesm.jpg"> -->
-        <!-- <a href="#" id="otherNon"><h3><em>Other Non-fiction</em></h3></a> -->
+              <div><a href="{{retreat.link}}" target="_blank">
 
-        <div id="bioShortBlurb">
-
-          <p class="shortBioBlurb">&nbsp;&nbsp;&nbsp;Jerrie Hurd, who recently completed the memoir <em>Surprised by Story</em>, has published novels, short stories and essays. She has taught writing at weekend conferences, and community colleges. When she’s not writing, she is a fine art photographer whose work has shown in galleries from coast to coast.<br><br><br><br>
-
-          In her memoir, she refers to a family ranch above Bone, Idaho. She has also lived in Oregon, New Jersey and New Mexico. More recently, she and her husband remodeled a small hundred-year-old Victorian house near downtown Boulder, Colorado, which they share with their dog.</p><br><br>
-
+                <p>{{retreat.name}}</p><br><br><br><br><br>
+                <p>{{retreat.location}}</p>
+                <img src="{{retreat.image}}">
+              </a></div>
+            </main>
+          </div>
         </div>
+
+        <div id="favoriteBooksDiv">
+          <h3>My All-Time Favorite Novels</h3>
+          <p>(no particular order)</p>
+
+
+          <main ng-repeat="book in $ctrl.books| orderBy : $ctrl.sortBy">
+            <div><a href="{{book.link}}" target="_blank">
+              <img src="{{book.cover}}">
+              <p class="favBookTitle"><em>{{book.title}}</em></p><br><br><br><br>
+              <p class="favBookAuthor">by {{book.author}}</p>
+            </a></div><br><br><br><br>
+
+          </main>
+        </div>
+
+
 
 
 

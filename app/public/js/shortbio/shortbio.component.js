@@ -43,6 +43,11 @@
       vm.navigateToSurprise = navigateToSurprise;
       vm.navigateLongBio = navigateLongBio;
       vm.navigatePublishedBooks = navigatePublishedBooks;
+      vm.navigateFunInfo = navigateFunInfo;
+
+      function navigateFunInfo() {
+        $state.go('funinfo');
+      }
 
       function navigatePublishedBooks() {
         $state.go('publishedbooks');

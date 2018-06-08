@@ -159,6 +159,12 @@
         url: '/publishedbooks',
         parent: 'app',
         component: 'publishedbooks'
+      })
+      .state({
+        name: 'funinfo',
+        url: '/funinfo',
+        parent: 'app',
+        component: 'funinfo'
       });
       // .state({
       //   name: 'dayview',

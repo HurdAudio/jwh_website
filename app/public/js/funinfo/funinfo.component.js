@@ -7,17 +7,25 @@
   var overAuthorMenu = false;
   var overFunStuffMenu = false;
   var authorDropdownToggle = false;
+  var bookImages = [ 'https://images.gr-assets.com/books/1401953526l/77699.jpg', 'https://images.gr-assets.com/books/1260470010l/4473.jpg', 'https://images.gr-assets.com/books/1322148274l/284066.jpg', 'https://images.gr-assets.com/books/1327124987l/9712.jpg', 'https://images.gr-assets.com/books/1329151576l/292408.jpg', 'https://images.gr-assets.com/books/1358615501l/9328.jpg', 'https://images.gr-assets.com/books/1385207977l/51019.jpg', 'https://images.gr-assets.com/books/1407710790l/3835.jpg', 'https://images.gr-assets.com/books/1388200586l/77156.jpg', 'https://images.gr-assets.com/books/1406383769l/49628.jpg', 'https://images.gr-assets.com/books/1451442186l/16243.jpg', 'https://images.gr-assets.com/books/1378573063l/256008.jpg', 'https://images.gr-assets.com/books/1358325366l/492532.jpg' ];
+  var bookTitles = [ 'Dinner at the Homesick Restaurant', 'A Prayer for Owen Meany', 'The Wind-up Bird Chronicle', 'Love in the Time of Cholera', 'Angle of Repose', 'This House of Spirits', 'Cat\'s Eye', 'Don Quixote', 'Plainsong', 'Cloud Atlas', 'Case Histories', 'Lonesome Dove', 'Canopus in Argos: Archives' ];
+  var bookAuthors = [ 'Anne Tyler', 'John Irving', 'Haruki Murakami', 'Gabriel García Márquez', 'Wallace Stegner', 'Isabel Allende', 'Margaret Atwood', 'Miguel de Cervantes Saavedra', 'Kent Haruf', 'David Mitchell', 'Kate Atkinson', 'Larry McMurtry', 'Doris Lessing - all books in the series' ];
+  var bookLinks = [ 'https://www.goodreads.com/book/show/10592766-dinner-at-the-homesick-restaurant', 'https://www.goodreads.com/book/show/4473.A_Prayer_for_Owen_Meany', 'https://www.goodreads.com/book/show/8872524-the-wind-up-bird-chronicle', 'https://www.goodreads.com/book/show/9712.Love_in_the_Time_of_Cholera', 'https://www.goodreads.com/book/show/292408.Angle_of_Repose', 'https://www.goodreads.com/book/show/9328.The_House_of_the_Spirits', 'https://www.goodreads.com/book/show/51019.Cat_s_Eye', 'https://www.goodreads.com/book/show/3835.Don_Quixote', 'https://www.goodreads.com/book/show/77156.Plainsong', 'https://www.goodreads.com/book/show/49628.Cloud_Atlas?ac=1', 'https://www.goodreads.com/book/show/8168770-case-histories', 'https://www.goodreads.com/book/show/256008.Lonesome_Dove', 'https://www.goodreads.com/book/show/492532.Canopus_in_Argos' ];
 
+  var retreatImages = [ './img/french.gif', './img/hedgebrook.jpg', './img/AnamCara.gif' ];
+  var retreatLinks = [ 'http://www.oleandercottage.com/', 'http://www.hedgebrook.org/', 'http://www.anamcararetreat.com/' ];
+  var retreatNames = [ 'Oleander Cottage', 'Hedgebrook', 'Anam Cara' ];
+  var retreatLocations = [ 'Lomagne Region of France', 'Whidbey Island near Seattle, WA', 'Coulagh Bay, County Cork, Ireland' ];
 
   angular.module('app')
-    .component('memoir', {
-      controller: MemoirController,
-      templateUrl: '/js/memoir/memoir.template.html'
+    .component('funinfo', {
+      controller: FunInfoController,
+      templateUrl: '/js/funinfo/funinfo.template.html'
     });
 
-    MemoirController.$inject = ['$http', '$state', '$stateParams'];
+    FunInfoController.$inject = ['$http', '$state', '$stateParams'];
 
-    function MemoirController($http, $state, $stateParams){
+    function FunInfoController($http, $state, $stateParams){
       const vm = this;
 
       vm.$onInit = onInit;
@@ -40,25 +48,26 @@
       vm.navigateWelome = navigateWelome;
       vm.navigageIntroduction = navigageIntroduction;
       vm.navigateFirstChapter = navigateFirstChapter;
+      vm.navigateToSurprise = navigateToSurprise;
       vm.navigateShortBio = navigateShortBio;
-      vm.navigateLongBio = navigateLongBio;
       vm.navigatePublishedBooks = navigatePublishedBooks;
-      vm.navigateFunInfo = navigateFunInfo;
+      vm.navigateLongBio = navigateLongBio;
 
-      function navigateFunInfo() {
-        $state.go('funinfo');
+      function navigateLongBio() {
+        $state.go('longbio');
       }
 
       function navigatePublishedBooks() {
         $state.go('publishedbooks');
       }
 
-      function navigateLongBio() {
-        $state.go('longbio');
-      }
 
       function navigateShortBio() {
         $state.go('shortbio');
+      }
+
+      function navigateToSurprise() {
+        $state.go('memoir');
       }
 
       function navigateFirstChapter() {
@@ -194,7 +203,25 @@
       }
 
       function onInit() {
-        console.log("Memoir is lit");
+        console.log("fun stuff is lit");
+        vm.books = [];
+        for (let i = 0; i < bookImages.length; i++) {
+          vm.books[i] = {};
+          vm.books[i].cover = bookImages[i];
+          vm.books[i].title = bookTitles[i];
+          vm.books[i].author = bookAuthors[i];
+          vm.books[i].link = bookLinks[i];
+        }
+
+        vm.retreats = [];
+        for (let j = 0; j < retreatImages.length; j++) {
+          vm.retreats[j] = [];
+          vm.retreats[j].image = retreatImages[j];
+          vm.retreats[j].link = retreatLinks[j];
+          vm.retreats[j].name = retreatNames[j];
+          vm.retreats[j].location = retreatLocations[j];
+        }
+
 
 
 
