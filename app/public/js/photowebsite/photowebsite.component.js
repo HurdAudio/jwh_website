@@ -10,14 +10,14 @@
 
 
   angular.module('app')
-    .component('shortbio', {
-      controller: ShortBioController,
-      templateUrl: '/js/shortbio/shortbio.template.html'
+    .component('photowebsite', {
+      controller: PhotoWebsiteController,
+      templateUrl: '/js/photowebsite/photowebsite.template.html'
     });
 
-    ShortBioController.$inject = ['$http', '$state', '$stateParams'];
+    PhotoWebsiteController.$inject = ['$http', '$state', '$stateParams'];
 
-    function ShortBioController($http, $state, $stateParams){
+    function PhotoWebsiteController($http, $state, $stateParams){
       const vm = this;
 
       vm.$onInit = onInit;
@@ -41,15 +41,11 @@
       vm.navigageIntroduction = navigageIntroduction;
       vm.navigateFirstChapter = navigateFirstChapter;
       vm.navigateToSurprise = navigateToSurprise;
-      vm.navigateLongBio = navigateLongBio;
+      vm.navigateShortBio = navigateShortBio;
       vm.navigatePublishedBooks = navigatePublishedBooks;
+      vm.navigateLongBio = navigateLongBio;
       vm.navigateFunInfo = navigateFunInfo;
       vm.navigateFutureProjects = navigateFutureProjects;
-      vm.navigatePhotoSite = navigatePhotoSite;
-
-      function navigatePhotoSite() {
-        $state.go('photowebsite');
-      }
 
       function navigateFutureProjects() {
         $state.go('futureprojects');
@@ -59,12 +55,17 @@
         $state.go('funinfo');
       }
 
+      function navigateLongBio() {
+        $state.go('longbio');
+      }
+
       function navigatePublishedBooks() {
         $state.go('publishedbooks');
       }
 
-      function navigateLongBio() {
-        $state.go('longbio');
+
+      function navigateShortBio() {
+        $state.go('shortbio');
       }
 
       function navigateToSurprise() {
@@ -204,7 +205,25 @@
       }
 
       function onInit() {
-        console.log("Memoir is lit");
+        console.log("fun stuff is lit");
+        vm.books = [];
+        for (let i = 0; i < bookImages.length; i++) {
+          vm.books[i] = {};
+          vm.books[i].cover = bookImages[i];
+          vm.books[i].title = bookTitles[i];
+          vm.books[i].author = bookAuthors[i];
+          vm.books[i].link = bookLinks[i];
+        }
+
+        vm.retreats = [];
+        for (let j = 0; j < retreatImages.length; j++) {
+          vm.retreats[j] = [];
+          vm.retreats[j].image = retreatImages[j];
+          vm.retreats[j].link = retreatLinks[j];
+          vm.retreats[j].name = retreatNames[j];
+          vm.retreats[j].location = retreatLocations[j];
+        }
+
 
 
 

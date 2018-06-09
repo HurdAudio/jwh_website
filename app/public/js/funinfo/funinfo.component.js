@@ -53,6 +53,11 @@
       vm.navigatePublishedBooks = navigatePublishedBooks;
       vm.navigateLongBio = navigateLongBio;
       vm.navigateFutureProjects = navigateFutureProjects;
+      vm.navigatePhotoSite = navigatePhotoSite;
+
+      function navigatePhotoSite() {
+        $state.go('photowebsite');
+      }
 
       function navigateFutureProjects() {
         $state.go('futureprojects');

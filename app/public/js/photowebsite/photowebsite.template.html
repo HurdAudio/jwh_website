@@ -9,7 +9,7 @@
   <div id="authorDropdownDiv" ng-mouseover="$ctrl.authorMenuActive()" ng-mouseleave="$ctrl.authorMenueInactive()">
 
     <p ng-click="$ctrl.navigateShortBio()">Short Bio</p>
-    <p><span class="sr-only">Long Bio</span></p>
+    <p ng-click="$ctrl.navigateLongBio()">Long Bio</p>
     <p ng-click="$ctrl.navigatePublishedBooks()">Published Books</p>
   </div>
 
@@ -17,7 +17,7 @@
 
     <p ng-click="$ctrl.navigateFunInfo()">Fun Info</p>
     <p ng-click="$ctrl.navigateFutureProjects()">Future Projects</p>
-    <p ng-click="$ctrl.navigatePhotoSite()">Photo Website</p>
+    <p><span class="sr-only">Photo Website</span></p>
     <p>Short Stories</p>
   </div>
 
@@ -53,29 +53,26 @@
   </div>
     <div class="row" id="theRow">
 
-      <div id="longbioContent" class="col-8">
-        <img id="authorPicLong" src="./img/jerrie2b&wme.jpg">
-
-        <!-- <a id="aboveBoneNav" href="#" ng-click="$ctrl.navigateToSurprise()"><h3><em></em></h3></a> -->
-
-        <!-- <img src="./img/treesm.jpg"> -->
-        <!-- <a href="#" id="otherNon"><h3><em>Other Non-fiction</em></h3></a> -->
-
-        <div id="bioLongBlurb">
-
-          <p class="longBioBlurb">&nbsp;&nbsp;&nbsp;In addition to the memoir <em>Surprised by Story</em>, Jerrie Hurd has published three novels with Pocket Books, several nonfiction books with a regional publisher as well as short stories and essays. She began her writing career working for her hometown newspaper while still in high school.<br><br>
-
-          &nbsp;&nbsp;&nbsp;She has taught writing at community colleges in Washington State and New Jersey and lead seminars at writing conferences.<br><br>
-
-          &nbsp;&nbsp;&nbsp;She is also a fine art photographer whose work has shown in galleries across the U.S. <br><br>
-
-          &nbsp;&nbsp;&nbsp;Hurd graduated with honors from University of Colorado and got an MFA in creative writing from the University of Oregon. <br><br>
-
-          &nbsp;&nbsp;&nbsp;She has served on the board of Women of the West Museum and the Autry Museum. She is co-founder and past-president of Women Writing the West and a former board member of Western Writers of America. She also served on the board of Women Work Together an organization working to improve girl’s education in Guatemala.<br><br>
-
-          &nbsp;&nbsp;&nbsp;She and her husband live in Boulder, Colorado.</p><br><br>
-
+      <div id="PhotoSiteContent" class="col-8">
+        <div id="photoSiteBanner">
+          <img src="./img/theone.jpg">
         </div>
+        <div id="photoSiteText">
+
+          <p>Besides writing, Jerrie Hurd is also a fine art photographer specializing in nudes. Her photo website explains “why nudes” and explores the centuries-long art tradition centered on the human figure.  It also includes galleries of her work.</p>
+
+          <p><a href="www.homosapiensunadorned.com" target="_blank">www.homosapiensunadorned.com</a></p>
+          <p>Here are a couple of her award-winning photos.</p>
+        </div>
+        <div id="awardWinningPhotos">
+
+          <img src="./img/suspendedswim_jerriehurd.jpg" id="photo1">
+          <img src="./img/maskitudesm.jpg" id="photo2">
+        </div>
+
+
+
+
 
 
 

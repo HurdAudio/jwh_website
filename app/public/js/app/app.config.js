@@ -171,6 +171,12 @@
         url: '/futureprojects',
         parent: 'app',
         component: 'futureprojects'
+      })
+      .state({
+        name: 'photowebsite',
+        url: '/photowebsite',
+        parent: 'app',
+        component: 'photowebsite'
       });
       // .state({
       //   name: 'dayview',

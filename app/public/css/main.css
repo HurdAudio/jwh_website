@@ -1471,3 +1471,27 @@
   font-family: 'Bellefair', san-serif;
   font-size: 30px;
 }
+
+#photoSiteBanner img {
+  width: 25%;
+  height: auto;
+  margin: 1vmin 35% 0 35%;
+}
+
+#photoSiteText p {
+  font-family: 'Bellefair', san-serif;
+  font-size: 30px;
+  margin: 3.5vmin 25% 1vmin 25%;
+}
+
+#photo1 {
+  float: left;
+  width: 35%;
+  margin: 0 2vmin 1vmin 15%;
+}
+
+#photo2 {
+  float: left;
+  width: 23.1%;
+  margin: 0 2vmin 1vmin 10%;
+}
