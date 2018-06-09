@@ -1113,14 +1113,20 @@
 
 #housePic {
   margin: 0;
+  width: 40%;
+  float: left;
 }
 
 #tellMeAboutTheHouse {
-  font-family: 'Lato', serif;
-  font-size: 30px;
   width: 55%;
   margin: 3vmin 3vmin 1vmin 1vmin;
-  float: right;
+  float: left;
+}
+
+#tellMeAboutTheHouse  p {
+  font-family: 'Lato', serif;
+  font-size: 30px;
+
   color: #942D08;
   font-weight: bold;
 }
@@ -1128,9 +1134,9 @@
 #contactForm {
   font-family: 'Lato', serif;
   font-size: 30px;
-  width: 55%;
-  margin: -85vmin 3vmin 1vmin 1vmin;
-  float: right;
+  width: 100%;
+  margin: 1vmin 3vmin 1vmin 1vmin;
+  float: left;
   color: #942D08;
   font-weight: bold;
 }
@@ -1423,4 +1429,45 @@
   float: left;
   width: 50%;
   margin-left: 2vmin;
+}
+
+#glassEye {
+  float: left;
+  width: 55%;
+}
+
+#glassEye img {
+  margin: 2.5vmin;
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  width: 100%;
+}
+
+#futureProjectsTextBox {
+  float: left;
+  width: 40%;
+  padding: 0 3vmin 1vmin 3vmin;
+  height: 80vmin;
+  overflow: scroll;
+
+}
+
+#futureProjectsTextBox h2 {
+  margin-left: 5vmin;
+  font-family: 'Lato', san-serif;
+  font-size: 36px;
+}
+
+#futureProjectsTextBox h5 {
+  margin-left: 3vmin;
+  font-family: 'Lato', san-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#futureProjectsTextBox p {
+  margin: 0 1vmin 1vmin 2vmin;
+  font-family: 'Bellefair', san-serif;
+  font-size: 30px;
 }

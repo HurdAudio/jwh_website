@@ -9,14 +9,14 @@
   <div id="authorDropdownDiv" ng-mouseover="$ctrl.authorMenuActive()" ng-mouseleave="$ctrl.authorMenueInactive()">
 
     <p ng-click="$ctrl.navigateShortBio()">Short Bio</p>
-    <p><span class="sr-only">Long Bio</span></p>
+    <p ng-click="$ctrl.navigateLongBio()">Long Bio</p>
     <p ng-click="$ctrl.navigatePublishedBooks()">Published Books</p>
   </div>
 
   <div id="funStuffDropdownDiv" ng-mouseover="$ctrl.funStuffMenuActive()" ng-mouseleave="$ctrl.funStuffMenuInactive()">
 
     <p ng-click="$ctrl.navigateFunInfo()">Fun Info</p>
-    <p ng-click="$ctrl.navigateFutureProjects()">Future Projects</p>
+    <p><span class="sr-only">Future Projects</span></p>
     <p>Photo Website</p>
     <p>Short Stories</p>
   </div>
@@ -53,29 +53,30 @@
   </div>
     <div class="row" id="theRow">
 
-      <div id="longbioContent" class="col-8">
-        <img id="authorPicLong" src="./img/jerrie2b&wme.jpg">
-
-        <!-- <a id="aboveBoneNav" href="#" ng-click="$ctrl.navigateToSurprise()"><h3><em></em></h3></a> -->
-
-        <!-- <img src="./img/treesm.jpg"> -->
-        <!-- <a href="#" id="otherNon"><h3><em>Other Non-fiction</em></h3></a> -->
-
-        <div id="bioLongBlurb">
-
-          <p class="longBioBlurb">&nbsp;&nbsp;&nbsp;In addition to the memoir <em>Surprised by Story</em>, Jerrie Hurd has published three novels with Pocket Books, several nonfiction books with a regional publisher as well as short stories and essays. She began her writing career working for her hometown newspaper while still in high school.<br><br>
-
-          &nbsp;&nbsp;&nbsp;She has taught writing at community colleges in Washington State and New Jersey and lead seminars at writing conferences.<br><br>
-
-          &nbsp;&nbsp;&nbsp;She is also a fine art photographer whose work has shown in galleries across the U.S. <br><br>
-
-          &nbsp;&nbsp;&nbsp;Hurd graduated with honors from University of Colorado and got an MFA in creative writing from the University of Oregon. <br><br>
-
-          &nbsp;&nbsp;&nbsp;She has served on the board of Women of the West Museum and the Autry Museum. She is co-founder and past-president of Women Writing the West and a former board member of Western Writers of America. She also served on the board of Women Work Together an organization working to improve girl’s education in Guatemala.<br><br>
-
-          &nbsp;&nbsp;&nbsp;She and her husband live in Boulder, Colorado.</p><br><br>
-
+      <div id="futureProjectsContent" class="col-8">
+        <div id="glassEye">
+          <img src="./img/glasseye2.jpg">
         </div>
+        <div id="futureProjectsTextBox">
+
+          <h2>Looking Ahead to Future Projects</h2>
+          <h5>Novels:</h5>
+          <p>Jerrie Hurd is currently doing research for a series of novels that will feature a woman sheriff in a large rural county in the American West. One such county in Idaho is larger than the state of Massachusetts and has fewer than 60,000 residents. Sheriffs in these kinds of rural areas have all the problems of other law enforcement officials plus some unique to their jurisdictions such as modern-day cattle rustling, water theft, and grave robbing of prehistoric sites.<br><br>
+
+          As part of her research, she flew with a sheriff who patrols by air. During the flight, they happened on some wealthy Japanese poachers hunting big horn sheep. This resulted in a few moments of unexpected excitement. <br><br>
+
+          The first of these novels is tentatively titled <em>Painted Horses.</em></p>
+          <br>
+          <h5>Nonfiction:</h5>
+          <p>Hurd is also outlining another nonfiction book about stories and the power of stories in everyday life. She wants to interview professional storytellers from various cultures about why they tell stories. What stories they tell. And what difference they think telling stories makes. This idea is still being formed and will likely change as it develops.<br>
+          A tentative title: <em>One Story, Two Story, Three Story, More</em></p><br>
+          <h5>Short Stories:</h5>
+          <p>And she will be sharing more short stories on Amazon soon.</p>
+        </div>
+
+
+
+
 
 
 

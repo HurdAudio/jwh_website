@@ -165,6 +165,12 @@
         url: '/funinfo',
         parent: 'app',
         component: 'funinfo'
+      })
+      .state({
+        name: 'futureprojects',
+        url: '/futureprojects',
+        parent: 'app',
+        component: 'futureprojects'
       });
       // .state({
       //   name: 'dayview',

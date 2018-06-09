@@ -16,7 +16,7 @@
   <div id="funStuffDropdownDiv" ng-mouseover="$ctrl.funStuffMenuActive()" ng-mouseleave="$ctrl.funStuffMenuInactive()">
 
     <p ng-click="$ctrl.navigateFunInfo()">Fun Info</p>
-    <p>Future Projects</p>
+    <p ng-click="$ctrl.navigateFutureProjects()">Future Projects</p>
     <p>Photo Website</p>
     <p>Short Stories</p>
   </div>
@@ -54,15 +54,19 @@
     <div class="row" id="theRow">
 
       <div class="col-8">
-        <img src="./img/house.jpg" id="housePic">
-        <p id="tellMeAboutTheHouse">My husband and I restored this 120-year-old Victorian in downtown Boulder, Colorado. We live there with our dog. </p>
+        <div id="housePic">
+          <img src="./img/house.jpg">
+        </div>
+        <div id="tellMeAboutTheHouse">
+          <p>My husband and I restored this 120-year-old Victorian in downtown Boulder, Colorado. We live there with our dog. </p>
 
-        <form id="contactForm">
-          <h2>Contact:</h2>
-          <input type="text" id="contactorEmail" placeholder="your email address" autofocus>
-          <textarea id="message" rows="9" col="145" placeholder="your message"></textarea>
-          <button type="button" class="btn btn-primary btn-lg btn-block">Send</button>
-        </form>
+          <form id="contactForm">
+            <h2>Contact:</h2>
+            <input type="text" id="contactorEmail" placeholder="your email address" autofocus>
+            <textarea id="message" rows="9" col="145" placeholder="your message"></textarea>
+            <button type="button" class="btn btn-primary btn-lg btn-block">Send</button>
+          </form>
+        </div>
         <!-- <h1 id="contactMail"><a href="mailto:jerrie@jerriehurd.com">jerrie@jerriehurd.com</a></h1> -->
 
         <!-- <img id="landingPic" src="./img/website.jpg"> -->

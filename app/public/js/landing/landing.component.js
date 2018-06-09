@@ -44,6 +44,11 @@
       vm.navigatePublishedBooks = navigatePublishedBooks;
       vm.navigateFunInfo = navigateFunInfo;
       vm.navigateFunInfo = navigateFunInfo;
+      vm.navigateFutureProjects = navigateFutureProjects;
+
+      function navigateFutureProjects() {
+        $state.go('futureprojects');
+      }
 
       function navigateFunInfo() {
         $state.go('funinfo');

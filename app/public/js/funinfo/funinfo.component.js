@@ -52,6 +52,11 @@
       vm.navigateShortBio = navigateShortBio;
       vm.navigatePublishedBooks = navigatePublishedBooks;
       vm.navigateLongBio = navigateLongBio;
+      vm.navigateFutureProjects = navigateFutureProjects;
+
+      function navigateFutureProjects() {
+        $state.go('futureprojects');
+      }
 
       function navigateLongBio() {
         $state.go('longbio');
