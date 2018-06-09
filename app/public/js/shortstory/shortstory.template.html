@@ -1,0 +1,448 @@
+<div class="container-fluid">
+  <div id="memoirDropdownDiv" ng-mouseover="$ctrl.memoirMenuActive()" ng-mouseleave="$ctrl.memoirMenueInactive()">
+
+    <p ng-click="$ctrl.navigateToSurprise()">About the Memoir</p>
+    <p ng-click="$ctrl.navigageIntroduction()">Introduction</p>
+    <p ng-click="$ctrl.navigateFirstChapter()">First Chapter</p>
+  </div>
+
+  <div id="authorDropdownDiv" ng-mouseover="$ctrl.authorMenuActive()" ng-mouseleave="$ctrl.authorMenueInactive()">
+
+    <p ng-click="$ctrl.navigateShortBio()">Short Bio</p>
+    <p ng-click="$ctrl.navigateLongBio()">Long Bio</p>
+    <p ng-click="$ctrl.navigatePublishedBooks()">Published Books</p>
+  </div>
+
+  <div id="funStuffDropdownDiv" ng-mouseover="$ctrl.funStuffMenuActive()" ng-mouseleave="$ctrl.funStuffMenuInactive()">
+
+    <p ng-click="$ctrl.navigateFunInfo()">Fun Info</p>
+    <p ng-click="$ctrl.navigateFutureProjects()">Future Projects</p>
+    <p ng-click="$ctrl.navigatePhotoSite()">Photo Website</p>
+    <p><span class="sr-only">Short Stories</span></p>
+  </div>
+
+  <div id="topbar">
+    <nav class="navbar navbar-expand-lg" id="navBarTop">
+      <h1 id="currentProject">Surprised by Story</h1>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <!-- <div id="storyStamp">
+
+          <h1>Jerrie Hurd's Stories</h1>
+        </div> -->
+
+        <div class="navbar-nav" id="menuBar">
+          <a class="nav-item nav-link" ng-click="$ctrl.navigateWelome()" style="cursor:pointer">Welcome</a>
+          <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateMemoir()" ng-mouseleave="$ctrl.hoverOffMemoir()" ng-click="$ctrl.navigateMemoir()">Current Book: <em>Surprised by Story</em>
+
+
+
+          </a>
+          <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateAuthor()" ng-mouseleave="$ctrl.hoverOffAuthor()" ng-click="$ctrl.navigateAuthor()">Author Info</a>
+          <a class="nav-item nav-link" href="#" ng-click="$ctrl.navigateContact()">Contact</a>
+          <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateFunStuff()" ng-mouseleave="$ctrl.hoverOffFunStuff()" ng-click="$ctrl.navigateFunStuff()">Fun Stuff</a>
+          <!-- <a class="nav-item nav-link" ng-click="$ctrl.navigateNovels()" href="#">Novels</a> -->
+
+          <!-- <a class="nav-item nav-link" href="#" ng-click="$ctrl.navigateShortStories()">Short Stories</a> -->
+          <!-- <a class="nav-item nav-link" href="#">Books</a> -->
+
+        </div>
+
+      </div>
+
+    </nav>
+  </div>
+  <img src="./img/paintedhorsesm.jpg" id="paintedHorse">
+    <div class="row" id="theRow">
+
+
+      <div id="shortStoryContent" class="col-8">
+
+        <br><br><br>
+        <p class="shortStoryText">Jerrie Hurd has written lots of short stories that have been published in various literary magazines. Most have a western background since the American West has long been an interest. Two of these stories are available on Amazon for $.99. </p>
+        <br><br>
+        <p class="shortStoryText"><a href="www.amazon.com/Sam-Talkingbird-Stories-Jerrie-Hurd-ebook/dp/B0079O04E2/ref=sr_1_7?ie=UTF8&qid=1528126032&sr=8-7&keywords=Jerrie+Hurd" target="_blank">Sam Talkingbird Stories at Amazon</a></p>
+        <br><br>
+        <p class="shortStoryText">If that link doesn’t work, go to Amazon and search for Jerrie Hurd. It will come up.<br><br>
+
+        For fun, here’s a free story—a comic one about rattlesnakes and family traditions:</p>
+
+        <div id="snakeoilContent" class="col-8"><br>
+
+          <!-- <p>Short Story:</p>
+          <p class="synopsis">In this story, Sari figures there is a little snake oil behind every exchange of money. In that sense, her family business is as respectable as any. Only she couldn't get her son, William, to understand. He hasn't  developed good snake sense.</p>
+          <div id="snakeOilDef">
+            <p><a title="A rattlesnake warning sign" href="/wiki/Image:Rattlesnakesign.jpg"><img src="http://upload.wikimedia.org/wikipedia/en/thumb/2/22/Rattlesnakesign.jpg/180px-Rattlesnakesign.jpg" alt="A rattlesnake warning sign" width="180" height="240" hspace="30" vspace="10" border="0" /></a></p>
+            <p><a title="Clark Stanley's Snake Oil." href="/wiki/Image:Snake-oil.png"><img src="http://upload.wikimedia.org/wikipedia/commons/d/d7/Snake-oil.png" alt="Clark Stanley's Snake Oil." width="150" height="270" hspace="45" border="0" /></a></p>
+            <p>&nbsp;</p>
+          <p><strong>Snake oil</strong> <em>n</em>. A worthless preparation fraudulently peddled as a cure for many ills.</p><br><br><br>
+          <p>&nbsp;</p>
+          <p><strong>Snake pit</strong><em> n.</em> <em>Slang.</em> A place of disorder and chaos.</p>
+
+          <p><br>
+              <br>
+              <strong><a href="http://library.thinkquest.org/TQ0312800/snake.htm">Snake hibernation:</a></strong><br>
+            Snakes look for caves, holes in the ground, or cracks in rocks to sleep in.   Dens   sometimes have hundreds of hibernating snakes in them.  </p>
+
+          </div><br><br><br><br><br> -->
+
+          <h3>The Family Snake Oil</h3>
+          <img src="./img/oil-in-water-1438353_1920.jpg" id="oils">
+          <br><br><br><br><br><br>
+
+
+
+
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Snakes were the basis of Eliza's family  fortune.<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Big, poison-fanged, diamond back rattlesnakes.  Lots of them. An endless supply.  Maybe that wasn&rsquo;t the same as owning a gold mine or a thousand-acre ranch.  Maybe it was. Eliza figured there was a little snake oil behind every exchange  of money. In that sense, her family business was as respectable as any. Only  she couldn't get her son, William, to understand that. He was thirty-one years  old, and he still hadn&rsquo;t developed good snake sense, but it would come. He was  an Osgood, like it or not.<br>
+                <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Four  o'clock one morning, he pounded on the side of Eliza's trailer house and  shouted that he and his friends wanted some of Granddaddy's famous snake oil  hooch. Startled out of a deep sleep, Eliza had to listen carefully to make out  what he was saying. His words were slurred, and the racket of his fists hitting  the aluminum siding made it worse. Nevertheless, he was her son, her only  child. For him, she got up, pulled on an old pink bathrobe, slipped her feet  into a pair of worn slippers, that had once been fuzzy, and stumbled down the  hall.<br>
+            <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; William's  pounding became more insistent. At one point, he kicked the trailer so hard  that Eliza had to brace herself between the hall walls. Still she refused to  hurry. She made her way to the bathroom and checked herself in the mirror. She  had inherited her mother's basic looks, high cheekbones, a fine-formed nose,  good skin&mdash;but early in the morning, at her age, minus make-up,  she couldn't exactly call herself a beauty. She sighed, ran a brush through her  bright red hair, smeared on orange-red lipstick, and used the toilet. Then,  when she was good and ready, she left the bathroom, traversed the rest of the  trailer, and opened the outside door.<br>
+            <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The  first thing she noticed was the damp morning chill.  Then she saw William's old Dodge pickup parked at an odd angle. His friends  came into focus next. They weren't local. A couple of Irish rednecks, itinerant  construction workers, she guessed. The taller one had steadied his elbows  against the hood of the pickup and was trying to roll a cigarette without much  success. The other one, shorter and stockier, was pissing behind the truck.  William was still around the other side of the trailer, pounding and carrying  on at the top of his lungs.<br>
+            <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The  scene explained itself. William had been drinking, had hooked up with this pair  of ne'er-do-wells, and the three of them had shut down all the bars in town.  Then they had driven the highway out to her place hoping to get some homemade  hooch to top off their night&mdash;a plan that depended on her generosity.<br>
+            <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;God  damn it, William!&quot; Eliza yelled. &quot;You got me clear outside in the  cold. What more do you want?&quot;<br>
+            <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; His  shouting stopped. There was a crashing sound as he stumbled through her  junipers. He emerged waving the string of rattlesnake skulls that usually hung  from the awning over her bedroom window&mdash;a charm against night spirits. Catching  sight of her, he stopped and just stood there in the early morning light,  swaying back and forth. His lavender cowboy shirt was half out of his pants and  his hair, long, had fallen into his face.<br>
+            <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Looks  like you boys need some coffee,&quot; she said matter-of-factly.<br>
+            <br>
+          &quot;Coffee?&quot; the shorter one asked  with slurred incredulity. &quot;We was told we could  get us some drink here that would put us in orbit.&quot;<br>
+             <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eliza  grunted. Granddaddy's snake oil remedy was a hundred proof  with an opium kicker. Even the local sheriff sipped it only when he was ailing  and then only after muttering that he never, ever, wanted to know what was in  it. In short, she didn't share the old family recipe with every Tom, Dick, or  Harry who showed up on her doorstep. William knew that. He was still standing  there, looking silly, with that string of snake bones dangling from his  outstretched arm.<br>
+            <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Coffee's  all I got,&quot; she answered with curt finality.&nbsp; Then she went inside to put the pot on the  stove.<br>
+            <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; She  heard some heated discussion outside, but it was brief. Before the pot had even  begun to warm, the three boys stumbled into her kitchen and took up chairs  around her Formica-topped table.<br>
+            <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Inside,  William's friends became Dan, the tall one, and Jerry, the stout one. Jerry  seemed the drunkest. He collapsed onto one of her chairs, took a minute to get  himself straightened up, then snapped his head back and began to stare wide-eyed  around the room. Eliza figured he had just fallen into the delirium tremens.  Her decor could do that to a drunk. <br>
+            <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eliza's  trailer was parked behind her livelihood&mdash;an old log cabin she had turned into a  roadside museum featuring Granddaddy's old medicine show wagon and an  assortment of stuff that she had collected, all of it related to the family  business. In the gift shop she sold snakeskin belts, wallets, and purses; snake  charms and potions; snake posters and knickknacks. Some of her collection had spilled  into her trailer and now decorated its environs. Snake decals were stuck to the  tabletop. Snake magnets clustered on the refrigerator. Carved green-colored  snake handles twisted up her cupboards. She had an assortment of ceramic snakes  on the windowsill and a row of rattlesnake skins hanging like a curtain around  the underside of her sink.<br>
+            <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; While  Jerry continued to stare, Dan said, &quot;Interesting kitchen.&quot;<br>
+            <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;I  like it,&quot; Eliza told him. She poured coffee into green mugs with snake  handles and set them in front of Dan and Jerry. Then she sat down with her own  cup.<br>
+            <br>
+          William leaned against the counter by the  sink, and whenever he thought she wasn't looking, he opened a cupboard or a  drawer, checking places he thought she might have stashed money.<br>
+                <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;What  brings you boys to these parts?&quot; Eliza asked.<br>
+            <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;We&rsquo;re  working on that new hotel,&quot; Dan answered as he thumbed south, indicating  the direction of the building site.<br>
+            <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eliza  nodded. &quot;I sold them the land for that hotel. That nice,  rocky bluff overlooking the river.&quot;<br>
+            <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dan  glanced over at William, as if to confirm that fact, but William was fussing  with the sugar jar, trying to feel all the way to the bottom with his middle  two fingers. <br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Getting  no help from him, Dan shrugged and said, &quot;No kidding? That must have been  some deal.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eliza  nodded. &quot;I sold them half the ground that Old Granddaddy homesteaded when  he quit the medicine show business. That rocky bluff made him a fortune. He  sold it four times, and counting this deal, I've sold it three times.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dan  shook his head. &quot;How'd you mean that? If you've sold something, it's sold.  You can't sell it again, can you?&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eliza  set her coffee mug down. She stole a glance at William who had found ten  dollars. &quot;Mostwise, I guess you can't sell  something you've already sold,&quot; she explained. &quot;But that bluff up  there is different. It's ours. The rocks are ours. The crevices,  the old lava tubes, even the warm spring on the backside is ours. We  always buy it back so we can sell it again.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Yeah,  and you can have that hot spring,&quot; Jerry said, suddenly seeming to notice  something besides Eliza's decor. &quot;I had to lay some drainage back there,  and that hot spring is so damned full of sulfur it stinks like the bottom rung  of hell. Some of them hotshot hotel boys were worried about what would happen  if the wind blew wrong.&quot; He fell silent for a couple of seconds. Then he  wet his lips and added, &quot;Dan, there are snakes all over this room. Did you  notice that?&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dan  laughed and nodded.<br>
+          <br>
+              Eliza glanced at William, who was now  feeling along the underside of the breadbox. &quot;You might say I'm fond of  snakes,&quot; Eliza said. &quot;My mother danced with a python, and Old  Granddaddy&mdash;my mother&rsquo;s father&mdash;sold snake oil medicine. They were a traveling  medicine show until my mother's snake died. It died right here, and they  stopped traveling right here. Just like that. They buried Mama&rsquo;s snake and  stayed, which was a fine piece of luck, you see, because this is where the  snakes come. Right here. Every  winter.&quot;<br>
+              <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dan  looked from Eliza to William and then back again. &quot;What do you mean about  the snakes coming right here?&quot; he asked.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;They're  everywhere,&quot; Jerry piped up again. &quot;Ain't  you noticed? On the walls, on the furniture, on  everything.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Yeah,  sure,&quot; Dan said. &quot;Drink your coffee.&quot; He pushed the cup at Jerry  but looked at William.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; William  twirled his finger beside his head, the universal sign for a crazy person. <br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; She  saw that, but, contrary to his opinion, she wasn't crazy. It was William who  needed straightening out. To prove it, she got up, went to the living room, and  returned with a photograph. She handed the picture to Dan.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; He  took it, studied it, and then he leaned back slowly and checked under the  table.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The  photo was of a trailer house&mdash;Eliza's, when it was newer&mdash;with the skirting  removed to reveal masses of rattlesnakes coiled in piles nearly filling the  space between the ground and the floor. There were three men, also pictured in  the photograph, wearing high boots and carrying long sticks. The photo was  about eighteen years old.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;That  was the first time I sold the bluff and the quickest turnaround of all the  deals so far,&quot; Eliza said. &quot;The people were from California. They came up here looking for a  place to retire, and they loved the view of the Snake   River. They figured being on the main east-west highway to  Yellowstone Park and halfway between Jackson Hole and Sun Valley put them right  where they wanted to be to hunt and fish and ski&mdash;all the same reasons them  hotel people liked the site. Anyway, the California  folks bought this here trailer and set it up to use until they got a house  built. Then they went back to California  to settle their affairs. It was getting toward late autumn, so they left the  heat on&mdash;the thermostat was set at about fifty degrees because they didn't want  any pipes to freeze and break. When they returned, not only were there piles of  snakes underneath, there were snakes inside the trailer itself! They'd worked  in around the sewer connection. I offered those California folks a third what they'd paid me  and got the trailer in the deal. The man's wife was so hysterical, he was just  glad to get her out of here while she possessed some slim degree of  sanity.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;And  what did you do about the snakes?&quot; Dan asked.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Ah,  they's no problem if you  know snakes. I hired those guys in the picture to pull off the skirting and  pull out those snakes. Then I hauled the trailer house down here, and I've been  living in it ever since. You don't need to worry. This part of the riverbank is  too low and damp. I hardly ever see a rattler down here, just a few garter  snakes.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dan  studied the photo again and shook his head. He passed it over to Jerry who  pushed it out to arm's length and then slowly drew it back again until it  focused. He paused, tipped his head to one side, and said, &quot;More  snakes.&quot; Then he handed it back.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dan  rubbed his chin. &quot;Where do the snakes come from?&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eliza  shrugged. &quot;It's the warm spring, I figure. That warm water runs all around  and underneath that bluff. It keeps the rocks warm, and, if you know where to  look, you can find little caves and long fissures that actually hold some of  that sulfur steam long into the cold season. So about this time of year, the  snakes start coming.&nbsp; Rattlesnakes have  probably been coming to winter on that bluff so long it's in their genes by  now. That's not the interesting part. I mean, ain't  it purely amazing how my old granddaddy who appreciated snakes more than anyone  I know, who dragged his wagon and his daughter and a python all over six states  for going on twenty years, should have stopped and took up homesteading in  exactly this spot? Some wonder, that.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dan  didn't answer. He just sat there as if puzzling something.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; William  cleared his throat. &quot;Well, now you've heard the whole damned story from  the very lips of the crazy woman who thinks she's going to buy back a  three-story hotel from a New York corporation the way she bought back a trailer  house from a couple of snake-scared Californians. I mean, what's she going to  do with that hotel, for Christ's sake? Drag it down here and live in it,  too?&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;I'll  tear it down and sell the salvage,&quot; Eliza snapped. &quot;I made damned  good off the house the next guy built up there, didn't I? Tearing it down and  selling the used bricks and stuff?&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;We're  talking about a twenty-million-dollar hotel, for Christ's sake. They've been  building on that hotel all summer, and they ain't  complained of snakes yet. Even if they did, they're not going to sell it back  to you for less than what the land cost. I don't care how many snakes show up  in their swimming pool.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eliza  turned the back of her shoulder to him and took a sip of her coffee.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; William  came around the table and said to Dan. &quot;Do you want to hear the real  story?&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dan  made a wry face, but, before he could say anything, William began in a voice  too loud for the room, &quot;She's already made a fortune on that land. She's  crazy, but she's shrewd. Half the people around here can't believe what that  hotel company paid for that piece of rock out there, but what's she done with  the money? Nothing! It ain't invested. It ain't anything. It's just sitting in her checking  account.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;I  don't know how much I'll need for the buy-back,&quot; Eliza said.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;And  do you think I've seen even so much as a dime of it?&quot; William asked,  pressing his face close to Dan's. &quot;Not on your life,&quot; he sputtered.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;I  don't know how much I'll need for the buy-back,&quot; Eliza repeated.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; William  straightened and let his fist crash into the table. &quot;Do I come from a  crazy family or what?&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eliza  never understood why anyone would want to come from an ordinary family. Likewise  she couldn&rsquo;t understand why William didn&rsquo;t appreciate his snake oil heritage.  Who else could claim such a rich . . ?<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Again  William slammed his fist into the table. &ldquo;Is that crazy or what?&rdquo;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dan  glanced at Eliza. &quot;I don&rsquo;t know, but I&rsquo;m guessing that hotel has more to  worry about than which way the wind blows off that stinking sulfur  spring.&quot;<br>
+          <br>
+              Eliza laughed and gave Dan a thumbs-up. She  liked a man who could see the beauty of her situation.<br>
+              <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; William  didn&rsquo;t. He whirled around and slammed his foot into a lower cupboard, knocking  the door off one hinge. Then he stomped out of the trailer. When Dan heard his  pickup motor come to life, he started to his feet, but Eliza motioned him to  sit down again.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;I'll  drive you into town after you've had some breakfast,&quot; she said. &quot;You  boys like waffles? I make good waffles.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dan  nodded, but Jerry had rested his head on the table. He was asleep.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; After  breakfast Eliza poured a little of Old Granddaddy's snake oil hooch into Dan's  third cup of coffee. He purred its praises.<br>
+            </p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Next  time she heard about Dan, he&rsquo;d rented a storefront and hung up a sign calling himself an exterminator. According to the ad he put in the  local paper, he specialized in getting rid of all types of vermin&mdash;bugs,  rodents, and <em>snakes.</em> She thought that  was clever. Seemed sure to her that the hotel people would  try a couple of things before they gave up and sold back. If Dan was  smart enough to figure out how to turn a dollar on the deal, she didn't  begrudge him. She wished William would figure out how to do the same. Not that  she was really worried. He might be slow, like a snake that hasn&rsquo;t warmed  itself, but he&rsquo;d come around. Snake oil was in his blood.</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A  couple of weeks later, William showed up at Eliza's gift shop with a girl who  was too young for him. She was, maybe, twenty-two.&nbsp; Her name was Samantha Egbert,  and her highest ambition was to get hired by the new hotel. She gushed on and  on about how fancy and up-to-date the hotel was  going to be. “It’s absolutely unlike anything else around here,” she repeated  several times. Eliza couldn't imagine why her son hadn't explained to the poor  dear that this grand hotel wasn't going to be in business very long exactly  because it had up-to-date heated sidewalks and hot tubs—all the warm things  snakes liked.<br>
+                <br>
+                    The  girl had long wispy bottle-blond hair that clung too close to her face, and she  was a little bit broad in the hips, not really fat—just tending toward it.  Eliza thought one pregnancy would settle her permanently southward. Besides,  there was nothing about her that suggested she could rise out of the ordinary,  meaning that Eliza couldn’t imagine her wrapping a snake around her neck and  wiggling those hips. In other words, Eliza couldn’t see her becoming part of  the family.<br>
+        <br>
+                    William  and Samantha were on their way to Jackpot, Nevada, to play the slots and see a stage  show. The reason for stopping was to wrangle some money and some hooch, but the  girl didn't seem to know that. She was buying William's solicitous son routine.  He was pretending to worry about Eliza being alone the whole weekend. He kept  asking if she'd be okay. To listen to him, you might have thought Eliza really  depended on him to help around the place, rather than the high school boy she'd  recently hired. <br>
+        <br>
+                    The  high school boy really did call regularly to let her know where he was and if  he was going to be late. But, unlike William, he didn't have a chance of  learning any snake sense. He was too honest. William, on the other hand, just  needed some time to get his knavery directed. He had excused himself to check  something in the back room, which really meant he wanted to see if Eliza had  squirreled any money back there. She hadn't. <br>
+        <br>
+                    When  he was gone, the girl looked around and began to gush again. &quot;Oh, this is  all so very quaint. I mean, where else could anyone see such a unique  collection?&quot; She tapped a polished fingernail on the glass that covered a  stuffed two-headed snake. Then catching sight of the row of Indian snake charms  displayed in another glass case, she exclaimed, &quot;Why, I'll bet even the  Smithsonian doesn't have a collection of these—not near as good, anyway.&quot;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                To this point, Eliza hadn't said anything.  Old Granddaddy, being the huckster he was, had taught her that any human could  be made to look stupid with a little prodding. In this case, Eliza expected  that Samantha could prattle herself into full-fledged idiocy without any help  at all.<br>
+                <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;You  know, I've never been scared of snakes,&quot; Samantha said. &quot;I was  telling Bill&quot; (she meant William) &quot;that my brothers used to try to  tease me with garter snakes, you know, the way boys sometimes do, and I was  never really scared.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Excuse  me,&quot; Eliza interrupted and then yelled for the high school assistant. When  he answered from the back of the shop, she asked him to bring her a ribbon. She  sold ribbons&mdash;lots of them. Then with the back of her hand, Eliza indicated that  Samantha could go on talking, and she did. <br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ldquo;Sometimes  I acted like I was scared because that&rsquo;s what they wanted. It&rsquo;s really more  like a game, you know, and&mdash;&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The  assistant, a clean-cut kid wearing blue jeans and a yellow sweatshirt,  appeared. He was holding a slender foot-long snake, bright green&mdash;known as a  ribbon. Some people liked them as pets. Eliza motioned for him to give it to  Samantha.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The  girl's chatter ceased. She brought both of her hands up to her neck. Then she  managed a wan little smile and took the snake even though she continued to hold  it at arm&rsquo;s length while it flipped and folded nearly in half. To her credit,  she didn't drop it, and she didn't try to give it back. Truth was, she couldn't have given it back. Eliza's assistant had  left immediately.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; While  the girl stood there hanging onto the writhing serpent, Eliza asked,  &quot;Heard of any snakes up at the hotel where you interviewed?&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; By  that time, the girl's mouth had parted enough to show her tongue moving with  the snake's twists. &quot;Nothing I'm going to believe,&quot; she said.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; William  returned. He grabbed the snake, thrust it into a drawer beside the cash  register, and breathed, &ldquo;Mother, how could you?&rdquo; <br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Before  he could say anything more, Eliza said, &quot;I believe there's half a bottle  of Old Granddaddy's stuff under the cushion of the couch in the living  room.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; His  eyebrows shot up, and he left again.<br>
+          <br>
+                A couple of tourists came in and were  fingering the snakeskin belts. Eliza yelled for her assistant again. Every  sheriff in six states had learned to watch her old granddaddy because he was  known to be light-fingered. Now she had to watch tourists for the same reason,  or they'd shoplift her into bankruptcy. When her assistant showed up, Eliza  assigned him to the tourists. Then she turned back to the girl.<br>
+                <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;You've  heard stories of snakes at the hotel?&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;They're  just stories, I think.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Tell  me,&quot; Eliza said. &quot;I like a good snake story.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Well,  they say there were snakes in the swimming pool one morning and more the next  morning. One pool man was supposed to have quit because of it. But I don't know  really.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Is  that all? Just snakes in the pool?&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Well  the other thing is really too bizarre . . .&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;What  is?&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Well,  they say the vents for the dryers in the laundry room keep getting clogged up,  and it isn't lint or anything like that. They say it's  snakes filling up all the tubes and sometimes falling into the dryers, but I  don't believe it. I think some of the people who work nights down in the  basement like to make up things like that. People who work the graveyard shift  get kind of weird, if you know what I mean.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;The  laundry room is in the basement?&quot; Eliza asked.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Yeah,  it's called the dungeon. Nobody wants to slave down there. I don't want to. I  told them, I'm a waitress. I only work with food, right?&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Oh,  I think I&rsquo;d want to work the upper floors,&rdquo; Eliza commented. &ldquo;Let me show you  something.&quot; <br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; She  took the girl to the back of the museum. Hanging on the wall was a framed page  from Old Granddaddy's journal. It was a sketch of a wooden barrel wedged into a  crevice of rock and full to overflowing with snakes. The top of the page was  labeled, &quot;The Snake Trap.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; As  the girl bent to look closer, William came in again and shouted from the front  of the shop, &quot;It wasn't there, Old Woman. What kind of tricks are you  trying to pull?&quot;<br>
+          <br>
+                Her tourist customers looked up and around,  but Eliza didn't care about them. Tourists were worse than Samantha for being  too ordinary&mdash;riding across the West in their RVs, looking for something to  remember because they didn&rsquo;t have any heritage of their own. They didn&rsquo;t fool  her. Anyone who didn&rsquo;t have snake oil in his blood was a chump, plain and  simple. <br>
+                <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; She  shouted back to William, &quot;Try looking behind the refrigerator.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; William  left again.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eliza  turned to the girl. &quot;There's a story that goes with that picture. You want  to hear it?&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Samantha  nodded, even though it was obvious she was reaching  her snake limit and would really rather go. <br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eliza  began, &ldquo;Old Granddaddy originally built this here log cabin on the bluff where  the hotel is now,&quot; she said. &quot;Only along about this time of year,  late fall, he started having some snake trouble.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The  girl shivered.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eliza  paused. She hadn't gotten to the good part yet. <br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; She  cleared her throat. &quot;Well, Old Granddaddy thought he knew what to do about  those snakes, but he needed a barrel. In those days this was a real wilderness,  and since barrels don't grow on trees and it was a hundred miles or more to the  nearest cooper, he didn't know what he was going to do. So he asked around, and  somebody said there was this old muleskinner working for the army at Fort Hall  who had a barrel the size Granddaddy needed, but it wasn't likely that the guy  would sell it because he needed it himself for his tanning business. Well, to  make a long story short, Granddaddy goes down to Fort Hall and drinks and plays  some cards with this old muleskinner, and one thing leads to another and pretty  soon Granddaddy has this old muleskinner thinking that there's money to be had  in snake skins. What's more, he talks the old fellow into bringing his barrel  and going snake hunting with him. So they come up and they find the warm  crevice that the snakes are following up to my granddaddy's house, and they set  this barrel on its side into that crevice and mound dirt around it. Then they  go off and have themselves a weeklong drunk. Meanwhile, the snakes follow that  crevice up to the barrel and when they can't get past the barrel, they just  stop and begin to pile up. You see, the trap was working like a charm.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Samantha  bit her lower lip.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Granddaddy  and the old muleskinner waited until the cool of one morning when they knew the  snakes would be slow. Then they took their shovels and went out to see what the  barrel had caught. Boy, were they amazed. There was a huge mound of snakes in  front of the barrel. At first, Granddaddy and the old muleskinner thought the  snakes hadn't gone inside the barrel, so they put their shovels behind the pile  and tried to slide the snakes inside. That's when they realized the whole  barrel was also full of snakes.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Samantha's  eyes widened.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Now,  they should have been glad for their good success, but they were just so  amazed, they stood around for maybe an hour or two just speculating on how many  snakes they'd caught. The muleskinner knew he couldn't tan anywhere near that  many snakes even if he worked all winter, and  Granddaddy figured no one would ever believe them, even if all those skins got  tanned. The real truth was that neither my granddaddy nor that old muleskinner  much wanted to dig out that barrel no matter how cold and slow those snakes  might be.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;So  they discussed it, and, after a while, my granddaddy went and got a can of  kerosene. He threw it on the barrel and set it afire&mdash;barrel, snakes, and all.  That muleskinner about cried seeing his best barrel burn, but what else could  they do? You see, Granddaddy hadn't figured out yet how those snakes were going  to make his fortune.&quot; <br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;What's  she telling you?&quot; William asked, showing up again. He had found the bottle  and was grinning from ear to ear. &quot;Don't believe it, whatever it is,&quot;  he said, and tried to kiss Samantha on her neck.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; She  pulled away. &quot;Are you saying the snakes in the dryer vents could be  real?&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Don't  know,&quot; Eliza answered. &quot;I'm just telling you what happened up there  on that bluff a long time ago. My old granddaddy had to move this here house.  He couldn't live up there, and he was a real snake charmer.&quot;<br>
+          <br>
+          &quot;She makes up these stories for the  tourists, &quot; William said, and tried to kiss the  other side of the girl's neck.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;They  moved this house?&quot; she asked.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Took every team of oxen and every horse for twenty miles  around. First they knocked the chimney off. Then they roped it and  dragged it down to this very spot. It's been here ever since. I think it makes  a fine museum and gift shop. Don&rsquo;t you agree?&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Come  on, honey,&quot; William said, taking the girl's arm and pulling at her.  &quot;It's a long drive to Jackpot. And I don't know if I can wait.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Samantha  slapped playfully at his arms and chest until he grabbed both her wrists and  pulled her toward the door. She giggled. &quot;That's an interesting story,  Miss Eliza,&quot; she said as she left.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Five  minutes later she was back. &quot;William says he forgot to ask you for his  pay.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;His pay?&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Yes,  ma'am,&quot; she said. &quot;He says you owe him two hundred and ten dollars  back pay.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; She  owed him no such thing but decided to play along. &quot;Of  course. How could I forget something like that?&quot; Eliza said, and  took the money from out of the cash register.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;And  ma'am,&quot; the girl looked at the floor, &quot;I can probably keep my old  job. You think I ought to? I mean the thing is, I'm  really quite afraid of snakes.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;You  fooled me,&quot; Eliza said.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Well,  that little one you call a ribbon weren't no rattler, if you know what I  mean.&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eliza  nodded. &quot;I'd keep my old job if I was you. Oh, and would you tell my son  something for me?&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;What?&quot;  she asked.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Tell  him that I think you have good snake sense.&quot;<br>
+          <br>
+                She brightened. &quot;I will.&quot;<br>
+                <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eliza  smiled back. William would hate hearing that. Being with a girl he thought his  mother liked would probably ruin his whole weekend.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; She  was right. She never saw that girl again. She didn't see William for almost a  month. Then one afternoon when business was slow, she left her assistant in  charge of the shop and went down into the cellar where she kept Old Granddaddy's  still. She was stirring up a new batch of his old snake oil hooch when William  yelled down the stairs.<br>
+          <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; She helloed back.<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Next  thing she knew he was down there himself, stooped over in the cramped space  introducing her to a salt-and-pepper-haired German, who wore expensive shoes  and cheap aftershave. His name was Stan Fliegelmann.  That name sounded familiar to Eliza. She couldn't remember why.<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; William  said he was a friend, but Eliza knew he was too high class to be one of  William's regular riffraff. Her first thought was that he might be a cop&mdash;maybe  a fed. He started immediately looking over the still, feeling along the  gooseneck, examining the worm, checking the vent and where it hooked into the  furnace. He wasn't trying to be subtle. He sidled between the copper kettle and  the cellar wall where Eliza kept mason jars on rows of shelves and got himself over to where she was measuring cinnamon bark and  juniper berries. He picked up a slice of gentian root and sniffed it. Then he  tossed it back on her chopping board and brushed his hands together while he  looked up and all around.<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eliza  had never had any particular problems with the law. Homemade hooch was legal as  long as she never sold it, and she never had. There was the matter of the  opium, but she had always been terribly careful about it. Not even William knew  that was the secret ingredient, although he had been trying to wheedle the  recipe out of her since he was fourteen years old and began pouring hooch over  his breakfast flakes instead of milk.<br>
+        <br>
+        While Stan Fliegelmann  continued to poke around, William was telling him all about her. &quot;She has  this large brown and green snakeskin that was once the python her mother danced  with. It hangs above the door in the museum area of her shop and when we go back  in there, you look, and you'll see a little row of candles arranged under it,  like in a church or something. Mama still lights them candles sometimes. I seen her do it. She lives entirely in the past, I tell  you, a real crazy past, too.&quot;<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Stan  set down a jar of dried herbs he had shaken and examined. By that time, he had  fingered all her funnels and flanges. &quot;Miss Eliza, do you light candles  for a snake?&quot;<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Sure  do,&quot; Eliza replied. It had taken her five minutes, but she'd figured out  who Stan Fliegelmann was, and that if William had  paid this lawyer to prove she was crazy, she ought to see he got his money's  worth.<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Why  do you light candles for a snake?&quot; he asked.<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Because of the pretty colors.&quot;<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;The pretty colors?&quot;<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eliza  set her chopping knife down and wiped her hands on her long skirt. &quot;You ever seen snakeskin in candlelight?&quot;<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;No,&quot;  Stan Fliegelmann said.<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Well,  you ought to. It's purely one of the wonders of the world. The scales are all  in rows and the edges are silvery, and when the light flickers, the colors  change. It's something to see, very pretty, but not as gaudy as a  rainbow.&quot;<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;That's  why you light candles under a snakeskin&mdash;to see the colors?&quot;<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eliza  nodded.<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Any  other reason?&quot; he asked.<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; There  was. It was because that was the only thing she could remember about her  mother. Milly, the Snake Lady,  had run away when Eliza was four years old, but Eliza could remember being in  her mother's arms one time as her mother held her and a candle up to that  snakeskin and told her something she couldn't remember. What she remembered was  seeing the colors shift and sparkle in the flickering candlelight, and then her  mother was gone.<br>
+        Eliza shrugged and looked the lawyer right  in the eye. &quot;I can't think of any other good reason to hold a candle up to  a snakeskin, can you?&quot;<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; He  didn't answer, but she could tell, by the way his eyes flicked away, that he  had ticked off some point inside his head that he wanted to remember later.<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Meanwhile,  William was going on. &quot;Did I tell you about the snake bones? Mama uses  them like dice. She never makes a decision without checking her snake bones,  and she does consultings and healings. She  practically practices medicine without a license.&quot;<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eliza  wished she remembered what her mother had tried to tell her. It must have been  important. She knew one thing. She would never run away from William the way  her mother had run away from her. She wasn't a good mother, but she was there.  She had always been there when William needed someone. She tried to tell him  important things, not once, but over and over, hoping to teach him the family  ways, but it hadn't worked. He kept missing the message. Maybe, in the end,  that wasn't any better than what Milly, the Snake  Lady, had done. <br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Whatever,  she&rsquo;d never imagined that she&rsquo;d failed William to such a degree that he would  want her out of his life, committed, put away. It was almost enough to make her  hesitate. That is, until she saw the lawyer stirring in her bitters bowl. <br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nobody  stirred her bitters.<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; She  reached behind her and took down a yellow gourd. It rattled like rushing water  as she shook it in the lawyer's face so close that he drew back. Then she  tipped the gourd and spilled a handful of snake bones, tiny vertebrae, onto the  table where she had been chopping.<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Want  me to tell you your fortune?&quot; she asked.<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; He  looked over at William who gestured with an open hand for him to go ahead and  see what this was all about.<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The  lawyer said, &quot;Sure.&quot;<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eliza  couldn't really read fortunes from snake bones&mdash;except maybe her own family's  fortune&mdash;but she gave the vertebrae a prolonged examination, looking at them  from one side of the table and then another.<br>
+        <br>
+        At last, she said, &quot;you are going to  handle a very profitable lawsuit concerning a wealthy Chicago woman whose silver-haired poodle was  bitten by a rattlesnake in the parking lot of that new hotel.&quot;<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The  lawyer cocked his head. <br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; She  knew why. He had just taken such a case. Eliza had read about it in the local  newspaper and finally made the connection. That's why his name had sounded  familiar.<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; She  went on. &quot;The poodle has survived, seemingly none the worse for wear, so  you plan to settle for a modest sum. The snake bones advise you not to do that.  The rattlesnake problem at the hotel is more serious than they've admitted. Ask  the bellboys. They have instructions to check ground-floor rooms for snakes.  Talk to the hot-tub attendant who recently quit. Poke around and you&rsquo;ll  discover that they have a parking lot attendant whose job description is `snake  removal.&rsquo; You might also discover that one basement laundry room is now closed  even to employees. Then check the airport. Five hotel-owned Lear jets have  logged in and out of there in the past two weeks. Three of those flights  brought in well-known herpetologists from top universities. Why? The bones predict  that if you answer those questions, you will discover that you have stumbled  onto the means of embarrassing the world's second largest chain of luxury  hotels. If that doesn't translate into money, these aren't snake bones, and I  must be crazy.&quot;<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Stan  Fliegelmann studied Eliza for fully half a minute.  Then he picked up the gourd and swept the snake bones back into it. &quot;I  don't believe in hocus-pocus,&quot; he said. &quot;But I have heard rumors  about that hotel. How do you know what you know?&quot;<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eliza  shrugged. Out of the corner of her eye, she saw William slump against the  cellar door frame. To the lawyer, she said, &quot;I usually get a hundred  dollars for a fortune reading.&quot;<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Stan  Fliegelmann took out his wallet.<br>
+              </p>
+              <p>Ten days later William strode into the shop  and up to where Eliza was helping a customer with a Chinese paper snake.  Without saying a word, he dumped a satchel of money onto the counter and  started counting the hundred dollar bills into piles of ten. Soon he had  fourteen piles of money. The customer backed off, but Eliza stood there and  watched him finger every bill with such intensity his hands shook. <br>
+                <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; When  he finished, he said, &quot;That's my snake money. I went to the bank and I got  cash because I wanted you to see it, Old Woman, all fourteen thousand dollars  of it. I'm a high-paid snake consultant. That hotel paid me to show them every  crack and crevice on that bluff. After I showed them, they pumped concrete into  them&mdash;every one of them. If there's a snake left up there, it's  cast in cement. Now, let's see you do something about that!&quot;<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; He  stood there looking at her, breathing heavily.<br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eliza  nodded and then couldn&rsquo;t keep herself from smiling. Deep down she&rsquo;d always  known it would come to this. He was an Osgood. He had snake oil in his blood. <br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; She  reached out and patted each stack of his money, palming a hundred off the last  pile as she pulled her hand back. Then she looked up at her William and said,  &quot;You did good. You did real fine. Yes, indeed.  That&rsquo;s a most respectful start, but, now, let me tell you, before you and I and  those snakes get through with that hotel . . .&quot;</p>
+          <p><a href="#" ng-click="$ctrl.topOfSnakeDiv()">back to top</a></p>
+
+                <p>&nbsp;</p>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+    </div>
+
+
+</div>

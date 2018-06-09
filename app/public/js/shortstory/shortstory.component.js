@@ -10,14 +10,14 @@
 
 
   angular.module('app')
-    .component('memoirfirstchapter', {
-      controller: MemoirFirstChapterController,
-      templateUrl: '/js/memoirfirstchapter/memoirfirstchapter.template.html'
+    .component('shortstory', {
+      controller: ShortStoryController,
+      templateUrl: '/js/shortstory/shortstory.template.html'
     });
 
-    MemoirFirstChapterController.$inject = ['$http', '$state', '$stateParams'];
+    ShortStoryController.$inject = ['$http', '$state', '$stateParams'];
 
-    function MemoirFirstChapterController($http, $state, $stateParams){
+    function ShortStoryController($http, $state, $stateParams){
       const vm = this;
 
       vm.$onInit = onInit;
@@ -38,18 +38,19 @@
       vm.navigateFunStuff = navigateFunStuff;
       vm.navigateContact = navigateContact;
       vm.navigateWelome = navigateWelome;
+      vm.navigageIntroduction = navigageIntroduction;
+      vm.navigateFirstChapter = navigateFirstChapter;
       vm.navigateToSurprise = navigateToSurprise;
-      vm.navigateToIntroduction = navigateToIntroduction;
       vm.navigateShortBio = navigateShortBio;
-      vm.navigateLongBio = navigateLongBio;
       vm.navigatePublishedBooks = navigatePublishedBooks;
+      vm.navigateLongBio = navigateLongBio;
       vm.navigateFunInfo = navigateFunInfo;
       vm.navigateFutureProjects = navigateFutureProjects;
       vm.navigatePhotoSite = navigatePhotoSite;
-      vm.navigateShortStory = navigateShortStory;
+      vm.topOfSnakeDiv = topOfSnakeDiv;
 
-      function navigateShortStory() {
-        $state.go('shortstory');
+      function topOfSnakeDiv() {
+        document.getElementById('shortStoryContent').scrollTop = 0;
       }
 
       function navigatePhotoSite() {
@@ -64,24 +65,29 @@
         $state.go('funinfo');
       }
 
+      function navigateLongBio() {
+        $state.go('longbio');
+      }
+
       function navigatePublishedBooks() {
         $state.go('publishedbooks');
       }
 
-      function navigateLongBio() {
-        $state.go('longbio');
-      }
 
       function navigateShortBio() {
         $state.go('shortbio');
       }
 
-      function navigateToIntroduction() {
-        $state.go('memoirintroduction');
-      }
-
       function navigateToSurprise() {
         $state.go('memoir');
+      }
+
+      function navigateFirstChapter() {
+        $state.go('memoirfirstchapter');
+      }
+
+      function navigageIntroduction() {
+        $state.go('memoirintroduction')
       }
 
       function navigateWelome() {
@@ -209,7 +215,25 @@
       }
 
       function onInit() {
-        console.log("Memoir Introduction is lit");
+        console.log("fun stuff is lit");
+        vm.books = [];
+        for (let i = 0; i < bookImages.length; i++) {
+          vm.books[i] = {};
+          vm.books[i].cover = bookImages[i];
+          vm.books[i].title = bookTitles[i];
+          vm.books[i].author = bookAuthors[i];
+          vm.books[i].link = bookLinks[i];
+        }
+
+        vm.retreats = [];
+        for (let j = 0; j < retreatImages.length; j++) {
+          vm.retreats[j] = [];
+          vm.retreats[j].image = retreatImages[j];
+          vm.retreats[j].link = retreatLinks[j];
+          vm.retreats[j].name = retreatNames[j];
+          vm.retreats[j].location = retreatLocations[j];
+        }
+
 
 
 

@@ -459,9 +459,9 @@
 
 #snakeoilContent {
   float: left;
-  width: 74.5%;
-  height: 118%;
-  overflow: scroll;
+  width: 84.5%;
+  /* height: 118%;
+  overflow: scroll; */
 
 }
 
@@ -482,8 +482,9 @@
 
 #snakeoilContent h3 {
   float: left;
-  font-family: 'Bellefair', sans-serif;
-  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+  font-size: 36px;
+  margin-left: 30%;
 }
 
 #pinkOpeningPagesContent {
@@ -1494,4 +1495,32 @@
   float: left;
   width: 23.1%;
   margin: 0 2vmin 1vmin 10%;
+}
+
+#paintedHorse {
+  width: 14%;
+  float: left;
+  margin: 0 2% 0 0;
+  position: fixed;
+}
+
+.shortStoryText {
+  font-family: 'Bellefair', san-serif;
+  font-size: 30px;
+  margin: 1vmin 12% 1vmin 6%;
+}
+
+#oils {
+  width: 17%;
+  float: right;
+  margin: 0 0 0 4vmin;
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
+#shortStoryContent {
+  margin-left: 13%;
+  height: 90vmin;
+  overflow: scroll;
 }

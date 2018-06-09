@@ -46,6 +46,11 @@
       vm.navigateLongBio = navigateLongBio;
       vm.navigateFunInfo = navigateFunInfo;
       vm.navigatePhotoSite = navigatePhotoSite;
+      vm.navigateShortStory = navigateShortStory;
+
+      function navigateShortStory() {
+        $state.go('shortstory');
+      }
 
       function navigatePhotoSite() {
         $state.go('photowebsite');
