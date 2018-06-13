@@ -1,25 +1,9 @@
 <div class="container-fluid">
-  <div id="memoirDropdownDiv" ng-mouseover="$ctrl.memoirMenuActive()" ng-mouseleave="$ctrl.memoirMenueInactive()">
 
-    <p ng-click="$ctrl.surpisedbystory()">About the Memoir</p>
-    <p ng-click="$ctrl.navigateIntroduction()">Introduction</p>
-    <p ng-click="$ctrl.navigateFirstChapter()">First Chapter</p>
-  </div>
 
-  <div id="authorDropdownDiv" ng-mouseover="$ctrl.authorMenuActive()" ng-mouseleave="$ctrl.authorMenueInactive()">
 
-    <p ng-click="$ctrl.navigateShortBio()">Short Bio</p>
-    <p ng-click="$ctrl.navigateLongBio()">Long Bio</p>
-    <p ng-click="$ctrl.navigatePublishedBooks()">Published Books</p>
-  </div>
 
-  <div id="funStuffDropdownDiv" ng-mouseover="$ctrl.funStuffMenuActive()" ng-mouseleave="$ctrl.funStuffMenuInactive()">
 
-    <p ng-click="$ctrl.navigateFunInfo()">Fun Info</p>
-    <p ng-click="$ctrl.navigateFutureProjects()">Future Projects</p>
-    <p ng-click="$ctrl.navigatePhotoSite()">Photo Website</p>
-    <p ng-click="$ctrl.navigateShortStory()">Short Stories</p>
-  </div>
 
   <div id="topbar">
     <nav class="navbar navbar-expand-lg" id="navBarTop">
@@ -47,9 +31,47 @@
 
         </div>
 
+
       </div>
 
     </nav>
+    <table id="navTable">
+      <tr>
+        <td style="width: 19%;"></td>
+        <td style="width: 25%;">
+
+          <div id="memoirDropdownDiv" ng-mouseover="$ctrl.memoirMenuActive()" ng-mouseleave="$ctrl.memoirMenueInactive()">
+
+            <p ng-click="$ctrl.surpisedbystory()">About the Memoir</p>
+            <p ng-click="$ctrl.navigateIntroduction()">Introduction</p>
+            <p ng-click="$ctrl.navigateFirstChapter()">First Chapter</p>
+          </div>
+        </td>
+        <td style="width: 30%;">
+          <div id="authorDropdownDiv" ng-mouseover="$ctrl.authorMenuActive()" ng-mouseleave="$ctrl.authorMenueInactive()">
+
+            <p ng-click="$ctrl.navigateShortBio()">Short Bio</p>
+            <p ng-click="$ctrl.navigateLongBio()">Long Bio</p>
+            <p ng-click="$ctrl.navigatePublishedBooks()">Published Books</p>
+          </div>
+
+        </td>
+        <td>
+          <div id="funStuffDropdownDiv" ng-mouseover="$ctrl.funStuffMenuActive()" ng-mouseleave="$ctrl.funStuffMenuInactive()">
+
+            <p ng-click="$ctrl.navigateFunInfo()">Fun Info</p>
+            <p ng-click="$ctrl.navigateFutureProjects()">Future Projects</p>
+            <p ng-click="$ctrl.navigatePhotoSite()">Photo Website</p>
+            <p ng-click="$ctrl.navigateShortStory()">Short Stories</p>
+          </div>
+
+        </td>
+
+
+
+      </tr>
+
+    </table>
   </div>
     <div class="row" id="theRow">
 
