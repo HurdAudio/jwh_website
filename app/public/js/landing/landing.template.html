@@ -15,19 +15,29 @@
         </div> -->
 
         <div class="navbar-nav" id="menuBar">
-          <a class="nav-item nav-link active"><span class="sr-only">Welcome</span></a>
-          <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateMemoir()" ng-mouseleave="$ctrl.hoverOffMemoir()" ng-click="$ctrl.navigateMemoir()">Current Book: <em>Surprised by Story</em>
+          <table id="toplineNavTable">
+            <tr>
+              <td style="width: 15%;">
+                <a class="nav-item nav-link active"><span class="sr-only">Welcome</span></a>
+              </td>
+              <td style="width: 31%;">
+                <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateMemoir()" ng-mouseleave="$ctrl.hoverOffMemoir()" ng-click="$ctrl.navigateMemoir()" style="font-size: 140%;">Current Book: <em>Surprised by Story</em></a>
+              </td>
+              <td style="width: 15%;">
+                <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateAuthor()" ng-mouseleave="$ctrl.hoverOffAuthor()" ng-click="$ctrl.navigateAuthor()">Author Info</a>
+              </td>
+              <td style="width: 15%;">
+                <a class="nav-item nav-link" href="#" ng-click="$ctrl.navigateContact()">Contact</a>
+              </td>
+              <td style="width: 24%;">
+                <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateFunStuff()" ng-mouseleave="$ctrl.hoverOffFunStuff()" ng-click="$ctrl.navigateFunStuff()">Fun Stuff</a>
+              </td>
+              <!-- <a class="nav-item nav-link" ng-click="$ctrl.navigateNovels()" href="#">Novels</a> -->
 
-
-
-          </a>
-          <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateAuthor()" ng-mouseleave="$ctrl.hoverOffAuthor()" ng-click="$ctrl.navigateAuthor()">Author Info</a>
-          <a class="nav-item nav-link" href="#" ng-click="$ctrl.navigateContact()">Contact</a>
-          <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateFunStuff()" ng-mouseleave="$ctrl.hoverOffFunStuff()" ng-click="$ctrl.navigateFunStuff()">Fun Stuff</a>
-          <!-- <a class="nav-item nav-link" ng-click="$ctrl.navigateNovels()" href="#">Novels</a> -->
-
-          <!-- <a class="nav-item nav-link" href="#" ng-click="$ctrl.navigateShortStories()">Short Stories</a> -->
-          <!-- <a class="nav-item nav-link" href="#">Books</a> -->
+              <!-- <a class="nav-item nav-link" href="#" ng-click="$ctrl.navigateShortStories()">Short Stories</a> -->
+              <!-- <a class="nav-item nav-link" href="#">Books</a> -->
+            </tr>
+          </table>
 
         </div>
 
@@ -56,7 +66,7 @@
           </div>
 
         </td>
-        <td>
+        <td style="width: 26%;">
           <div id="funStuffDropdownDiv" ng-mouseover="$ctrl.funStuffMenuActive()" ng-mouseleave="$ctrl.funStuffMenuInactive()">
 
             <p ng-click="$ctrl.navigateFunInfo()">Fun Info</p>
