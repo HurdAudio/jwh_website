@@ -209,7 +209,7 @@
 }
 
 #menuBar a {
-  margin: 3vmin 3vmin 4vmin 3vmin;
+  margin: 0 3vmin 4vmin 3vmin;
   font-weight: bold;
   font-size: 150%;
   text-decoration: none;
@@ -1545,7 +1545,7 @@
   width: 99.5%;
   position:absolute;
   z-index: 8;
-  margin: 0 0 0 0;
+  margin: -1.5vmin 0 0 0;
 }
 
 #toplineNavTable td {
