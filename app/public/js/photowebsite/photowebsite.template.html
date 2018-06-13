@@ -1,25 +1,7 @@
 <div class="container-fluid">
-  <div id="memoirDropdownDiv" ng-mouseover="$ctrl.memoirMenuActive()" ng-mouseleave="$ctrl.memoirMenueInactive()">
 
-    <p ng-click="$ctrl.navigateToSurprise()">About the Memoir</p>
-    <p ng-click="$ctrl.navigageIntroduction()">Introduction</p>
-    <p ng-click="$ctrl.navigateFirstChapter()">First Chapter</p>
-  </div>
 
-  <div id="authorDropdownDiv" ng-mouseover="$ctrl.authorMenuActive()" ng-mouseleave="$ctrl.authorMenueInactive()">
 
-    <p ng-click="$ctrl.navigateShortBio()">Short Bio</p>
-    <p ng-click="$ctrl.navigateLongBio()">Long Bio</p>
-    <p ng-click="$ctrl.navigatePublishedBooks()">Published Books</p>
-  </div>
-
-  <div id="funStuffDropdownDiv" ng-mouseover="$ctrl.funStuffMenuActive()" ng-mouseleave="$ctrl.funStuffMenuInactive()">
-
-    <p ng-click="$ctrl.navigateFunInfo()">Fun Info</p>
-    <p ng-click="$ctrl.navigateFutureProjects()">Future Projects</p>
-    <p ng-click="$ctrl.navigateShortStory()"><span class="sr-only">Photo Website</span></p>
-    <p ng-click="$ctrl.navigateShortStory()">Short Stories</p>
-  </div>
 
   <div id="topbar">
     <nav class="navbar navbar-expand-lg" id="navBarTop">
@@ -31,25 +13,72 @@
         </div> -->
 
         <div class="navbar-nav" id="menuBar">
-          <a class="nav-item nav-link" ng-click="$ctrl.navigateWelome()" style="cursor:pointer">Welcome</a>
-          <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateMemoir()" ng-mouseleave="$ctrl.hoverOffMemoir()" ng-click="$ctrl.navigateMemoir()">Current Book: <em>Surprised by Story</em>
+          <table id="toplineNavTable">
+            <tr>
+              <td style="width: 15%;">
+                <a class="nav-item nav-link" ng-click="$ctrl.navigateWelome()" style="cursor:pointer">Welcome</a>
+              </td>
+              <td style="width: 31%;">
+                <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateMemoir()" ng-mouseleave="$ctrl.hoverOffMemoir()" ng-click="$ctrl.navigateMemoir()" style="font-size: 115%;">Current Book: <em>Surprised by Story</em></a>
+              </td>
+              <td style="width: 15%;">
+                <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateAuthor()" ng-mouseleave="$ctrl.hoverOffAuthor()" ng-click="$ctrl.navigateAuthor()" style="font-size: 130%;">Author Info</a>
+              </td>
+              <td style="width: 15%;">
+                <a class="nav-item nav-link" href="#" ng-click="$ctrl.navigateContact()">Contact</a>
+              </td>
+              <td style="width: 15%;">
+                <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateFunStuff()" ng-mouseleave="$ctrl.hoverOffFunStuff()" ng-click="$ctrl.navigateFunStuff()">Fun Stuff</a>
+              </td>
+                <!-- <a class="nav-item nav-link" ng-click="$ctrl.navigateNovels()" href="#">Novels</a> -->
 
-
-
-          </a>
-          <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateAuthor()" ng-mouseleave="$ctrl.hoverOffAuthor()" ng-click="$ctrl.navigateAuthor()">Author Info</a>
-          <a class="nav-item nav-link" href="#" ng-click="$ctrl.navigateContact()">Contact</a>
-          <a class="nav-item nav-link" href="#" ng-mouseover="$ctrl.navigateFunStuff()" ng-mouseleave="$ctrl.hoverOffFunStuff()" ng-click="$ctrl.navigateFunStuff()">Fun Stuff</a>
-          <!-- <a class="nav-item nav-link" ng-click="$ctrl.navigateNovels()" href="#">Novels</a> -->
-
-          <!-- <a class="nav-item nav-link" href="#" ng-click="$ctrl.navigateShortStories()">Short Stories</a> -->
-          <!-- <a class="nav-item nav-link" href="#">Books</a> -->
+                <!-- <a class="nav-item nav-link" href="#" ng-click="$ctrl.navigateShortStories()">Short Stories</a> -->
+                <!-- <a class="nav-item nav-link" href="#">Books</a> -->
+            </tr>
+          </table>
 
         </div>
 
       </div>
 
     </nav>
+    <table id="navTable">
+      <tr>
+        <td style="width: 19%;"></td>
+        <td style="width: 25%;">
+
+          <div id="memoirDropdownDiv" ng-mouseover="$ctrl.memoirMenuActive()" ng-mouseleave="$ctrl.memoirMenueInactive()">
+
+            <p ng-click="$ctrl.surpisedbystory()">About the Memoir</p>
+            <p ng-click="$ctrl.navigateIntroduction()">Introduction</p>
+            <p ng-click="$ctrl.navigateFirstChapter()">First Chapter</p>
+          </div>
+        </td>
+        <td style="width: 30%;">
+          <div id="authorDropdownDiv" ng-mouseover="$ctrl.authorMenuActive()" ng-mouseleave="$ctrl.authorMenueInactive()">
+
+            <p ng-click="$ctrl.navigateShortBio()">Short Bio</p>
+            <p ng-click="$ctrl.navigateLongBio()">Long Bio</p>
+            <p ng-click="$ctrl.navigatePublishedBooks()">Published Books</p>
+          </div>
+
+        </td>
+        <td style="width: 26%;">
+          <div id="funStuffDropdownDiv" ng-mouseover="$ctrl.funStuffMenuActive()" ng-mouseleave="$ctrl.funStuffMenuInactive()">
+
+            <p ng-click="$ctrl.navigateFunInfo()">Fun Info</p>
+            <p ng-click="$ctrl.navigateFutureProjects()">Future Projects</p>
+            <p ng-click="$ctrl.navigateShortStory()"><span class="sr-only">Photo Website</span></p>
+            <p ng-click="$ctrl.navigateShortStory()">Short Stories</p>
+          </div>
+
+        </td>
+
+
+
+      </tr>
+
+    </table>
   </div>
     <div class="row" id="theRow">
 
