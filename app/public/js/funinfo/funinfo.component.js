@@ -13,7 +13,7 @@
   var bookLinks = [ 'https://www.goodreads.com/book/show/10592766-dinner-at-the-homesick-restaurant', 'https://www.goodreads.com/book/show/4473.A_Prayer_for_Owen_Meany', 'https://www.goodreads.com/book/show/8872524-the-wind-up-bird-chronicle', 'https://www.goodreads.com/book/show/9712.Love_in_the_Time_of_Cholera', 'https://www.goodreads.com/book/show/292408.Angle_of_Repose', 'https://www.goodreads.com/book/show/9328.The_House_of_the_Spirits', 'https://www.goodreads.com/book/show/51019.Cat_s_Eye', 'https://www.goodreads.com/book/show/3835.Don_Quixote', 'https://www.goodreads.com/book/show/77156.Plainsong', 'https://www.goodreads.com/book/show/49628.Cloud_Atlas?ac=1', 'https://www.goodreads.com/book/show/8168770-case-histories', 'https://www.goodreads.com/book/show/256008.Lonesome_Dove', 'https://www.goodreads.com/book/show/492532.Canopus_in_Argos' ];
 
   var retreatImages = [ './img/french.gif', './img/hedgebrook.jpg', './img/AnamCara.gif' ];
-  var retreatLinks = [ 'http://www.oleandercottage.com/', 'http://www.hedgebrook.org/', 'http://www.anamcararetreat.com/' ];
+  var retreatLinks = [ 'http://www.fsrn.info/', 'http://www.hedgebrook.org/', 'http://www.anamcararetreat.com/' ];
   var retreatNames = [ 'Oleander Cottage', 'Hedgebrook', 'Anam Cara' ];
   var retreatLocations = [ 'Lomagne Region of France', 'Whidbey Island near Seattle, WA', 'Coulagh Bay, County Cork, Ireland' ];
 

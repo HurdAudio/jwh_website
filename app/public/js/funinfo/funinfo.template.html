@@ -86,30 +86,30 @@
           <img src="./img/desk.gif">
           <div id="favoriteRetreatsDiv">
 
-            <h3>Every writer needs a little quiet. Here are my favorite retreat places:</h3>
+            <h3>Every writer needs a little quiet. Here are my favorite retreat places:</h3><br><br><br>
             <main ng-repeat="retreat in $ctrl.retreats | orderBy : $ctrl.sortBy">
 
               <div><a href="{{retreat.link}}" target="_blank">
 
-                <p>{{retreat.name}}</p><br><br><br><br><br>
+                <p>{{retreat.name}}:</p>
                 <p>{{retreat.location}}</p>
-                <img src="{{retreat.image}}">
-              </a></div>
+                <img src="{{retreat.image}}"><br><br><br><br><br><br><br><br><br>
+              </a></div><br><br><br><br>
             </main>
           </div>
         </div>
 
         <div id="favoriteBooksDiv">
           <h3>My All-Time Favorite Novels</h3>
-          <p>(no particular order)</p>
+          <p>(no particular order)</p><br><br><br>
 
 
           <main ng-repeat="book in $ctrl.books| orderBy : $ctrl.sortBy">
             <div><a href="{{book.link}}" target="_blank">
               <img src="{{book.cover}}">
-              <p class="favBookTitle"><em>{{book.title}}</em></p><br><br><br><br>
+              <p class="favBookTitle"><em>{{book.title}}</em></p><br>
               <p class="favBookAuthor">by {{book.author}}</p>
-            </a></div><br><br><br><br>
+            </a></div><br><br><br><br><br><br><br><br><br><br><br><br>
 
           </main>
         </div>

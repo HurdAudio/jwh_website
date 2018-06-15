@@ -205,11 +205,31 @@
 
       function onInit() {
         console.log("Contact is lit");
-        let contactPic = document.getElementById('contactImg');
-        contactPic.setAttribute("style", "opacity: 0.2; filter: hue-rotate(60deg);");
-        setTimeout(()=>{
-          contactPic.setAttribute("style", "opacity: 1; filter: hue-rotate(0deg); transition: all 1s linear;");
-        }, 200)
+        let sendMessage = document.getElementById('sendMessage');
+        let contactorEmail = document.getElementById('contactorEmail');
+        let cantactorMessage = document.getElementById('cantactorMessage');
+
+
+
+        sendMessage.addEventListener('click', ()=>{
+          if ((contactorEmail.value !== '') && (cantactorMessage.value !== '')) {
+            let subObj = {
+              email: contactorEmail.value,
+              message: cantactorMessage.value
+            }
+            $http.post('/contactemail', subObj)
+            .then(data=>{
+              console.log(data.data);
+              contactorEmail.value = '';
+              cantactorMessage.value = 'Your message has been sent. Thank you!';
+              setTimeout(()=>{
+                cantactorMessage.value = '';
+              }, 2000);
+            });
+
+          }
+
+        });
 
 
 

@@ -4,6 +4,7 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const knex = require('knex');
+const nodemailer = require('nodemailer');
 // const bcrypt = require('bcrypt');
 // const request = require('request');
 // const parseString = require('xml2js').parseString;
@@ -301,6 +302,100 @@ app.use(express.static(path.join(__dirname, '/../', 'node_modules')));
 //   });
 //
 // });
+
+app.post('/contactemail', (req, res, next)=>{
+  console.log('it\'s emailing time!');
+
+  let smtp = {
+    host: 'smtp.mail.com',
+    port: 587,
+    secure: false
+  };
+  let account = {
+    smtp: smtp,
+    user: process.env.EMAIL_ACCOUNT,
+    pass: process.env.EMAIL_PASSWORD
+  };
+
+
+    //console.log(req.body.email);
+    // nodemailer.createTestAccount((err)=>{
+    //   if (err) {
+    //     console.log('failed to create a testing account');
+    //     return(err);
+    //   }
+    //   console.log('Credentials obtained, sending message...');
+    // });
+
+  let transporter = nodemailer.createTransport(
+      {
+          host: account.smtp.host,
+          port: account.smtp.port,
+          secure: account.smtp.secure,
+          auth: {
+              user: account.user,
+              pass: account.pass
+          },
+          tls: {
+            rejectUnauthorized: false
+          },
+          logger: true,
+          debug: true // include SMTP traffic in the logs
+      },
+      {
+          // default message fields
+
+          // sender info
+          from: process.env.EMAIL_ACCOUNT
+      }
+  );
+
+  transporter.verify(function(error, success) {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log('Server is ready to take our messages');
+    }
+  });
+
+  // Message object
+  let message = {
+      // Comma separated list of recipients
+      from: process.env.EMAIL_ACCOUNT,
+      to: 'jerrie@jerriehurd.com',
+
+      // Subject of the message
+      subject: 'Message from website',
+
+      // plaintext body
+
+
+      text: req.body.email + ' message: ' + req.body.message,
+
+
+
+  };
+
+  transporter.sendMail(message, (error, info) => {
+      if (error) {
+          console.log('Error occurred');
+          console.log(error.message);
+          res.send(error);
+          return process.exit(1);
+      }
+
+
+      console.log('Message sent successfully!');
+      console.log(nodemailer.getTestMessageUrl(info));
+
+      res.send('Message Sent Successfully');
+
+      // only needed when using pooled connections
+      //transporter.close();
+  });
+
+
+});
 
 
 app.use('*', function(req, res, next) {
