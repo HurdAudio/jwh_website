@@ -402,7 +402,7 @@
   font-family: 'Montserrat', serif;
   font-size: 42px;
   padding: 1%;
-  margin: -10% 9% 3% 9%;
+  margin: -10% 9% 3% 3%;
 }
 
 #ellieOpeningPagesContent {
@@ -1519,9 +1519,9 @@
 }
 
 #oils {
-  width: 17%;
+  width: 29%;
   float: right;
-  margin: 0 0 0 4vmin;
+  margin: 0 -4vmin 0 -4vmin;
   -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   box-shadow: 1px 2px 3px rgba(0,0,0,.5);
