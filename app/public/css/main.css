@@ -1695,6 +1695,11 @@
     height: 140%;
     overflow: scroll;
   }
+
+  #publishedBooksContent {
+    overflow: scroll;
+    height: 140%;
+  }
 }
 
 @media (max-width: 769px) {
@@ -1792,6 +1797,11 @@
     margin: 0 2% 1% 6%;
     font-weight: 600;
 
+  }
+
+  #publishedBooksContent {
+    overflow: scroll;
+    height: 140%;
   }
 }
 
@@ -1951,6 +1961,52 @@
     font-size: 30px;
     padding: 1%;
     margin: -80% 9% 3% 3%;
+  }
+
+  .shortBioBlurb {
+    font-family: 'Bellefair', sans-serif;
+    font-size: 18px;
+    margin: 1% 6% 1% 6%;
+    float: left;
+  }
+
+  .longBioBlurb {
+    font-family: 'Bellefair', sans-serif;
+    font-size: 18px;
+    margin: 1% 6% 1% 6%;
+    float: left;
+  }
+
+  #publishedBooksContent {
+    overflow: scroll;
+    height: 225%;
+  }
+
+  #missElliePublishedInfos p {
+    font-family: 'Bellefair', sans-serif;
+    font-size: 18px;
+    margin: 1% 6% 1% 1%;
+    float: left;
+  }
+
+  .editorialReviewPub p {
+    font-family: 'Bellefair', san-serif;
+    font-size: 18px;
+    margin: 1vmin 15vmin 1vmin 10vmin;
+  }
+
+  #katePublishedInfos p {
+    font-family: 'Bellefair', sans-serif;
+    font-size: 18px;
+    margin: 1% 6% 1% 1%;
+    float: left;
+  }
+
+  #ladyPinkertonPublishedInfos p {
+    font-family: 'Bellefair', sans-serif;
+    font-size: 18px;
+    margin: 1% 6% 1% 1%;
+    float: left;
   }
 }
 
@@ -2115,5 +2171,51 @@
     font-size: 30px;
     padding: 1%;
     margin: -80% 9% 3% 3%;
+  }
+
+  .shortBioBlurb {
+    font-family: 'Bellefair', sans-serif;
+    font-size: 18px;
+    margin: 1% 6% 1% 6%;
+    float: left;
+  }
+
+  .longBioBlurb {
+    font-family: 'Bellefair', sans-serif;
+    font-size: 18px;
+    margin: 1% 6% 1% 6%;
+    float: left;
+  }
+
+  #publishedBooksContent {
+    overflow: scroll;
+    height: 225%;
+  }
+
+  #missElliePublishedInfos p {
+    font-family: 'Bellefair', sans-serif;
+    font-size: 18px;
+    margin: 1% 6% 1% 1%;
+    float: left;
+  }
+
+  .editorialReviewPub p {
+    font-family: 'Bellefair', san-serif;
+    font-size: 18px;
+    margin: 1vmin 15vmin 1vmin 10vmin;
+  }
+
+  #katePublishedInfos p {
+    font-family: 'Bellefair', sans-serif;
+    font-size: 18px;
+    margin: 1% 6% 1% 1%;
+    float: left;
+  }
+
+  #ladyPinkertonPublishedInfos p {
+    font-family: 'Bellefair', sans-serif;
+    font-size: 18px;
+    margin: 1% 6% 1% 1%;
+    float: left;
   }
 }
