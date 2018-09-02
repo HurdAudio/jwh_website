@@ -1722,6 +1722,7 @@
     position: absolute;
     z-index: 8;
     margin: 1vmin 0 0 0;
+
   }
 
   #navTable td {
@@ -1735,6 +1736,7 @@
     position: absolute;
     z-index: 8;
     margin: -1.75vmin 0 0 0;
+    top: 10%;
   }
 
   #toplineNavTable td {
