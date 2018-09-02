@@ -2008,6 +2008,25 @@
     margin: 1% 6% 1% 1%;
     float: left;
   }
+
+  #housePic {
+    margin: 0;
+    width: 30%;
+  }
+
+  #tellMeAboutTheHouse {
+    width: 100%;
+    margin: 3vmin 3vmin 1vmin 4vmin;
+    float: left;
+  }
+
+  #tellMeAboutTheHouse  p {
+    font-family: 'Lato', serif;
+    font-size: 18px;
+
+    color: #942D08;
+    font-weight: bold;
+  }
 }
 
 @media (max-width: 415px) {
@@ -2217,5 +2236,23 @@
     font-size: 18px;
     margin: 1% 6% 1% 1%;
     float: left;
+  }
+
+  #housePic {
+    margin: 0;
+    width: 30%;
+  }
+
+  #tellMeAboutTheHouse {
+    width: 80%;
+    margin: 3vmin 3vmin 1vmin 4vmin;
+  }
+
+  #tellMeAboutTheHouse  p {
+    font-family: 'Lato', serif;
+    font-size: 18px;
+
+    color: #942D08;
+    font-weight: bold;
   }
 }
