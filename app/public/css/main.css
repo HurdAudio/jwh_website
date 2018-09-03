@@ -1562,6 +1562,13 @@
   #menuBar {
     width: 1024px;
   }
+
+  #shortStoryContent {
+    margin-left: 13%;
+    height: 140%;
+    overflow: scroll;
+  }
+
   #menuBar a {
     margin: 0 1vmin 2vmin 1vmin;
     font-weight: bolder;
@@ -1811,6 +1818,37 @@
     width: 375px;
   }
 
+  #shortStoryContent {
+    margin-left: 13%;
+    height: 230%;
+    overflow: scroll;
+  }
+
+  .shortStoryText {
+    font-family: 'Bellefair', san-serif;
+    font-size: 18px;
+  }
+
+  #snakeoilContent {
+    float: left;
+    width: 84.5%;
+    /* height: 118%;
+    overflow: scroll; */
+
+  }
+
+  #snakeoilContent p {
+    font-family: 'Bellefair', sans-serif;
+    font-size: 18px;
+
+  }
+
+  #snakeoilContent h3 {
+    float: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
+  }
+
   #menuBar a {
     margin: 0 0.3vmin 1vmin 0.3vmin;
     font-weight: bolder;
@@ -2027,6 +2065,81 @@
     color: #942D08;
     font-weight: bold;
   }
+
+  #authorDesk {
+    width: 80%;
+    height: auto;
+    overflow: scroll;
+  }
+
+  #authorDesk img {
+    /* float: left; */
+    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  }
+
+  #favoriteBooksDiv {
+    width: 80%;
+    padding: -1vmin 3vmin 3vmin 3vmin;
+    margin: 1vmin 2vmin 1vmin 2vmin;
+    /* -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    box-shadow: 1px 2px 3px rgba(0,0,0,.5); */
+    height: auto;
+    overflow: scroll;
+  }
+
+  #favoriteBooksDiv h3 {
+    font-family: 'Bellefair', san-serif;
+    font-size: 30px;
+  }
+
+  #favoriteBooksDiv p {
+    font-family: 'Bellefair', san-serif;
+    font-size: 30px;
+  }
+
+  #favoriteBooksDiv img {
+    width: 10%;
+    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    float: left;
+    margin: 0 0 0 6vmin;
+  }
+
+  #futureProjectsTextBox {
+    width: 80%;
+    padding: 0 3vmin 1vmin 3vmin;
+    height: 210%;
+    overflow: scroll;
+
+  }
+
+  #futureProjectsTextBox h2 {
+    margin-left: 5vmin;
+    font-family: 'Lato', san-serif;
+    font-size: 30px;
+  }
+
+  #futureProjectsTextBox h5 {
+    margin-left: 3vmin;
+    font-family: 'Lato', san-serif;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  #futureProjectsTextBox p {
+    margin: 0 1vmin 1vmin 2vmin;
+    font-family: 'Bellefair', san-serif;
+    font-size: 18px;
+  }
+
+  #photoSiteText p {
+    font-family: 'Bellefair', san-serif;
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 415px) {
@@ -2034,6 +2147,37 @@
 
   #menuBar {
     width: 414px;
+  }
+
+  #shortStoryContent {
+    margin-left: 13%;
+    height: 230%;
+    overflow: scroll;
+  }
+
+  .shortStoryText {
+    font-family: 'Bellefair', san-serif;
+    font-size: 18px;
+  }
+
+  #snakeoilContent {
+    float: left;
+    width: 84.5%;
+    /* height: 118%;
+    overflow: scroll; */
+
+  }
+
+  #snakeoilContent p {
+    font-family: 'Bellefair', sans-serif;
+    font-size: 18px;
+
+  }
+
+  #snakeoilContent h3 {
+    float: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
   }
 
   #menuBar a {
@@ -2254,5 +2398,80 @@
 
     color: #942D08;
     font-weight: bold;
+  }
+
+  #authorDesk {
+    width: 80%;
+    height: auto;
+    overflow: scroll;
+  }
+
+  #authorDesk img {
+    /* float: left; */
+    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  }
+
+  #favoriteBooksDiv {
+    width: 80%;
+    padding: -1vmin 3vmin 3vmin 3vmin;
+    margin: 1vmin 2vmin 1vmin 2vmin;
+    /* -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    box-shadow: 1px 2px 3px rgba(0,0,0,.5); */
+    height: auto;
+    overflow: scroll;
+  }
+
+  #favoriteBooksDiv h3 {
+    font-family: 'Bellefair', san-serif;
+    font-size: 30px;
+  }
+
+  #favoriteBooksDiv p {
+    font-family: 'Bellefair', san-serif;
+    font-size: 30px;
+  }
+
+  #favoriteBooksDiv img {
+    width: 10%;
+    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    float: left;
+    margin: 0 0 0 6vmin;
+  }
+
+  #futureProjectsTextBox {
+    width: 80%;
+    padding: 0 3vmin 1vmin 3vmin;
+    height: 210%;
+    overflow: scroll;
+
+  }
+
+  #futureProjectsTextBox h2 {
+    margin-left: 5vmin;
+    font-family: 'Lato', san-serif;
+    font-size: 30px;
+  }
+
+  #futureProjectsTextBox h5 {
+    margin-left: 3vmin;
+    font-family: 'Lato', san-serif;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  #futureProjectsTextBox p {
+    margin: 0 1vmin 1vmin 2vmin;
+    font-family: 'Bellefair', san-serif;
+    font-size: 18px;
+  }
+
+  #photoSiteText p {
+    font-family: 'Bellefair', san-serif;
+    font-size: 18px;
   }
 }
