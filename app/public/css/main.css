@@ -8,8 +8,16 @@
   /* height: 94px; */
   align-content: center;
   top: auto;
-  height: 19vmin;
+  height: 17vh;
 
+}
+
+#memoirContainer {
+  height: 98vh;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
 }
 
 
@@ -278,6 +286,10 @@
   /* padding: 2% 0 0 0;
 
 } */
+
+.textForReading {
+  max-width: 800px;
+}
 
 #memoirContent {
   float: left;
