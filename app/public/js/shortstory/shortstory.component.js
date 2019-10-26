@@ -48,6 +48,11 @@
       vm.navigateFutureProjects = navigateFutureProjects;
       vm.navigatePhotoSite = navigatePhotoSite;
       vm.topOfSnakeDiv = topOfSnakeDiv;
+      vm.navigateSecondChapter = navigateSecondChapter;
+
+      function navigateSecondChapter() {
+        $state.go('memoirsecondchapter');
+      }
 
       function topOfSnakeDiv() {
         document.getElementById('shortStoryContent').scrollTop = 0;

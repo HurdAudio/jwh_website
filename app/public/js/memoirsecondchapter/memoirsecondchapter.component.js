@@ -10,14 +10,14 @@
 
 
   angular.module('app')
-    .component('longbio', {
-      controller: LongBioController,
-      templateUrl: '/js/longbio/longbio.template.html'
+    .component('memoirsecondchapter', {
+      controller: MemoirSecondChapterController,
+      templateUrl: '/js/memoirsecondchapter/memoirsecondchapter.template.html'
     });
 
-    LongBioController.$inject = ['$http', '$state', '$stateParams'];
+    MemoirSecondChapterController.$inject = ['$http', '$state', '$stateParams'];
 
-    function LongBioController($http, $state, $stateParams){
+    function MemoirSecondChapterController($http, $state, $stateParams){
       const vm = this;
 
       vm.$onInit = onInit;
@@ -38,19 +38,19 @@
       vm.navigateFunStuff = navigateFunStuff;
       vm.navigateContact = navigateContact;
       vm.navigateWelome = navigateWelome;
-      vm.navigageIntroduction = navigageIntroduction;
-      vm.navigateFirstChapter = navigateFirstChapter;
       vm.navigateToSurprise = navigateToSurprise;
+      vm.navigateToIntroduction = navigateToIntroduction;
       vm.navigateShortBio = navigateShortBio;
+      vm.navigateLongBio = navigateLongBio;
       vm.navigatePublishedBooks = navigatePublishedBooks;
       vm.navigateFunInfo = navigateFunInfo;
       vm.navigateFutureProjects = navigateFutureProjects;
       vm.navigatePhotoSite = navigatePhotoSite;
       vm.navigateShortStory = navigateShortStory;
-      vm.navigateSecondChapter = navigateSecondChapter;
+      vm.navigateFirstChapter = navigateFirstChapter;
 
-      function navigateSecondChapter() {
-        $state.go('memoirsecondchapter');
+      function navigateFirstChapter() {
+        $state.go('memoirfirstchapter');
       }
 
       function navigateShortStory() {
@@ -73,21 +73,20 @@
         $state.go('publishedbooks');
       }
 
+      function navigateLongBio() {
+        $state.go('longbio');
+      }
 
       function navigateShortBio() {
         $state.go('shortbio');
       }
 
+      function navigateToIntroduction() {
+        $state.go('memoirintroduction');
+      }
+
       function navigateToSurprise() {
         $state.go('memoir');
-      }
-
-      function navigateFirstChapter() {
-        $state.go('memoirfirstchapter');
-      }
-
-      function navigageIntroduction() {
-        $state.go('memoirintroduction')
       }
 
       function navigateWelome() {
@@ -215,7 +214,7 @@
       }
 
       function onInit() {
-        console.log("longbio is lit");
+        console.log("Memoir Second Chapter is lit");
 
 
 
