@@ -22,7 +22,7 @@
   "homepage": "https://github.com/HurdAudio/jwh_website#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.0.0",
     "dotenv": "^5.0.0",
     "express": "^4.16.3",
     "knex": "^0.14.3",
