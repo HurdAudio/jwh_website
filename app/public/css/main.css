@@ -20,6 +20,13 @@
   width: 100%;
 }
 
+.subP {
+  font-family: 'Bellefair', sans-serif;
+  font-size: 30px;
+  padding-left: 6em;
+  padding-right: 6em;
+}
+
 
 
 
@@ -318,6 +325,36 @@
   float: left;
   width: 40%;
   margin: 2vmin 1vmin 4vmin 2vmin;
+  /* filter: sepia(30%); */
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
+#snake1 {
+  float: left !important;
+  width: 20% !important;
+  margin: 2vmin 1vmin 4vmin 2vmin !important;
+  /* filter: sepia(30%); */
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
+#snake2 {
+  float: left !important;
+  width: 20% !important;
+  margin: 2vmin 1vmin 4vmin 2vmin !important;
+  /* filter: sepia(30%); */
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
+#snake3 {
+  float: left !important;
+  width: 80% !important;
+  margin: 2vmin 1vmin 4vmin 2vmin !important;
   /* filter: sepia(30%); */
   -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);

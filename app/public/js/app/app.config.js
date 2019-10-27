@@ -189,6 +189,12 @@
         url: '/memoirsecondchapter',
         parent: 'app',
         component: 'memoirsecondchapter'
+      })
+      .state({
+        name: 'memoirthirdchapter',
+        url: '/memoirthirdchapter',
+        parent: 'app',
+        component: 'memoirthirdchapter'
       });
       // .state({
       //   name: 'dayview',

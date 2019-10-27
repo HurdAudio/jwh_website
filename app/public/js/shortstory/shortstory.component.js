@@ -49,6 +49,11 @@
       vm.navigatePhotoSite = navigatePhotoSite;
       vm.topOfSnakeDiv = topOfSnakeDiv;
       vm.navigateSecondChapter = navigateSecondChapter;
+      vm.navigateThirdChapter = navigateThirdChapter;
+
+      function navigateThirdChapter() {
+        $state.go('memoirthirdchapter');
+      }
 
       function navigateSecondChapter() {
         $state.go('memoirsecondchapter');
